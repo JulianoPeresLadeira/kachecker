@@ -1,6 +1,6 @@
 {
     "name": "@juliano.ladeira/kachecker",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Checks KaBuM for discounts",
     "main": "index.js",
     "scripts": {

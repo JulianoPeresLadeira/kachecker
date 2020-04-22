@@ -1,11 +1,12 @@
 import axios from 'axios';
 import Product from "../models/product";
+import KacheckerConfig from './kachecker-config';
 
 export default class Kachecker {
 
-    private config: any;
+    private config: KacheckerConfig;
 
-    constructor(config: any) {
+    constructor(config: KacheckerConfig) {
         this.config = config;
     }
 

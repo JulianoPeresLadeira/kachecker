@@ -22,7 +22,14 @@ export default class Kachecker {
     }
 
     async fetchProducts(): Promise<Array<Product>> {
-        const products = await Promise.all(this.checkers.map(checker => checker.fetchProducts()));
+        const products = await Promise.all(this.checkers.map(checker => {
+            try {
+                return checker.fetchProducts();
+            } catch (e) {
+                // TODO: log somewhere lol
+                return [];
+            }
+        }));
         return products.reduce((acc, curr) => acc.concat(curr), []);
     }
 }

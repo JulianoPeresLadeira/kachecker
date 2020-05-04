@@ -1,4 +1,4 @@
-export default interface Product {
+export default interface KabumProduct {
     fabricante: number;
     produto: string;
     oferta_codigo: number;

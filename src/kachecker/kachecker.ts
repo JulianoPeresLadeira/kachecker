@@ -1,28 +1,28 @@
-import axios from 'axios';
-import Product from "../models/product";
-import KacheckerConfig from './kachecker-config';
+import { Product } from '../core/models/product';
+import { Checker } from '../core/abstract-checker';
+import { sellers } from './sellers';
 
 export default class Kachecker {
 
-    private config: KacheckerConfig;
+    private checkers: Array<Checker> = [];
 
-    constructor(config: KacheckerConfig) {
-        this.config = config;
+    public register(seller: string, configs?: any) {
+        const sellerInfo = sellers[seller];
+
+        if (!sellerInfo) {
+            throw new Error(`Seller ${seller} not found.`);
+        }
+
+        const checker = new sellerInfo["checker"](configs ? configs : sellerInfo.defaultConfig);
+        this.checkers.push(checker);
     }
 
-    private buildEndpoint(promotion: string): string {
-        return `${this.config.getProductEndpoint}?campanha=${promotion}&${this.config.getProductParams}`;
-    }
-
-    private async fetchPromotion(): Promise<string> {
-        const offerResponse = await axios.get(this.config.getDiscountEndpoint);
-        const campanha = offerResponse && offerResponse.data && offerResponse.data.oferta && offerResponse.data.oferta.path_json;
-        return campanha;
+    public registerAll() {
+        Object.keys(sellers).forEach(seller => this.register(seller));
     }
 
     async fetchProducts(): Promise<Array<Product>> {
-        const promotion = await this.fetchPromotion();
-        const endpoint = this.buildEndpoint(promotion);
-        return (await axios.get(endpoint)).data.produtos;
+        const products = await Promise.all(this.checkers.map(checker => checker.fetchProducts()));
+        return products.reduce((acc, curr) => acc.concat(curr), []);
     }
 }

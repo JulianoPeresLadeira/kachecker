@@ -1,9 +1,9 @@
-import KacheckerConfig from "./kachecker-config";
+import KabumConfig from "./models/kabum-config";
 
-const KacheckerDefaultConfigs: KacheckerConfig = {
+const KabumDefaultConfig: KabumConfig = {
     getProductEndpoint: "https://b2lq2jmc06.execute-api.us-east-1.amazonaws.com/PROD/ofertas",
     getProductParams: "app=1&limite=2000000&pagina=1",
     getDiscountEndpoint: "https://www.kabum.com.br/ofertas_home.json"
 };
 
-export default KacheckerDefaultConfigs;
+export default KabumDefaultConfig;

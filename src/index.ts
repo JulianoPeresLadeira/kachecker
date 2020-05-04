@@ -1,4 +1,4 @@
 import Kachecker from './kachecker/kachecker'
-export { default as KacheckerDefaultConfigs } from './kachecker/kachecker-default-configs'
+export { default as KabumConfig } from './sellers/KaBuM/models/kabum-config';
 
-export default Kachecker
+export default Kachecker;

@@ -1,5 +1,5 @@
-export interface TerabyteshopProduct {
-    seller: 'terabyteshop',
+export interface PichauProduct {
+    seller: 'pichau',
     imageUrl: string,
     name: string,
     storeLink: string,

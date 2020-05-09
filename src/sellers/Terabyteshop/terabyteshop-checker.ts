@@ -1,4 +1,4 @@
-import { Checker as AbstractChecker } from "../../core/abstract-checker";
+import { Checker } from "../../core/abstract-checker";
 import { TerabyteshopProduct } from "./models/terabyteshop-product";
 import { Product } from "../../core/models/product";
 import TerabyteshopConfig from "./models/terabyteshop-config";
@@ -6,20 +6,17 @@ import axios from "axios";
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
-export class TerabyteshopChecker extends AbstractChecker {
-
-    private config: TerabyteshopConfig;
+export class TerabyteshopChecker extends Checker<TerabyteshopConfig> {
 
     constructor(config: TerabyteshopConfig) {
-        super();
-        this.config = config;
+        super(config);
     }
 
     protected convert(sourceProduct: TerabyteshopProduct): Product {
         return <Product>sourceProduct;
     }
 
-    public extractProducts(responseSample: string): Array<TerabyteshopProduct> {
+    extractProducts(responseSample: string): Array<TerabyteshopProduct> {
         const transformProduct = (sourceProduct) => {
 
             const transformNumber = (textNumber: string) => {

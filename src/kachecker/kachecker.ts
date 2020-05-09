@@ -1,10 +1,11 @@
 import { Product } from '../core/models/product';
 import { Checker } from '../core/abstract-checker';
 import { sellers } from './sellers';
+import { Config } from '../core/models/configs';
 
 export default class Kachecker {
 
-    private checkers: Array<Checker> = [];
+    private checkers: Array<Checker<Config>> = [];
 
     public register(seller: string, configs?: any) {
         const sellerInfo = sellers[seller];

@@ -20,15 +20,15 @@ describe('pichau tests',
                 axios.get.mockImplementation(async () => ({ data: homepage }));
                 const promotion = await checker.fetchPromotionEndpoint();
 
-                expect(promotion).toEqual("https://www.pichau.com.br/dailydeal");
+                expect(promotion).toEqual("https://www.pichau.com.br/maes");
             }
         )
 
         it('should return a list of products',
             async () => {
                 const products = checker.extractProducts(promotionPage);
-                //@ts-ignore
-                console.log(products.length);
+                // console.log(products.map(prd => JSON.stringify(prd)));
+                expect(products.every(prd => prd.originalPrice != null && prd.discountedPrice != null && prd.discount != null)).toBeTruthy();
             }
         )
     }

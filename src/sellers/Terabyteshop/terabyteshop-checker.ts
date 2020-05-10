@@ -3,6 +3,7 @@ import { TerabyteshopProduct } from "./models/terabyteshop-product";
 import { Product } from "../../core/models/product";
 import TerabyteshopConfig from "./models/terabyteshop-config";
 import axios from "axios";
+import { Utils } from "../utils/utils";
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -19,15 +20,6 @@ export class TerabyteshopChecker extends Checker<TerabyteshopConfig> {
     extractProducts(responseSample: string): Array<TerabyteshopProduct> {
         const transformProduct = (sourceProduct) => {
 
-            const transformNumber = (textNumber: string) => {
-                return Number(
-                    textNumber
-                        .replace(/[a-zA-Z]/g, '')
-                        .replace(/\$/, '')
-                        .replace(',', '.')
-                );
-            }
-
             const getImageUrl = () => sourceProduct.getElementsByTagName("img")[0].getAttribute("src");
             const getName = () => sourceProduct.getElementsByClassName("prod-name")[0].getAttribute("title");
             const getStoreLink = () => `https://www.terabyteshop.com.br${sourceProduct.getElementsByClassName("prod-name")[0].getAttribute("href")}`;
@@ -37,7 +29,7 @@ export class TerabyteshopChecker extends Checker<TerabyteshopConfig> {
                     ?.getElementsByTagName("span")[0]
                     ?.innerHTML;
 
-                return oldValueNumber ? transformNumber(oldValueNumber) : NaN;
+                return oldValueNumber ? Utils.transformNumber(oldValueNumber) : NaN;
             }
             const getDiscountedPrice = () => {
                 const oldValueNumber = sourceProduct
@@ -45,7 +37,7 @@ export class TerabyteshopChecker extends Checker<TerabyteshopConfig> {
                     ?.getElementsByTagName("span")[0]
                     ?.innerHTML;
 
-                return oldValueNumber ? transformNumber(oldValueNumber) : NaN;
+                return oldValueNumber ? Utils.transformNumber(oldValueNumber) : NaN;
             }
 
             let product = {

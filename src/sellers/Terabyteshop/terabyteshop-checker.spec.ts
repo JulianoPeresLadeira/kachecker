@@ -4545,7 +4545,7 @@ describe('Terabyteshop tests',
                 axios.get.mockImplementation(async () => ({ data: responseSample }));
                 const products = await checker.fetchProducts();
 
-                expect(products.length).toEqual(25);
+                expect(products.length).toEqual(32);
                 expect(products.every(product => product.discount > 0)).toBeTruthy();
             }
         );

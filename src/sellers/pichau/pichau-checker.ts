@@ -3,6 +3,7 @@ import { Product } from "../../core/models/product";
 import PichauConfig from "./models/pichau-config";
 import axios from "axios";
 import { PichauProduct } from "./models/pichau-product";
+import { Utils } from "../utils/utils";
 
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
@@ -28,20 +29,12 @@ export class PichauChecker extends Checker<PichauConfig> {
 
     extractProducts(sourceHtml: string): Array<PichauProduct> {
         const extractProduct = (productInformation, pricingInformation) => {
-            const transformNumber = (textNumber: string) => {
-                return Number(
-                    textNumber
-                        .replace(/[a-zA-Z]/g, '')
-                        .replace(/\$/, '')
-                        .replace(',', '.')
-                );
-            }
 
             const getImageUrl = () => productInformation.getElementsByTagName("img")[0].getAttribute("src");
             const getName = () => productInformation.getElementsByClassName("product-name")[0].getElementsByTagName("a")[0].innerHTML;
             const getStoreLink = () => productInformation.getElementsByClassName("product-name")[0].getElementsByTagName("a")[0].getAttribute("href");
             const getOriginalPrice = () => NaN
-            const getDiscountedPrice = () => transformNumber(pricingInformation.getElementsByClassName("boleto")[0].getElementsByClassName("valor")[0].innerHTML)
+            const getDiscountedPrice = () => Utils.transformNumber(pricingInformation.getElementsByClassName("boleto")[0].getElementsByClassName("valor")[0].innerHTML)
             const getDiscount = () => Number(productInformation.getElementsByClassName("save-price")[0].getElementsByClassName("price")[0].innerHTML.split('%').join(''));
 
             let product = {

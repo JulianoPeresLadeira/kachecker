@@ -1,45 +1,5 @@
-export const homepage = `<html lang="pt" class="lc-cb-container-vi uk-notouch"><head>
-<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/-wV2EAWEOTlEtZh4vNQtn3H1/recaptcha__en.js"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=c3044a418bc08642b864d2343f0a2da3&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.ebk8EhJxLu4.O/m=ratingbadge/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCP6GuLd1aTsaaFO6Zp_Rjnyu1Wv5g/cb=gapi.loaded_0" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.11&amp;appId=555333651272722"></script><script async="" src="https://js.datadome.co/tags.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MQS562"></script><script src="/cdn-cgi/apps/head/zdvena6okxF8D1KoxHwpN1BcyTM.js"></script><script data-dapp-detection="">
-(function() {
-  let alreadyInsertedMetaTag = false
-
-  function __insertDappDetected() {
-    if (!alreadyInsertedMetaTag) {
-      const meta = document.createElement('meta')
-      meta.name = 'dapp-detected'
-      document.head.appendChild(meta)
-      alreadyInsertedMetaTag = true
-    }
-  }
-
-  if (window.hasOwnProperty('web3')) {
-    // Note a closure can't be used for this var because some sites like
-    // www.wnyc.org do a second script execution via eval for some reason.
-    window.__disableDappDetectionInsertion = true
-    // Likely oldWeb3 is undefined and it has a property only because
-    // we defined it. Some sites like wnyc.org are evaling all scripts
-    // that exist again, so this is protection against multiple calls.
-    if (window.web3 === undefined) {
-      return
-    }
-    __insertDappDetected()
-  } else {
-    var oldWeb3 = window.web3
-    Object.defineProperty(window, 'web3', {
-      configurable: true,
-      set: function (val) {
-        if (!window.__disableDappDetectionInsertion)
-          __insertDappDetected()
-        oldWeb3 = val
-      },
-      get: function () {
-        if (!window.__disableDappDetectionInsertion)
-          __insertDappDetected()
-        return oldWeb3
-      }
-    })
-  }
-})()</script><script>
+export const homepage = `<html class="lc-cb-container-vi uk-notouch" lang="pt"><head>
+<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/-wV2EAWEOTlEtZh4vNQtn3H1/recaptcha__en.js"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=bbc14678f6289bd33888318610e3e992" async="" crossorigin="anonymous"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.jw7XZHvcak8.O/m=ratingbadge/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCOXtLG11kt9d673FzpjO_GiLUGIQA/cb=gapi.loaded_0" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.11&amp;appId=555333651272722"></script><script async="" src="https://js.datadome.co/tags.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MQS562"></script><script src="/cdn-cgi/apps/head/zdvena6okxF8D1KoxHwpN1BcyTM.js"></script><script>
     var BASE_URL = 'https://www.pichau.com.br/';
     var require = {
         "baseUrl": "https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR"
@@ -59,6 +19,9 @@ export const homepage = `<html lang="pt" class="lc-cb-container-vi uk-notouch"><
 <link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/css/searchsuiteautocomplete.css">
 <link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Tigren_Dailydeal/css/dailydeal_sidebar.css">
 <link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_ShopbyBase/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_SeoToolKit/css/source/mkcss/amseokit.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_ShopbyBase/css/source/mkcss/am-shopby-base.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/css/source/mkcss/am-shopby.css">
 <link rel="stylesheet" type="text/css" media="print" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/css/print.css">
 <script type="text/javascript" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/require.js"></script>
 <script type="text/javascript" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/mixins.js"></script>
@@ -153,10 +116,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {event: "viewHome"}
         );
     })();
-</script> <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.mobile.custom" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.mobile.custom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dataPost" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dataPost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate-inline" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate-inline.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyResponsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyResponsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/responsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/responsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/theme" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/theme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/typeahead" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/typeahead.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.cookie" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/smart-keyboard-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/mage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/mage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/ie-class-fixer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/ie-class-fixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery-ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/confirm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyTopFilters" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyTopFilters.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/tabs" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Label/js/label" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Label/js/label.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="matchMedia" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/matchMedia.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/price-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/price-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/catalog-add-to-cart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/catalog-add-to-cart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-migrate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-migrate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/common" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/common.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tether" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/tether.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="slick" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/slick.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mask" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/jquery.mask.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.fancybox" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-storageapi" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.storageapi.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-es5.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids-resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids-resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/key-codes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/observable_array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/bound-nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/scripts.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-repeat.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-fast-foreach.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/wrapper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="es6-collections" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/es6-collections.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/renderer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/range.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/mage-init.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/keyboard.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/optgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/after-render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/autoselect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/outer_click.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/fadeVisible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/staticChecked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/simple-checked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bind-html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/observable_source.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/async.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/registry/registry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/calendar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/calendar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/moment.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/storage/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry-factory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-output-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/formatter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/message-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/levels-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/dom-observer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/bindings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/arrays.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/misc" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/misc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/objects" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/objects.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/strings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/strings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/template.js"></script><link rel="stylesheet" type="text/css" href="https://d36mpcpuzc4ztk.cloudfront.net/css/visitor.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_gtm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_gtm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-ui-timepicker-addon" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui-timepicker-addon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/customer-data" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/customer-data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Persistent/js/view/customer-data-mixin" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Persistent/js/view/customer-data-mixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="FormData" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/FormData.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MutationObserver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MutationObserver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/section-config" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/section-config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/url" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/url.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider-ajax" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider-ajax.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_PageCache/js/page-cache" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_PageCache/js/page-cache.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Search/js/form-mini" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Search/js/form-mini.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/menu" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/menu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/update-parcels" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/update-parcels.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider-redirect" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider-redirect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/cookies" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/cookies.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Paypal/js/in-context/express-checkout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Paypal/js/in-context/express-checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/block-loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/block-loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-processor" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-processor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_GoogleRecaptcha/js/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_GoogleRecaptcha/js/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/types.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uikit" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/uikit.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/price-box" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/price-box.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/collection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="paypalInContextExpressCheckout" src="https://www.paypalobjects.com/api/checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/view/minicart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/view/minicart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Tax/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Tax/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Msrp/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Msrp/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Cmsmart_Promotion/js/view/checkout/minicart/discount" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Cmsmart_Promotion/js/view/checkout/minicart/discount.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/image" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/view/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/view/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/validate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/loginCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/loginCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_SocialLogin/js/view/social-buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/view/social-buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/bindEvents" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/bindEvents.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/dataProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/dataProvider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/storage-manager" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/storage-manager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/components/slideshow" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/components/slideshow.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/links.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/sidebar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdown" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dropdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.metadata.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/form" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/action/login" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/action/login.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/model/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/alert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/defaultCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/defaultCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captchaList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captchaList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="socialProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/provider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messageList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messageList.js"></script><script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=www.pichau.com.br&amp;source=checkoutjs&amp;t=xo&amp;v=4.0.314"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/storage-service" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/storage-service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/decorate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/decorate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-rules/website-rule" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-rules/website-rule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/data-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/data-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage-compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage-compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/action/refresh" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/action/refresh.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter/buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter/buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/query-builder" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/query-builder.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+</script> <link rel="stylesheet" type="text/css" href="https://d36mpcpuzc4ztk.cloudfront.net/css/visitor.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.mobile.custom" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.mobile.custom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dataPost" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dataPost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate-inline" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate-inline.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyResponsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyResponsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/responsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/responsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/theme" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/theme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/typeahead" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/typeahead.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/confirm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyTopFilters" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyTopFilters.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/tabs" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/smart-keyboard-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/mage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/mage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/ie-class-fixer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/ie-class-fixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Label/js/label" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Label/js/label.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_gtm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_gtm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/customer-data" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/customer-data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-migrate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-migrate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/common" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/common.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tether" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/tether.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.cookie" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="slick" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/slick.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery-ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="matchMedia" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/matchMedia.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mask" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/jquery.mask.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.fancybox" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/price-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/price-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/catalog-add-to-cart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/catalog-add-to-cart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-es5.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/scripts.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/observable_array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/bound-nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/storage/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/registry/registry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/section-config" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/section-config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-storageapi" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.storageapi.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids-resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids-resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/key-codes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-repeat.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-fast-foreach.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/url" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/url.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/wrapper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="es6-collections" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/es6-collections.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/renderer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/range.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/mage-init.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/keyboard.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/optgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/after-render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/autoselect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/outer_click.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/fadeVisible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/staticChecked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/simple-checked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bind-html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/observable_source.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/arrays.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/misc" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/misc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/async.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/calendar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/calendar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/objects" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/objects.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="FormData" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/FormData.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-ui-timepicker-addon" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui-timepicker-addon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/strings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/strings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/moment.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry-factory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-output-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/formatter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/message-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/levels-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/dom-observer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/bindings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MutationObserver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MutationObserver.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
 .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit" src="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit"></script></head>
-<body data-container="body" class="cms-home cms-index-index page-layout-home-layout ajax-loading" style="background-image: url(&quot;https://cdn.pichau.com.br/aw_rbslider/slides/bg-daily-quest-season4_9.jpg&quot;);" aria-busy="true"><script>!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://js.datadome.co/tags.js","6D7FE42D59136B36A64C1AB393707E");</script>
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider-ajax" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider-ajax.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_PageCache/js/page-cache" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_PageCache/js/page-cache.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Search/js/form-mini" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Search/js/form-mini.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/menu" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/menu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/update-parcels" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/update-parcels.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider-redirect" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider-redirect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/cookies" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/cookies.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Paypal/js/in-context/express-checkout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Paypal/js/in-context/express-checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/block-loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/block-loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-processor" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-processor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_GoogleRecaptcha/js/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_GoogleRecaptcha/js/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Persistent/js/view/customer-data-mixin" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Persistent/js/view/customer-data-mixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/types.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/price-box" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/price-box.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uikit" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/uikit.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/collection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="paypalInContextExpressCheckout" src="https://www.paypalobjects.com/api/checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/view/minicart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/view/minicart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Tax/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Tax/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Msrp/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Msrp/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Cmsmart_Promotion/js/view/checkout/minicart/discount" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Cmsmart_Promotion/js/view/checkout/minicart/discount.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/image" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/view/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/view/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/loginCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/loginCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_SocialLogin/js/view/social-buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/view/social-buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/bindEvents" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/bindEvents.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/dataProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/dataProvider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/validate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/storage-manager" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/storage-manager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/components/slideshow" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/components/slideshow.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/links.js"></script><script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=www.pichau.com.br&amp;source=checkoutjs&amp;t=xo&amp;v=4.0.314"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/sidebar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdown" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dropdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/form" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/action/login" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/action/login.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/model/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/alert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/defaultCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/defaultCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captchaList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captchaList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="socialProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/provider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messageList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messageList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.metadata.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/storage-service" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/storage-service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-rules/website-rule" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-rules/website-rule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/decorate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/decorate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/data-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/data-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage-compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage-compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter/buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter/buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/action/refresh" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/action/refresh.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/query-builder" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/query-builder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit" src="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit"></script></head>
+<body data-container="body" class="cms-home cms-index-index page-layout-home-layout ajax-loading" style="background-image: url(&quot;https://cdn.pichau.com.br/aw_rbslider/slides/bg-diadasmae2020.jpg&quot;);" aria-busy="true"><script>!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://js.datadome.co/tags.js","6D7FE42D59136B36A64C1AB393707E");</script>
 <script>
     try {
         if (!window.localStorage || !window.sessionStorage) {
@@ -504,7 +467,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav></li>
 <li class="sac-phone"><a id="nav-sac-1" class="open-tel"> <i class="fa fa-phone"></i> Atendimento <span>por Telefone</span> </a></li>
 <li class="sac-chat"><a id="nav-sac-2" class="btn-chat" href="https://pichau.freshdesk.com" target="_blank"> <i class="fa fa-comments-o"></i>SAC </a></li>
-<li class="banner-nav"><a href="//pichaugaming.com.br" target="_blank"> <img src="https://cdn.pichau.com.br/wysiwyg/btn-pichaugaming-home.png" alt="Loja fisica - Pichau" width="147" height="34" data-pagespeed-lsc-url="https://static.pichau.com.br/wysiwyg/btn-pichaugaming-home.png"> </a></li>
+<li class="banner-nav"><a href="//pichaugaming.com.br" target="_blank"> <img src="https://cdn.pichau.com.br/wysiwyg/btn-pichaugaming-home.png" alt="Loja fisica - Pichau" data-pagespeed-lsc-url="https://static.pichau.com.br/wysiwyg/btn-pichaugaming-home.png" width="147" height="34"> </a></li>
 </ul>
 </div>
 <div id="modal-telefone" class="modal">
@@ -598,7 +561,7 @@ Carrinho <span class="counter qty empty" data-bind="css: { empty: !!getCartParam
 Acesse todos os <span>departamentos</span>
 </a>
 <ul id="ui-id-1" class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0">
-<li class="level0 nav-1 category-item first level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-2" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Hardware</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-1-1 category-item first parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores" aria-haspopup="true" id="ui-id-13" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Processadores</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level2 nav-1-1-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/intel" id="ui-id-27" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Intel</span></a></li><li class="level2 nav-1-1-2 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/amd" id="ui-id-28" class="ui-corner-all" tabindex="-1" role="menuitem"><span>AMD</span></a></li></ul></li><li class="level1 nav-1-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-m-e" id="ui-id-14" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa Mãe</span></a></li><li class="level1 nav-1-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/memorias" id="ui-id-15" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Memórias</span></a></li><li class="level1 nav-1-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-de-video" id="ui-id-16" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa de Vídeo</span></a></li><li class="level1 nav-1-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/hard-disk-e-ssd" id="ui-id-17" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Disco rígido interno (HD)</span></a></li><li class="level1 nav-1-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ssd" id="ui-id-18" class="ui-corner-all" tabindex="-1" role="menuitem"><span>SSD</span></a></li><li class="level1 nav-1-7 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/gabinete" id="ui-id-19" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Gabinete</span></a></li><li class="level1 nav-1-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/fonte" id="ui-id-20" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fonte</span></a></li><li class="level1 nav-1-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cabos-extensores-sleeved" id="ui-id-21" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos Extensores Sleeved</span></a></li><li class="level1 nav-1-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cooler-processador" id="ui-id-22" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Coolers e Watercoolers</span></a></li><li class="level1 nav-1-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ventoinhas-e-casemod" id="ui-id-23" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Ventoinhas e Casemod</span></a></li><li class="level1 nav-1-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/pasta-termica-e-refrigerantes" id="ui-id-24" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pasta Térmica e Refrigerantes</span></a></li><li class="level1 nav-1-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placas-de-som" id="ui-id-25" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placas de Som</span></a></li><li class="level1 nav-1-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/drive-optico" id="ui-id-26" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drive Óptico</span></a></li></ul></li><li class="level0 nav-2 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-3" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Periféricos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-2-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/caixa-de-som" id="ui-id-29" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Caixa de Som</span></a></li><li class="level1 nav-2-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/teclado" id="ui-id-30" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Teclado</span></a></li><li class="level1 nav-2-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/fone-de-ouvido" id="ui-id-31" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fone de Ouvido</span></a></li><li class="level1 nav-2-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse" id="ui-id-32" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Kit Teclado e Mouse</span></a></li><li class="level1 nav-2-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mouse" id="ui-id-33" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mouse</span></a></li><li class="level1 nav-2-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mousepad" id="ui-id-34" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mousepad</span></a></li><li class="level1 nav-2-7 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/cabos-e-adaptadores" id="ui-id-35" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos e Adaptadores</span></a></li><li class="level1 nav-2-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/impressoras" id="ui-id-36" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Impressoras</span></a></li><li class="level1 nav-2-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/armazenamento" id="ui-id-37" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Armazenamento</span></a></li><li class="level1 nav-2-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/energia" id="ui-id-38" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Energia</span></a></li><li class="level1 nav-2-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/acessorios" id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios</span></a></li><li class="level1 nav-2-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/webcam" id="ui-id-40" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Webcam</span></a></li><li class="level1 nav-2-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/pendrives" id="ui-id-41" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pendrives</span></a></li><li class="level1 nav-2-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mesa-digitalizadora" id="ui-id-42" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesa Digitalizadora</span></a></li></ul></li><li class="level0 nav-3 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-4" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Computadores</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-3-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-gamer" id="ui-id-43" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer</span></a></li><li class="level1 nav-3-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/rtb" id="ui-id-44" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer RTB-Pronta Entrega</span></a></li><li class="level1 nav-3-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-moba" id="ui-id-45" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Moba</span></a></li><li class="level1 nav-3-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-workstation" id="ui-id-46" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Professional Workstation</span></a></li><li class="level1 nav-3-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-home" id="ui-id-47" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Home</span></a></li><li class="level1 nav-3-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/highflyer" id="ui-id-48" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Highflyer Intel</span></a></li><li class="level1 nav-3-7 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/skycutter" id="ui-id-49" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Skycutter AMD</span></a></li></ul></li><li class="level0 nav-4 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monitores" class="level-top ui-corner-all" id="ui-id-5" tabindex="-1" role="menuitem"><span>Monitores</span></a></li><li class="level0 nav-5 category-item has-active level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-6" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Cadeiras e Mesas Gamer</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-5-1 category-item first active ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/gamer" id="ui-id-50" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cadeiras Gamer</span></a></li><li class="level1 nav-5-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/escritorio" id="ui-id-51" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Escritório</span></a></li><li class="level1 nav-5-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/mesas-gamer" id="ui-id-52" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesas Gamer</span></a></li></ul></li><li class="level0 nav-6 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-7" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Eletronicos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-6-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/consoles-e-acessorios" id="ui-id-53" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Consoles e Acessórios</span></a></li><li class="level1 nav-6-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/acessorios-mobile" id="ui-id-54" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios Mobile</span></a></li><li class="level1 nav-6-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/smartwatch" id="ui-id-55" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Smartwatch</span></a></li></ul></li><li class="level0 nav-7 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-8" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Notebooks e Portáteis</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-7-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/refrigerac-o-e-bases" id="ui-id-56" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Refrigeração e Bases</span></a></li><li class="level1 nav-7-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/carregadores-e-fontes" id="ui-id-57" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Carregadores e Fontes</span></a></li><li class="level1 nav-7-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebook-gamer" id="ui-id-58" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebook Gamer</span></a></li><li class="level1 nav-7-4 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebooks" id="ui-id-59" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebooks</span></a></li></ul></li><li class="level0 nav-8 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/redes-wireless" class="level-top ui-corner-all" id="ui-id-9" tabindex="-1" role="menuitem"><span>Redes &amp; Wireless</span></a></li><li class="level0 nav-9 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-10" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Mundo Geek</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-9-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/camisetas" id="ui-id-60" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Camisetas</span></a></li><li class="level1 nav-9-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/action-figures" id="ui-id-61" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Action Figures</span></a></li><li class="level1 nav-9-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/drone" id="ui-id-62" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drone</span></a></li></ul></li><li class="level0 nav-10 category-item last level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/kit-upgrade" class="level-top ui-corner-all" id="ui-id-11" tabindex="-1" role="menuitem"><span>Kit Upgrade</span></a></li> <li class="img-pc ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monte-seu-computador/processador/" id="ui-id-12" class="ui-corner-all" tabindex="-1" role="menuitem"><img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/monte-pc.png" alt="Monte seu PC - Pichau" border="0"></a></li>
+<li class="level0 nav-1 category-item first has-active level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-2" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Hardware</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-1-1 category-item first parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores" aria-haspopup="true" id="ui-id-13" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Processadores</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level2 nav-1-1-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/intel" id="ui-id-27" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Intel</span></a></li><li class="level2 nav-1-1-2 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/amd" id="ui-id-28" class="ui-corner-all" tabindex="-1" role="menuitem"><span>AMD</span></a></li></ul></li><li class="level1 nav-1-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-m-e" id="ui-id-14" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa Mãe</span></a></li><li class="level1 nav-1-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/memorias" id="ui-id-15" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Memórias</span></a></li><li class="level1 nav-1-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-de-video" id="ui-id-16" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa de Vídeo</span></a></li><li class="level1 nav-1-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/hard-disk-e-ssd" id="ui-id-17" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Disco rígido interno (HD)</span></a></li><li class="level1 nav-1-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ssd" id="ui-id-18" class="ui-corner-all" tabindex="-1" role="menuitem"><span>SSD</span></a></li><li class="level1 nav-1-7 category-item active ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/gabinete" id="ui-id-19" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Gabinete</span></a></li><li class="level1 nav-1-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/fonte" id="ui-id-20" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fonte</span></a></li><li class="level1 nav-1-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cabos-extensores-sleeved" id="ui-id-21" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos Extensores Sleeved</span></a></li><li class="level1 nav-1-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cooler-processador" id="ui-id-22" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Coolers e Watercoolers</span></a></li><li class="level1 nav-1-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ventoinhas-e-casemod" id="ui-id-23" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Ventoinhas e Casemod</span></a></li><li class="level1 nav-1-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/pasta-termica-e-refrigerantes" id="ui-id-24" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pasta Térmica e Refrigerantes</span></a></li><li class="level1 nav-1-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placas-de-som" id="ui-id-25" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placas de Som</span></a></li><li class="level1 nav-1-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/drive-optico" id="ui-id-26" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drive Óptico</span></a></li></ul></li><li class="level0 nav-2 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-3" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Periféricos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-2-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/caixa-de-som" id="ui-id-29" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Caixa de Som</span></a></li><li class="level1 nav-2-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/teclado" id="ui-id-30" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Teclado</span></a></li><li class="level1 nav-2-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/fone-de-ouvido" id="ui-id-31" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fone de Ouvido</span></a></li><li class="level1 nav-2-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse" id="ui-id-32" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Kit Teclado e Mouse</span></a></li><li class="level1 nav-2-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mouse" id="ui-id-33" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mouse</span></a></li><li class="level1 nav-2-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mousepad" id="ui-id-34" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mousepad</span></a></li><li class="level1 nav-2-7 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/cabos-e-adaptadores" id="ui-id-35" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos e Adaptadores</span></a></li><li class="level1 nav-2-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/impressoras" id="ui-id-36" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Impressoras</span></a></li><li class="level1 nav-2-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/armazenamento" id="ui-id-37" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Armazenamento</span></a></li><li class="level1 nav-2-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/energia" id="ui-id-38" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Energia</span></a></li><li class="level1 nav-2-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/acessorios" id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios</span></a></li><li class="level1 nav-2-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/webcam" id="ui-id-40" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Webcam</span></a></li><li class="level1 nav-2-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/pendrives" id="ui-id-41" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pendrives</span></a></li><li class="level1 nav-2-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mesa-digitalizadora" id="ui-id-42" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesa Digitalizadora</span></a></li></ul></li><li class="level0 nav-3 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-4" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Computadores</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-3-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-gamer" id="ui-id-43" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer</span></a></li><li class="level1 nav-3-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/rtb" id="ui-id-44" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer RTB-Pronta Entrega</span></a></li><li class="level1 nav-3-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-moba" id="ui-id-45" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Moba</span></a></li><li class="level1 nav-3-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-workstation" id="ui-id-46" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Professional Workstation</span></a></li><li class="level1 nav-3-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-home" id="ui-id-47" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Home</span></a></li><li class="level1 nav-3-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/highflyer" id="ui-id-48" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Highflyer Intel</span></a></li><li class="level1 nav-3-7 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/skycutter" id="ui-id-49" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Skycutter AMD</span></a></li></ul></li><li class="level0 nav-4 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monitores" class="level-top ui-corner-all" id="ui-id-5" tabindex="-1" role="menuitem"><span>Monitores</span></a></li><li class="level0 nav-5 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-6" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Cadeiras e Mesas Gamer</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-5-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/gamer" id="ui-id-50" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cadeiras Gamer</span></a></li><li class="level1 nav-5-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/escritorio" id="ui-id-51" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Escritório</span></a></li><li class="level1 nav-5-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/mesas-gamer" id="ui-id-52" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesas Gamer</span></a></li></ul></li><li class="level0 nav-6 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-7" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Eletronicos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-6-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/consoles-e-acessorios" id="ui-id-53" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Consoles e Acessórios</span></a></li><li class="level1 nav-6-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/acessorios-mobile" id="ui-id-54" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios Mobile</span></a></li><li class="level1 nav-6-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/smartwatch" id="ui-id-55" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Smartwatch</span></a></li></ul></li><li class="level0 nav-7 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-8" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Notebooks e Portáteis</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-7-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/refrigerac-o-e-bases" id="ui-id-56" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Refrigeração e Bases</span></a></li><li class="level1 nav-7-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/carregadores-e-fontes" id="ui-id-57" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Carregadores e Fontes</span></a></li><li class="level1 nav-7-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebook-gamer" id="ui-id-58" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebook Gamer</span></a></li><li class="level1 nav-7-4 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebooks" id="ui-id-59" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebooks</span></a></li></ul></li><li class="level0 nav-8 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/redes-wireless" class="level-top ui-corner-all" id="ui-id-9" tabindex="-1" role="menuitem"><span>Redes &amp; Wireless</span></a></li><li class="level0 nav-9 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-10" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Mundo Geek</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-9-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/camisetas" id="ui-id-60" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Camisetas</span></a></li><li class="level1 nav-9-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/action-figures" id="ui-id-61" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Action Figures</span></a></li><li class="level1 nav-9-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/drone" id="ui-id-62" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drone</span></a></li></ul></li><li class="level0 nav-10 category-item last level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/kit-upgrade" class="level-top ui-corner-all" id="ui-id-11" tabindex="-1" role="menuitem"><span>Kit Upgrade</span></a></li> <li class="img-pc ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monte-seu-computador/processador/" id="ui-id-12" class="ui-corner-all" tabindex="-1" role="menuitem"><img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/monte-pc.png" alt="Monte seu PC - Pichau" border="0"></a></li>
 </ul>
 </nav>
 </div>
@@ -619,7 +582,7 @@ Acesse todos os <span>departamentos</span>
 }
 </style>
 <div class="awating" style="width: 1100px; height: 360px; display: block; margin: 0 auto; position: relative; z-index:-1;"><div class="aw-rbslider-container uk-slidenav-position banner_home_menu_bottom" style="">
-<a href="https://www.pichau.com.br/dailydeal" class="link" target="blank"></a>
+<a href="https://www.pichau.com.br/maes" class="link" target="blank"></a>
 </div></div>
 <script type="text/javascript">
                     require(['jquery', 'jquery/ui'], function($){
@@ -634,12 +597,12 @@ Acesse todos os <span>departamentos</span>
             require([
                 'jquery'
             ], function($){
-                var imagePath = "https://cdn.pichau.com.br/aw_rbslider/slides/bg-daily-quest-season4_9.jpg";
+                var imagePath = "https://cdn.pichau.com.br/aw_rbslider/slides/bg-diadasmae2020.jpg";
                 $('body').css({'background-image': 'url('+imagePath+')'});
                 $('.page-wrapper > .aw-rbslider-container').appendTo($('.awating'));
             });
         </script>
-<main id="maincontent" class="page-main-home"><div class="page messages" style="display: none;"><div data-placeholder="messages"></div>
+<main id="maincontent" class="page-main-home"><div class="page messages"><div data-placeholder="messages"></div>
 <div data-bind="scope: 'messages'">
 <!-- ko if: cookieMessages && cookieMessages.length > 0 --><!-- /ko -->
 <!-- ko if: messages().messages && messages().messages.length > 0 --><!-- /ko -->
@@ -658,7 +621,7 @@ Acesse todos os <span>departamentos</span>
 
 	});
 </script><ul class="slider-category-home slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;">Previous</button>
-<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5248px; transform: translate3d(-2788px, 0px, 0px);"><li class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/monitores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/73df1967f687c2fc67a8a7ed1fb38738.png" alt=""> <span>MONITORES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/redes-wireless" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/2c41c9c4615df75e4c408edc8b040db5.png" alt=""> <span>REDE SEM FIO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/gabinete" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/90a36ac52e712ae7770894a7d35bd92e.png" alt=""> <span>GABINETES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/fone-de-ouvido" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/c7fc58008611845d250096f1deb809fe.png" alt=""> <span>FONES DE OUVIDO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/fonte" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e68e99ce889565d0a3259147d35f8cfd.png" alt=""> <span>FONTES DE ENERGIA</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/kit-teclado-e-mouse" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/153facd2bda7a8ff082463bf3c5a66a6.png" alt=""> <span>TECLADOS E MOUSES</span> </a></li><li class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-de-video" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e760996924436e35d9941d127095fb51.png" alt=""> <span>PLACAS DE VÍDEO</span> </a></li><li class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-m-e" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/8c019e496865e69b03b04298a8e21823_1_.png" alt=""> <span>PLACAS MÃE</span> </a></li><li class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/processadores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/fdfe9f3c5ad26f3d18dc4fac311f9edb.png" alt=""> <span>PROCESSADORES</span> </a></li><li class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/memorias" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/ca6eb79143b05abdd879afae9ed9a786.png" alt=""> <span>MEMÓRIA RAM</span> </a></li><li class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/ssd" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/16f131995eb6276f9c648bb8cf52c8cb.png" alt=""> <span>SSD 2.5"</span> </a></li><li class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/cooler-processador" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/f75ab97229e744903430ac306840e558.png" alt=""> <span>COOLER E WATERCOOLER</span> </a></li><li class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/hard-disk-e-ssd" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/374759a4abcab604f4f59bbe13cc9fa3.png" alt=""> <span>DISCO RÍGIDO (HD)</span> </a></li><li class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/monitores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/73df1967f687c2fc67a8a7ed1fb38738.png" alt=""> <span>MONITORES</span> </a></li><li class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/redes-wireless" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/2c41c9c4615df75e4c408edc8b040db5.png" alt=""> <span>REDE SEM FIO</span> </a></li><li class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/gabinete" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/90a36ac52e712ae7770894a7d35bd92e.png" alt=""> <span>GABINETES</span> </a></li><li class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/fone-de-ouvido" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/c7fc58008611845d250096f1deb809fe.png" alt=""> <span>FONES DE OUVIDO</span> </a></li><li class="slick-slide slick-current slick-active" data-slick-index="11" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/hardware/fonte" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/e68e99ce889565d0a3259147d35f8cfd.png" alt=""> <span>FONTES DE ENERGIA</span> </a></li><li class="slick-slide slick-active" data-slick-index="12" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/pertifericos/kit-teclado-e-mouse" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/153facd2bda7a8ff082463bf3c5a66a6.png" alt=""> <span>TECLADOS E MOUSES</span> </a></li><li class="slick-slide slick-cloned slick-active" data-slick-index="13" aria-hidden="false" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-de-video" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/e760996924436e35d9941d127095fb51.png" alt=""> <span>PLACAS DE VÍDEO</span> </a></li><li class="slick-slide slick-cloned slick-active" data-slick-index="14" aria-hidden="false" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-m-e" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/8c019e496865e69b03b04298a8e21823_1_.png" alt=""> <span>PLACAS MÃE</span> </a></li><li class="slick-slide slick-cloned slick-active" data-slick-index="15" aria-hidden="false" style="width: 164px;" tabindex="-1"><a href="/hardware/processadores" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/fdfe9f3c5ad26f3d18dc4fac311f9edb.png" alt=""> <span>PROCESSADORES</span> </a></li><li class="slick-slide slick-cloned slick-active" data-slick-index="16" aria-hidden="false" style="width: 164px;" tabindex="-1"><a href="/hardware/memorias" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/ca6eb79143b05abdd879afae9ed9a786.png" alt=""> <span>MEMÓRIA RAM</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/ssd" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/16f131995eb6276f9c648bb8cf52c8cb.png" alt=""> <span>SSD 2.5"</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/cooler-processador" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/f75ab97229e744903430ac306840e558.png" alt=""> <span>COOLER E WATERCOOLER</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/hard-disk-e-ssd" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/374759a4abcab604f4f59bbe13cc9fa3.png" alt=""> <span>DISCO RÍGIDO (HD)</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/monitores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/73df1967f687c2fc67a8a7ed1fb38738.png" alt=""> <span>MONITORES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/redes-wireless" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/2c41c9c4615df75e4c408edc8b040db5.png" alt=""> <span>REDE SEM FIO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="22" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/gabinete" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/90a36ac52e712ae7770894a7d35bd92e.png" alt=""> <span>GABINETES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/fone-de-ouvido" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/c7fc58008611845d250096f1deb809fe.png" alt=""> <span>FONES DE OUVIDO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="24" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/fonte" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e68e99ce889565d0a3259147d35f8cfd.png" alt=""> <span>FONTES DE ENERGIA</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="25" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/kit-teclado-e-mouse" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/153facd2bda7a8ff082463bf3c5a66a6.png" alt=""> <span>TECLADOS E MOUSES</span> </a></li></div></div>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5248px; transform: translate3d(-1312px, 0px, 0px); transition: transform 500ms ease 0s;"><li class="slick-slide slick-cloned" data-slick-index="-6" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/monitores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/73df1967f687c2fc67a8a7ed1fb38738.png" alt=""> <span>MONITORES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-5" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/redes-wireless" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/2c41c9c4615df75e4c408edc8b040db5.png" alt=""> <span>REDE SEM FIO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/gabinete" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/90a36ac52e712ae7770894a7d35bd92e.png" alt=""> <span>GABINETES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/fone-de-ouvido" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/c7fc58008611845d250096f1deb809fe.png" alt=""> <span>FONES DE OUVIDO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/fonte" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e68e99ce889565d0a3259147d35f8cfd.png" alt=""> <span>FONTES DE ENERGIA</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/kit-teclado-e-mouse" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/153facd2bda7a8ff082463bf3c5a66a6.png" alt=""> <span>TECLADOS E MOUSES</span> </a></li><li class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-de-video" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e760996924436e35d9941d127095fb51.png" alt=""> <span>PLACAS DE VÍDEO</span> </a></li><li class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 164px;" tabindex="0"><a href="/hardware/placa-m-e" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/8c019e496865e69b03b04298a8e21823_1_.png" alt=""> <span>PLACAS MÃE</span> </a></li><li class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/hardware/processadores" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/fdfe9f3c5ad26f3d18dc4fac311f9edb.png" alt=""> <span>PROCESSADORES</span> </a></li><li class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/hardware/memorias" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/ca6eb79143b05abdd879afae9ed9a786.png" alt=""> <span>MEMÓRIA RAM</span> </a></li><li class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/hardware/ssd" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/16f131995eb6276f9c648bb8cf52c8cb.png" alt=""> <span>SSD 2.5"</span> </a></li><li class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/hardware/cooler-processador" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/f75ab97229e744903430ac306840e558.png" alt=""> <span>COOLER E WATERCOOLER</span> </a></li><li class="slick-slide slick-active" data-slick-index="6" aria-hidden="false" style="width: 164px;" tabindex="0"><a href="/hardware/hard-disk-e-ssd" tabindex="0"> <img src="https://cdn.pichau.com.br/wysiwyg/374759a4abcab604f4f59bbe13cc9fa3.png" alt=""> <span>DISCO RÍGIDO (HD)</span> </a></li><li class="slick-slide slick-active" data-slick-index="7" aria-hidden="false" style="width: 164px;" tabindex="-1"><a href="/monitores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/73df1967f687c2fc67a8a7ed1fb38738.png" alt=""> <span>MONITORES</span> </a></li><li class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/redes-wireless" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/2c41c9c4615df75e4c408edc8b040db5.png" alt=""> <span>REDE SEM FIO</span> </a></li><li class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/gabinete" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/90a36ac52e712ae7770894a7d35bd92e.png" alt=""> <span>GABINETES</span> </a></li><li class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/fone-de-ouvido" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/c7fc58008611845d250096f1deb809fe.png" alt=""> <span>FONES DE OUVIDO</span> </a></li><li class="slick-slide" data-slick-index="11" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/fonte" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e68e99ce889565d0a3259147d35f8cfd.png" alt=""> <span>FONTES DE ENERGIA</span> </a></li><li class="slick-slide" data-slick-index="12" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/kit-teclado-e-mouse" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/153facd2bda7a8ff082463bf3c5a66a6.png" alt=""> <span>TECLADOS E MOUSES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="13" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-de-video" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e760996924436e35d9941d127095fb51.png" alt=""> <span>PLACAS DE VÍDEO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="14" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/placa-m-e" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/8c019e496865e69b03b04298a8e21823_1_.png" alt=""> <span>PLACAS MÃE</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="15" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/processadores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/fdfe9f3c5ad26f3d18dc4fac311f9edb.png" alt=""> <span>PROCESSADORES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="16" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/memorias" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/ca6eb79143b05abdd879afae9ed9a786.png" alt=""> <span>MEMÓRIA RAM</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="17" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/ssd" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/16f131995eb6276f9c648bb8cf52c8cb.png" alt=""> <span>SSD 2.5"</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="18" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/cooler-processador" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/f75ab97229e744903430ac306840e558.png" alt=""> <span>COOLER E WATERCOOLER</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="19" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/hard-disk-e-ssd" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/374759a4abcab604f4f59bbe13cc9fa3.png" alt=""> <span>DISCO RÍGIDO (HD)</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="20" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/monitores" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/73df1967f687c2fc67a8a7ed1fb38738.png" alt=""> <span>MONITORES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="21" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/redes-wireless" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/2c41c9c4615df75e4c408edc8b040db5.png" alt=""> <span>REDE SEM FIO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="22" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/gabinete" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/90a36ac52e712ae7770894a7d35bd92e.png" alt=""> <span>GABINETES</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="23" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/fone-de-ouvido" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/c7fc58008611845d250096f1deb809fe.png" alt=""> <span>FONES DE OUVIDO</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="24" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/hardware/fonte" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/e68e99ce889565d0a3259147d35f8cfd.png" alt=""> <span>FONTES DE ENERGIA</span> </a></li><li class="slick-slide slick-cloned" data-slick-index="25" aria-hidden="true" style="width: 164px;" tabindex="-1"><a href="/pertifericos/kit-teclado-e-mouse" tabindex="-1"> <img src="https://cdn.pichau.com.br/wysiwyg/153facd2bda7a8ff082463bf3c5a66a6.png" alt=""> <span>TECLADOS E MOUSES</span> </a></li></div></div>
 
 
 
@@ -727,7 +690,7 @@ require([
 
 });
 </script>
-<input name="form_key" type="hidden" value="eeAPnLjt7Eq6vV6f"><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+<input name="form_key" type="hidden" value="bQtJtJ1iUdwGRd8D"><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
 <script>
         window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/www.pichau.com.br\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/www.pichau.com.br\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/www.pichau.com.br\/"};
     </script>
@@ -760,7 +723,7 @@ require([
 <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/redragon/mouse-gamer-redragon-griffin-rgb-7200dpi-m607" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/m/6/m6072625.jpg" width="500" height="500" alt="Mouse Gamer Redragon Griffin RGB 7200DPI, M607">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/m/6/m6072625.jpg" alt="Mouse Gamer Redragon Griffin RGB 7200DPI, M607" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -806,12 +769,12 @@ Detalhes </a>
 Comprar </button>
 </div>
 </div>
- </div>
+</div>
 </div>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/teclab/teclado-mecanico-redragon-dark-avenger-rgb-usb-switch-azul-k568rgb-2-blue" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/k/5/k568rgb-13123.jpg" width="500" height="500" alt="Teclado Mecanico Redragon Dark Avenger RGB USB Switch Azul, K568RGB-2 BLUE">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/k/5/k568rgb-13123.jpg" alt="Teclado Mecanico Redragon Dark Avenger RGB USB Switch Azul, K568RGB-2 BLUE" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -849,7 +812,7 @@ Teclado Mecanico Redragon Dark Avenger RGB USB Switch Azul, K568RGB-2 BLUE </a>
 </div>
 <div class="product-item-actions">
 <div class="actions-primary">
- <a title="Teclado Mecanico Redragon Dark Avenger RGB USB Switch Azul, K568RGB-2 BLUE" href="https://www.pichau.com.br/teclab/teclado-mecanico-redragon-dark-avenger-rgb-usb-switch-azul-k568rgb-2-blue" class="more-details bt-list-product">
+<a title="Teclado Mecanico Redragon Dark Avenger RGB USB Switch Azul, K568RGB-2 BLUE" href="https://www.pichau.com.br/teclab/teclado-mecanico-redragon-dark-avenger-rgb-usb-switch-azul-k568rgb-2-blue" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 <button class="action tocart bt-list-product" data-post="{&quot;action&quot;:&quot;https:\/\/www.pichau.com.br\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8%2C\/product\/14843\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;14843&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8,&quot;}}" type="button" title="Colocar no Carrinho">
@@ -861,8 +824,8 @@ Comprar </button>
 </div>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
-<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-3-3200g-quad-core-3-6ghz-4ghz-turbo-6mb-cache-am4-yd3200c5fhbox" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/y/d/yd3200c5fhbox6222.jpg" width="500" height="500" alt="Processador AMD Ryzen 3 3200G Quad-Core 3.6GHz (4GHz Turbo) 6MB Cache AM4, YD3200C5FHBOX">
+ <a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-3-3200g-quad-core-3-6ghz-4ghz-turbo-6mb-cache-am4-yd3200c5fhbox" class="product-item-photo">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/y/d/yd3200c5fhbox6222.jpg" alt="Processador AMD Ryzen 3 3200G Quad-Core 3.6GHz (4GHz Turbo) 6MB Cache AM4, YD3200C5FHBOX" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -900,7 +863,7 @@ Processador AMD Ryzen 3 3200G Quad-Core 3.6GHz (4GHz Turbo) 6MB Cache AM4, YD3..
 </div>
 <div class="product-item-actions">
 <div class="actions-primary">
-<a title="Processador AMD Ryzen 3 3200G Quad-Core 3.6GHz (4GHz Turbo) 6MB Cache AM4, YD3200C5FHBOX" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-3-3200g-quad-core-3-6ghz-4ghz-turbo-6mb-cache-am4-yd3200c5fhbox" class="more-details bt-list-product">
+ <a title="Processador AMD Ryzen 3 3200G Quad-Core 3.6GHz (4GHz Turbo) 6MB Cache AM4, YD3200C5FHBOX" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-3-3200g-quad-core-3-6ghz-4ghz-turbo-6mb-cache-am4-yd3200c5fhbox" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 <button class="action tocart bt-list-product" data-post="{&quot;action&quot;:&quot;https:\/\/www.pichau.com.br\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8%2C\/product\/16184\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;16184&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8,&quot;}}" type="button" title="Colocar no Carrinho">
@@ -913,14 +876,39 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pg-5001-br2315.jpg" width="500" height="500" alt="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pg-5001-br2315.jpg" alt="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
 <a title="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR" href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br" class="product-item-link">
 Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR </a>
 </h4>
-<div class="product-reviews-summary">
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="16504" data-price-box="product-id-16504">
+<span class="special-price">
+<span class="price-container price-final_price tax weee">
+<span class="price-label">Preço Promocional</span>
+<span id="old-price-16504-widget-product-grid" data-price-amount="318.07" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price">R$318,07</span> </span>
+<span class="price-installments">
+<span>10x de R$31,81</span> <strong>sem juros</strong> no cartão </span>
+</span>
+<span class="price-boleto">
+<span>à vista R$279,90</span> no boleto com <strong>12% de desconto</strong></span>
+
+</span>
+<span class="old-price">
+<span class="price-container price-final_price tax weee">
+<span class="price-label">was</span>
+<span id="old-price-16504-widget-product-grid" data-price-amount="340.79" data-price-type="oldPrice" class="price-wrapper ">
+<span class="price">R$340,79</span> </span>
+<span class="price-installments">
+<span>10x de R$34,08</span> <strong>sem juros</strong> no cartão </span>
+</span>
+<span class="price-boleto">
+<span>à vista R$299,90</span> no boleto com <strong>12% de desconto</strong></span>
+
+</span>
+</div> <div class="product-reviews-summary">
 <div class="rating-summary">
 <span class="label"><span>Avaliação:</span></span>
 <div class="rating-result" title="98%">
@@ -941,14 +929,12 @@ Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR </a>
 </div>
 <div class="product-item-actions">
 <div class="actions-primary">
-<div class="stock unavailable">
-<span>
-<i class="fa fa-times"></i>
-Produto Indisponível </span>
-<a href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br">
-Veja + detalhes <i class="fa fa-chevron-right"></i>
-</a>
-</div>
+<a title="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR" href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+<button class="action tocart bt-list-product" data-post="{&quot;action&quot;:&quot;https:\/\/www.pichau.com.br\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8%2C\/product\/16504\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;16504&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8,&quot;}}" type="button" title="Colocar no Carrinho">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+ Comprar </button>
 </div>
 </div>
 </div>
@@ -956,7 +942,7 @@ Veja + detalhes <i class="fa fa-chevron-right"></i>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/hardware/processador-intel-core-i5-9600kf-hexa-core-3-7ghz-4-6ghz-turbo-9mb-cache-lga1151-bx80684i59600kf" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/b/x/bx80684i59600kf2_1.jpg" width="500" height="500" alt="Processador Intel Core i5-9600KF Hexa-Core 3.7GHz (4.6GHz Turbo) 9MB Cache LGA1151, BX80684I59600KF">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/b/x/bx80684i59600kf2_1.jpg" alt="Processador Intel Core i5-9600KF Hexa-Core 3.7GHz (4.6GHz Turbo) 9MB Cache LGA1151, BX80684I59600KF" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -996,7 +982,7 @@ Processador Intel Core i5-9600KF Hexa-Core 3.7GHz (4.6GHz Turbo) 9MB Cache LGA..
 <div class="actions-primary">
 <a title="Processador Intel Core i5-9600KF Hexa-Core 3.7GHz (4.6GHz Turbo) 9MB Cache LGA1151, BX80684I59600KF" href="https://www.pichau.com.br/hardware/processador-intel-core-i5-9600kf-hexa-core-3-7ghz-4-6ghz-turbo-9mb-cache-lga1151-bx80684i59600kf" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes  </a>
+Detalhes </a>
 <button class="action tocart bt-list-product" data-post="{&quot;action&quot;:&quot;https:\/\/www.pichau.com.br\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8%2C\/product\/16755\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;16755&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8,&quot;}}" type="button" title="Colocar no Carrinho">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </button>
@@ -1007,7 +993,7 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/destaques/fone-de-ouvido-gamer-pichau-p851-rgb-7-1-usb-pgh-p851-rgb" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgh-p851-rgb1020.jpg" width="500" height="500" alt="Fone de Ouvido Gamer Pichau P851 RGB 7.1 USB, PGH-P851-RGB">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgh-p851-rgb1020.jpg" alt="Fone de Ouvido Gamer Pichau P851 RGB 7.1 USB, PGH-P851-RGB" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -1030,7 +1016,7 @@ Fone de Ouvido Gamer Pichau P851 RGB 7.1 USB, PGH-P851-RGB </a>
 <div class="rating-result" title="100%">
 <span style="width:100%">
 <span>
- <span>100</span>% of <span>100</span>
+<span>100</span>% of <span>100</span>
 </span>
 </span>
 </div>
@@ -1057,8 +1043,8 @@ Comprar </button>
 </div>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/t/l/tlpbd48g2666hc18h01.jpg" width="500" height="500" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01">
+ <a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" class="product-item-photo">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/t/l/tlpbd48g2666hc18h01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -1090,7 +1076,7 @@ Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD4..
 <span>à vista R$308,99</span> no boleto com <strong>12% de desconto</strong></span>
 
 </span>
-</div> <div class="product-reviews-summary">
+</div>  <div class="product-reviews-summary">
 <div class="rating-summary">
 <span class="label"><span>Avaliação:</span></span>
 <div class="rating-result" title="97%">
@@ -1111,7 +1097,7 @@ Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD4..
 </div>
 <div class="product-item-actions">
 <div class="actions-primary">
- <a title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" class="more-details bt-list-product">
+<a title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 <button class="action tocart bt-list-product" data-post="{&quot;action&quot;:&quot;https:\/\/www.pichau.com.br\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8%2C\/product\/17933\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;17933&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8,&quot;}}" type="button" title="Colocar no Carrinho">
@@ -1124,7 +1110,7 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/destaques/microfone-condensador-blue-yeti-nano-vivid-blue-988-000089" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/9/8/988-000089.jpg" width="500" height="500" alt="Microfone Condensador Blue Yeti Nano Vivid Blue, 988-000089">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/9/8/988-000089.jpg" alt="Microfone Condensador Blue Yeti Nano Vivid Blue, 988-000089" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -1157,7 +1143,8 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/destaques/display-interativo-digitalizadora-wacom-one-ceres-13-dtc133w0a1" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/d/t/dtc133w0a1.jpg" width="500" height="500" alt="Display Interativo Digitalizadora Wacom One 13&quot;, DTC133W0A">
+
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/d/t/dtc133w0a1.jpg" alt="Display Interativo Digitalizadora Wacom One 13&quot;, DTC133W0A" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -1182,7 +1169,7 @@ Display Interativo Digitalizadora Wacom One 13", DTC133W0A </a>
 Detalhes </a>
 <button class="action tocart bt-list-product" data-post="{&quot;action&quot;:&quot;https:\/\/www.pichau.com.br\/checkout\/cart\/add\/uenc\/aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8%2C\/product\/18317\/&quot;,&quot;data&quot;:{&quot;product&quot;:&quot;18317&quot;,&quot;uenc&quot;:&quot;aHR0cHM6Ly93d3cucGljaGF1LmNvbS5ici8,&quot;}}" type="button" title="Colocar no Carrinho">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </button>
+Comprar  </button>
 </div>
 </div>
 </div>
@@ -1190,7 +1177,7 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" class="product-item-photo">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/1/0/100-100000158box.jpg" width="500" height="500" alt="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/1/0/100-100000158box.jpg" alt="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX" width="500" height="500">
 </a>
 <div class="product-item-details">
 <h4 class="product-item-name">
@@ -1252,17 +1239,17 @@ Comprar </button>
 <div class="slider-home">
 <div class="aw-rbslider-container uk-slidenav-position" style="width: 900px;">
 <ul class="uk-slideshow" style="height: 100px;">
-<li data-slide="html" aria-hidden="false" class="uk-active" style="animation-duration: 500ms; opacity: 1; height: 100px;"><div>
+<li data-slide="html" aria-hidden="true" class="" style="animation-duration: 500ms; opacity: 0; height: 100px;"><div>
 <a href="https://www.pichau.com.br/catalogsearch/result/?q=aoc" target="_blank" rel="nofollow">
 <img class="aw-rbslider__img" src="https://cdn.pichau.com.br/aw_rbslider/slides/Display_900x100.png" title="" alt="">
 </a>
 </div></li>
-<li data-slide="html" aria-hidden="true" style="animation-duration: 500ms; opacity: 0; height: 100px;" class=""><div>
+<li data-slide="html" aria-hidden="false" style="animation-duration: 500ms; opacity: 1; height: 100px;" class="uk-active"><div>
 <a href="https://www.pichau.com.br/hardware/processadores/intel" target="_blank" rel="nofollow">
 <img class="aw-rbslider__img" src="https://cdn.pichau.com.br/aw_rbslider/slides/filete-site.jpg" title="" alt="">
 </a>
 </div></li>
-<li data-slide="html" aria-hidden="true" style="animation-duration: 500ms; opacity: 0; height: 100px;" class=""><div>
+<li data-slide="html" aria-hidden="true" style="height: 100px;"><div>
 <a href="https://www.pichau.com.br/hardware/placa-de-video?marcas=123" target="_blank" rel="nofollow">
 <img class="aw-rbslider__img" src="https://cdn.pichau.com.br/aw_rbslider/slides/fXrGVyIQ.png" title="" alt="">
 </a>
@@ -1282,7 +1269,7 @@ Comprar </button>
 <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p651-rgb-7-1-usb-pgh-p651-rgb" class="product-item-photo" style="display: inline-block;">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgh-p651-rgb1212.jpg" width="500" height="500" alt="Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgh-p651-rgb1212.jpg" alt="Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB" width="500" height="500">
 <div class="amlabel-position-top-left-17336-cat amlabel-position-wrapper" style="top: 0px; left: 0px; line-height: normal; position: absolute; z-index: 995; display: block; width: 45px; height: 45px;"><div class="amasty-label-container amasty-label-container-4-17336-cat amasty-label-for-17336" style="max-width: 45px; width: 45px; height: 45px; position: relative; display: block;">
 <div class="amasty-label-text" style="padding: 0px 3px; position: absolute; white-space: nowrap; width: 100%; line-height: 45px;">
 </div>
@@ -1304,8 +1291,22 @@ Comprar </button>
 Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB </a>
 </h4>
 <div class="price-box price-final_price" data-role="priceBox" data-product-id="17336" data-price-box="product-id-17336">
+<span class="special-price">
 <span class="price-container price-final_price tax weee">
-<span id="old-price-17336-widget-product-grid" data-price-amount="272.61" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price-label">Preço Promocional</span>
+<span id="old-price-17336-widget-product-grid" data-price-amount="215.8" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price">R$215,80</span> </span>
+<span class="price-installments">
+<span>10x de R$21,58</span> <strong>sem juros</strong> no cartão </span>
+</span>
+<span class="price-boleto">
+<span>à vista R$189,90</span> no boleto com <strong>12% de desconto</strong></span>
+
+</span>
+<span class="old-price">
+<span class="price-container price-final_price tax weee">
+<span class="price-label">was</span>
+<span id="old-price-17336-widget-product-grid" data-price-amount="272.61" data-price-type="oldPrice" class="price-wrapper ">
 <span class="price">R$272,61</span> </span>
 <span class="price-installments">
 <span>10x de R$27,26</span> <strong>sem juros</strong> no cartão </span>
@@ -1313,7 +1314,8 @@ Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB </a>
 <span class="price-boleto">
 <span>à vista R$239,90</span> no boleto com <strong>12% de desconto</strong></span>
 
-</div> <div class="product-reviews-summary">
+</span>
+</div>  <div class="product-reviews-summary">
 <div class="rating-summary">
 <span class="label"><span>Avaliação:</span></span>
 <div class="rating-result" title="100%">
@@ -1341,13 +1343,13 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </button>
 </div>
- </div>
+</div>
 </div>
 </div>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p451-led-vermelho-7-1-usb-pgh-p451" class="product-item-photo" style="display: inline-block;">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgh-p451231.jpg" width="500" height="500" alt="Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgh-p451231.jpg" alt="Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451" width="500" height="500">
 <div class="amlabel-position-top-left-17337-cat amlabel-position-wrapper" style="top: 0px; left: 0px; line-height: normal; position: absolute; z-index: 995; display: block; width: 45px; height: 45px;"><div class="amasty-label-container amasty-label-container-4-17337-cat amasty-label-for-17337" style="max-width: 45px; width: 45px; height: 45px; position: relative; display: block;">
 <div class="amasty-label-text" style="padding: 0px 3px; position: absolute; white-space: nowrap; width: 100%; line-height: 45px;">
 </div>
@@ -1369,8 +1371,22 @@ Comprar </button>
 Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451 </a>
 </h4>
 <div class="price-box price-final_price" data-role="priceBox" data-product-id="17337" data-price-box="product-id-17337">
+<span class="special-price">
 <span class="price-container price-final_price tax weee">
-<span id="old-price-17337-widget-product-grid" data-price-amount="204.43" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price-label">Preço Promocional</span>
+<span id="old-price-17337-widget-product-grid" data-price-amount="181.71" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price">R$181,71</span> </span>
+<span class="price-installments">
+<span>10x de R$18,17</span> <strong>sem juros</strong> no cartão </span>
+</span>
+<span class="price-boleto">
+<span>à vista R$159,90</span> no boleto com <strong>12% de desconto</strong></span>
+
+</span>
+<span class="old-price">
+<span class="price-container price-final_price tax weee">
+<span class="price-label">was</span>
+<span id="old-price-17337-widget-product-grid" data-price-amount="204.43" data-price-type="oldPrice" class="price-wrapper ">
 <span class="price">R$204,43</span> </span>
 <span class="price-installments">
 <span>10x de R$20,44</span> <strong>sem juros</strong> no cartão </span>
@@ -1378,13 +1394,14 @@ Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451 </a>
 <span class="price-boleto">
 <span>à vista R$179,90</span> no boleto com <strong>12% de desconto</strong></span>
 
+</span>
 </div> <div class="product-reviews-summary">
 <div class="rating-summary">
 <span class="label"><span>Avaliação:</span></span>
 <div class="rating-result" title="100%">
-<span style="width:100%">
+ <span style="width:100%">
 <span>
- <span>100</span>% of <span>100</span>
+<span>100</span>% of <span>100</span>
 </span>
 </span>
 </div>
@@ -1412,7 +1429,7 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/novidades/suporte-para-headset-pichau-pgs-100-rgb-hub-usb3-0-pgs-100-rgb" class="product-item-photo" style="display: inline-block;">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgs-100-rgb.jpg" width="500" height="500" alt="Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pgs-100-rgb.jpg" alt="Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB" width="500" height="500">
 <div class="amlabel-position-top-left-18228-cat amlabel-position-wrapper" style="top: 0px; left: 0px; line-height: normal; position: absolute; z-index: 995; display: block; width: 45px; height: 45px;"><div class="amasty-label-container amasty-label-container-4-18228-cat amasty-label-for-18228" style="max-width: 45px; width: 45px; height: 45px; position: relative; display: block;">
 <div class="amasty-label-text" style="padding: 0px 3px; position: absolute; white-space: nowrap; width: 100%; line-height: 45px;">
 </div>
@@ -1428,14 +1445,28 @@ Comprar </button>
    });
 </script>
 </a>
- <div class="product-item-details">
+<div class="product-item-details">
 <h4 class="product-item-name">
 <a title="Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB" href="https://www.pichau.com.br/novidades/suporte-para-headset-pichau-pgs-100-rgb-hub-usb3-0-pgs-100-rgb" class="product-item-link">
 Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB </a>
 </h4>
 <div class="price-box price-final_price" data-role="priceBox" data-product-id="18228" data-price-box="product-id-18228">
+<span class="special-price">
 <span class="price-container price-final_price tax weee">
-<span id="old-price-18228-widget-product-grid" data-price-amount="193.07" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price-label">Preço Promocional</span>
+<span id="old-price-18228-widget-product-grid" data-price-amount="147.62" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price">R$147,62</span> </span>
+<span class="price-installments">
+<span>10x de R$14,76</span> <strong>sem juros</strong> no cartão </span>
+</span>
+<span class="price-boleto">
+<span>à vista R$129,91</span> no boleto com <strong>12% de desconto</strong></span>
+
+</span>
+<span class="old-price">
+<span class="price-container price-final_price tax weee">
+<span class="price-label">was</span>
+<span id="old-price-18228-widget-product-grid" data-price-amount="193.07" data-price-type="oldPrice" class="price-wrapper ">
 <span class="price">R$193,07</span> </span>
 <span class="price-installments">
 <span>10x de R$19,31</span> <strong>sem juros</strong> no cartão </span>
@@ -1443,6 +1474,7 @@ Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB </a>
 <span class="price-boleto">
 <span>à vista R$169,90</span> no boleto com <strong>12% de desconto</strong></span>
 
+</span>
 </div> <div class="product-reviews-summary">
 <div class="rating-summary">
 <span class="label"><span>Avaliação:</span></span>
@@ -1477,7 +1509,7 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/hardware/gabinete-gamer-pichau-lark-vidro-temp-preto-pg-lk-01" class="product-item-photo" style="display: inline-block;">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pg-lk-012324.jpg" width="500" height="500" alt="Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/p/g/pg-lk-012324.jpg" alt="Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01" width="500" height="500">
 <div class="amlabel-position-top-left-18958-cat amlabel-position-wrapper" style="top: 0px; left: 0px; line-height: normal; position: absolute; z-index: 995; display: block; width: 45px; height: 45px;"><div class="amasty-label-container amasty-label-container-4-18958-cat amasty-label-for-18958" style="max-width: 45px; width: 45px; height: 45px; position: relative; display: block;">
 <div class="amasty-label-text" style="padding: 0px 3px; position: absolute; white-space: nowrap; width: 100%; line-height: 45px;">
 </div>
@@ -1499,8 +1531,22 @@ Comprar </button>
 Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01 </a>
 </h4>
 <div class="price-box price-final_price" data-role="priceBox" data-product-id="18958" data-price-box="product-id-18958">
+<span class="special-price">
 <span class="price-container price-final_price tax weee">
-<span id="old-price-18958-widget-product-grid" data-price-amount="318.07" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price-label">Preço Promocional</span>
+<span id="old-price-18958-widget-product-grid" data-price-amount="295.34" data-price-type="finalPrice" class="price-wrapper ">
+<span class="price">R$295,34</span> </span>
+<span class="price-installments">
+<span>10x de R$29,53</span> <strong>sem juros</strong> no cartão </span>
+</span>
+<span class="price-boleto">
+<span>à vista R$259,90</span> no boleto com <strong>12% de desconto</strong></span>
+
+</span>
+<span class="old-price">
+<span class="price-container price-final_price tax weee">
+<span class="price-label">was</span>
+<span id="old-price-18958-widget-product-grid" data-price-amount="318.07" data-price-type="oldPrice" class="price-wrapper ">
 <span class="price">R$318,07</span> </span>
 <span class="price-installments">
 <span>10x de R$31,81</span> <strong>sem juros</strong> no cartão </span>
@@ -1508,6 +1554,7 @@ Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01 </a>
 <span class="price-boleto">
 <span>à vista R$279,90</span> no boleto com <strong>12% de desconto</strong></span>
 
+</span>
 </div>
 <div class="product-item-actions">
 <div class="actions-primary">
@@ -1524,7 +1571,7 @@ Comprar </button>
 </li> <li class="product-item">
 <div class="product-item-info" style="z-index: 2000;">
 <a href="https://www.pichau.com.br/novidades/caixa-de-som-harman-aura-studio-3-bluetooth-hkauras3blkbr" class="product-item-photo" style="display: inline-block;">
-<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/h/k/hkauras3blkbr.jpg" width="500" height="500" alt="Caixa de Som Harman Aura Studio 3 Bluetooth, HKAURAS3BLKBR">
+<img class="product-image-photo" src="https://cdn.pichau.com.br/catalog/product/cache/14035723553183b9d29277c409fc60a6/h/k/hkauras3blkbr.jpg" alt="Caixa de Som Harman Aura Studio 3 Bluetooth, HKAURAS3BLKBR" width="500" height="500">
 <div class="amlabel-position-top-left-19028-cat amlabel-position-wrapper" style="top: 0px; left: 0px; line-height: normal; position: absolute; z-index: 995; display: block; width: 45px; height: 45px;"><div class="amasty-label-container amasty-label-container-4-19028-cat amasty-label-for-19028" style="max-width: 45px; width: 45px; height: 45px; position: relative; display: block;">
 <div class="amasty-label-text" style="padding: 0px 3px; position: absolute; white-space: nowrap; width: 100%; line-height: 45px;">
 </div>
@@ -1671,7 +1718,7 @@ Cadastro realizado com sucesso </div>
 <div class="yt-subscribe-footer"><a href="https://www.youtube.com/subscription_center?add_user=pichauinfo" target="_blank"> <img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/footer/yt-subscribe.png" alt=""> </a></div>
 </nav>
 <div class="fb-like-box">
-<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/PichauInfo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=555333651272722&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 265px; height: 181px;"><iframe name="f27c3a210ea796c" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=555333651272722&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df3a0275fc091f08%26domain%3Dwww.pichau.com.br%26origin%3Dhttps%253A%252F%252Fwww.pichau.com.br%252Ffd72ea57ce228%26relation%3Dparent.parent&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false" style="border: none; visibility: visible; width: 265px; height: 181px;" class=""></iframe></span></div>
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/PichauInfo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=555333651272722&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 265px; height: 181px;"><iframe name="f287fdf4fa43e2" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 265px; height: 181px;" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=555333651272722&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df17da296ec82c2%26domain%3Dwww.pichau.com.br%26origin%3Dhttps%253A%252F%252Fwww.pichau.com.br%252Ff22d966eb38f2a8%26relation%3Dparent.parent&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
 </div>
 <hr><nav class="nav-payment" style="margin-right: 9.8%;">
 <h5>Formas de Pagamento</h5>
@@ -1685,7 +1732,7 @@ Cadastro realizado com sucesso </div>
 </div></li>
 <li><img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/footer/certificados/pichau-google.png" alt=""></li>
 <li style="width: 110px; margin-top: 0; margin-right: 0;"><a id="seloEbit" href="http://www.ebit.com.br/6261" target="_blank" data-noop="redir(this.href);"> </a></li>
-<li class="last" style="margin-right: 0;"><div id="___ratingbadge_0" style="border: 1px none rgb(245, 245, 245); text-indent: 0px; margin: 0px; padding: 0px; background: transparent; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 165px; height: 54px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 165px; margin: 0px; border-style: none; display: block; left: 0px; visibility: visible; height: 54px;" tabindex="0" vspace="0" width="100%" id="I0_1588918949865" name="I0_1588918949865" src="https://www.google.com/shopping/customerreviews/badge?usegapi=1&amp;merchant_id=106916823&amp;position=INLINE&amp;origin=https%3A%2F%2Fwww.pichau.com.br&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.ebk8EhJxLu4.O%2Fam%3DwQE%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCP6GuLd1aTsaaFO6Zp_Rjnyu1Wv5g%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1588918949865&amp;_gfid=I0_1588918949865&amp;parent=https%3A%2F%2Fwww.pichau.com.br&amp;pfname=&amp;rpctoken=26206771" data-gapiattached="true" title="Google Customer Reviews"></iframe></div></li>
+<li class="last" style="margin-right: 0;"><div id="___ratingbadge_0" style="border: 1px none rgb(245, 245, 245); text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 165px; height: 54px;"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 165px; margin: 0px; border-style: none; display: block; left: 0px; visibility: visible; height: 54px;" tabindex="0" vspace="0" id="I0_1589017499662" name="I0_1589017499662" src="https://www.google.com/shopping/customerreviews/badge?usegapi=1&amp;merchant_id=106916823&amp;position=INLINE&amp;origin=https%3A%2F%2Fwww.pichau.com.br&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.jw7XZHvcak8.O%2Fam%3DwQE%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCOXtLG11kt9d673FzpjO_GiLUGIQA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1589017499662&amp;_gfid=I0_1589017499662&amp;parent=https%3A%2F%2Fwww.pichau.com.br&amp;pfname=&amp;rpctoken=16829661" data-gapiattached="true" title="Google Customer Reviews" width="100%" frameborder="0"></iframe></div></li>
 </ul>
 </nav></div>
 <div class="addres-footer"><img class="logo-footer" src="https://cdn.pichau.com.br/wysiwyg/logo-alt.png" alt="Pichau">
@@ -1805,7 +1852,7 @@ src="https://www.facebook.com/tr?id=1234234216641327&ev=PageView&noscript=1"
                 customerData.invalidate(['gtm']);
             });
     </script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-199a4e80efcd30d8013","applicationID":"508691749","transactionName":"YlNbMBRVXxAAWkIMClsZeAcSXV4NTlpbFkpcWF0BHhtYDQVcTg==","queueTime":0,"applicationTime":274,"atts":"ThRYRlxPTB4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-199a4e80efcd30d8013","applicationID":"508691749","transactionName":"YlNbMBRVXxAAWkIMClsZeAcSXV4NTlpbFkpcWF0BHhtYDQVcTg==","queueTime":0,"applicationTime":518,"atts":"ThRYRlxPTB4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
 
 <div class="modals-wrapper"><aside role="dialog" class="modal-popup popup-authentication
                modal-slide
@@ -1815,7 +1862,7 @@ src="https://www.facebook.com/tr?id=1234234216641327&ev=PageView&noscript=1"
 <header class="modal-header">
 
 <button class="action-close" data-role="closeBtn" type="button">
-<span>Close</span>
+<span>Fechar</span>
 </button>
 </header>
 <div id="modal-content-25" class="modal-content" data-role="content"><div class="block-authentication" data-bind="afterRender: setModalElement, blockLoader: isLoading" style="">
@@ -1845,7 +1892,7 @@ src="https://www.facebook.com/tr?id=1234234216641327&ev=PageView&noscript=1"
 </div>
 <!-- ko foreach: getRegion('messages') -->
 <!-- ko template: getTemplate() -->
-<div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll" style="display: none;">
+<div data-role="checkout-messages" class="messages" data-bind="visible: isVisible(), click: removeAll">
 <!-- ko foreach: messageContainer.getErrorMessages() --><!--/ko-->
 <!-- ko foreach: messageContainer.getSuccessMessages() --><!--/ko-->
 </div>
@@ -1899,11 +1946,10 @@ src="https://www.facebook.com/tr?id=1234234216641327&ev=PageView&noscript=1"
 
 </div>
 <div data-role="focusable-end" tabindex="0"></div>
-</aside></div></body></html>`;
+</aside></div></body></html>`
 
-
-export const promotionPage = `<html lang="pt" class="lc-cb-container-vi uk-notouch"><head>
-<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/-wV2EAWEOTlEtZh4vNQtn3H1/recaptcha__en.js"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=c3044a418bc08642b864d2343f0a2da3&amp;ua=modern_es6" async="" crossorigin="anonymous"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.ebk8EhJxLu4.O/m=ratingbadge/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCP6GuLd1aTsaaFO6Zp_Rjnyu1Wv5g/cb=gapi.loaded_0" async=""></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.11&amp;appId=555333651272722"></script><script async="" src="https://js.datadome.co/tags.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MQS562"></script><script src="/cdn-cgi/apps/head/zdvena6okxF8D1KoxHwpN1BcyTM.js"></script><script>
+export const promotionPage = `<html class="lc-cb-container-vi uk-notouch" lang="pt"><head>
+<script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/-wV2EAWEOTlEtZh4vNQtn3H1/recaptcha__en.js"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script src="https://connect.facebook.net/en_US/sdk.js?hash=bbc14678f6289bd33888318610e3e992" async="" crossorigin="anonymous"></script><script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en.jw7XZHvcak8.O/m=ratingbadge/rt=j/sv=1/d=1/ed=1/am=wQE/rs=AGLTcCOXtLG11kt9d673FzpjO_GiLUGIQA/cb=gapi.loaded_0" async=""></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.11&amp;appId=555333651272722"></script><script async="" src="https://js.datadome.co/tags.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MQS562"></script><script src="/cdn-cgi/apps/head/zdvena6okxF8D1KoxHwpN1BcyTM.js"></script><script>
     var BASE_URL = 'https://www.pichau.com.br/';
     var require = {
         "baseUrl": "https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR"
@@ -1924,48 +1970,11 @@ export const promotionPage = `<html lang="pt" class="lc-cb-container-vi uk-notou
 <link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Tigren_Dailydeal/css/dailydeal_sidebar.css">
 <link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Tigren_Dailydeal/css/jquery.fancybox.css">
 <link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Tigren_Dailydeal/css/dailydeal.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_SeoToolKit/css/source/mkcss/amseokit.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_ShopbyBase/css/source/mkcss/am-shopby-base.css">
+<link rel="stylesheet" type="text/css" media="all" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/css/source/mkcss/am-shopby.css">
 <link rel="stylesheet" type="text/css" media="print" href="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/css/print.css">
-<script type="text/javascript" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/require.js"></script><script data-dapp-detection="">
-(function() {
-  let alreadyInsertedMetaTag = false
-
-  function __insertDappDetected() {
-    if (!alreadyInsertedMetaTag) {
-      const meta = document.createElement('meta')
-      meta.name = 'dapp-detected'
-      document.head.appendChild(meta)
-      alreadyInsertedMetaTag = true
-    }
-  }
-
-  if (window.hasOwnProperty('web3')) {
-    // Note a closure can't be used for this var because some sites like
-    // www.wnyc.org do a second script execution via eval for some reason.
-    window.__disableDappDetectionInsertion = true
-    // Likely oldWeb3 is undefined and it has a property only because
-    // we defined it. Some sites like wnyc.org are evaling all scripts
-    // that exist again, so this is protection against multiple calls.
-    if (window.web3 === undefined) {
-      return
-    }
-    __insertDappDetected()
-  } else {
-    var oldWeb3 = window.web3
-    Object.defineProperty(window, 'web3', {
-      configurable: true,
-      set: function (val) {
-        if (!window.__disableDappDetectionInsertion)
-          __insertDappDetected()
-        oldWeb3 = val
-      },
-      get: function () {
-        if (!window.__disableDappDetectionInsertion)
-          __insertDappDetected()
-        return oldWeb3
-      }
-    })
-  }
-})()</script>
+<script type="text/javascript" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/require.js"></script>
 <script type="text/javascript" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/mixins.js"></script>
 <script type="text/javascript" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs-config.js"></script>
 <link rel="icon" type="image/x-icon" href="https://cdn.pichau.com.br/favicon/stores/1/favicon.ico">
@@ -2016,6 +2025,7 @@ export const promotionPage = `<html lang="pt" class="lc-cb-container-vi uk-notou
         }
     });
 </script>
+
 <script>
         window.getWpCookie = function(name) {
             match = document.cookie.match(new RegExp(name + '=([^;]+)'));
@@ -2043,10 +2053,10 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MQS562');</script>
- <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.mobile.custom" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.mobile.custom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dataPost" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dataPost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate-inline" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate-inline.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyResponsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyResponsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/responsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/responsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/theme" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/theme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/typeahead" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/typeahead.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.cookie" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.cookie.js"></script><link rel="stylesheet" type="text/css" href="https://d36mpcpuzc4ztk.cloudfront.net/css/visitor.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/mage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/mage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/price-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/price-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/catalog-add-to-cart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/catalog-add-to-cart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery-ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-migrate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-migrate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/common" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/common.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tether" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/tether.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_gtm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_gtm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/confirm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyTopFilters" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyTopFilters.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/tabs" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/smart-keyboard-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/ie-class-fixer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/ie-class-fixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mask" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/jquery.mask.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.fancybox" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dailydeal_countdown" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Tigren_Dailydeal/js/dailydeal.countdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chosen" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/chosen.jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/customer-data" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/customer-data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Persistent/js/view/customer-data-mixin" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Persistent/js/view/customer-data-mixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="matchMedia" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/matchMedia.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/storage/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/registry/registry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids-resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids-resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-storageapi" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.storageapi.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-es5.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/scripts.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/observable_array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/bound-nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/section-config" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/section-config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/wrapper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/key-codes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="es6-collections" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/es6-collections.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-repeat.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-fast-foreach.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/url" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/url.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/observable_source.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/renderer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/range.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/mage-init.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/keyboard.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/optgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/after-render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/autoselect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/outer_click.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/fadeVisible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/staticChecked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/simple-checked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bind-html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/arrays.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/misc" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/misc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/objects" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/objects.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/strings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/strings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/async.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/calendar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/calendar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry-factory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-output-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/formatter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/message-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/levels-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/moment.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="FormData" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/FormData.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-ui-timepicker-addon" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui-timepicker-addon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/dom-observer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/bindings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+ <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.mobile.custom" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.mobile.custom.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dataPost" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dataPost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate-inline" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate-inline.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyResponsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyResponsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/responsive" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/responsive.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/theme" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/theme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/translate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mirasvit_SearchAutocomplete/js/typeahead" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mirasvit_SearchAutocomplete/js/typeahead.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/confirm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bootstrap.js"></script><link rel="stylesheet" type="text/css" href="https://d36mpcpuzc4ztk.cloudfront.net/css/visitor.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.cookie" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.cookie.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/patches/jquery-ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/patches/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Amasty_Shopby/js/amShopbyTopFilters" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Amasty_Shopby/js/amShopbyTopFilters.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/tabs" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/requirejs/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/smart-keyboard-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/mage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/mage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/ie-class-fixer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/ie-class-fixer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-migrate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-migrate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/common" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/common.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tether" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/tether.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dailydeal_countdown" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Tigren_Dailydeal/js/dailydeal.countdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="chosen" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/chosen.jquery.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-es5.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-storageapi" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.storageapi.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_persistentlayer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="WeltPixel_GoogleTagManager/js/weltpixel_gtm" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/WeltPixel_GoogleTagManager/js/weltpixel_gtm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/price-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/price-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/catalog-add-to-cart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/catalog-add-to-cart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="matchMedia" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/matchMedia.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.mask" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/jquery.mask.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.fancybox" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/jquery.fancybox.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/apply/scripts.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/observable_array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/extender/bound-nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/customer-data" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/customer-data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Persistent/js/view/customer-data-mixin" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Persistent/js/view/customer-data-mixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="bootstrap" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/js/vendor/bootstrap.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/key-codes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/storage/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/registry/registry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids-resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids-resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-repeat.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/knockoutjs/knockout-fast-foreach.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/wrapper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/renderer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/range.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/mage-init.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/keyboard.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/optgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="es6-collections" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/es6-collections.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/section-config" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/section-config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/main" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/view/product-ids" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/view/product-ids.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/after-render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/autoselect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/outer_click.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/fadeVisible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/staticChecked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/simple-checked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/bind-html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/bindings/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/observable_source.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/async.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/url" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/url.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/knockout/template/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/arrays.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/misc" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/misc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/objects" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/objects.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/strings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/strings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/template" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/utils/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/calendar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/calendar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/moment.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry-factory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/console-output-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/formatter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/message-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/levels-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/logger-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/dom-observer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/view/utils/bindings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="FormData" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/FormData.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery-ui-timepicker-addon" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery-ui-timepicker-addon.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/logger/entry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MutationObserver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MutationObserver.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
 .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MutationObserver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MutationObserver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider-ajax" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider-ajax.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_PageCache/js/page-cache" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_PageCache/js/page-cache.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Search/js/form-mini" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Search/js/form-mini.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/menu" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/menu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/cookies" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/cookies.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Paypal/js/in-context/express-checkout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Paypal/js/in-context/express-checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/block-loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/block-loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-processor" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-processor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_GoogleRecaptcha/js/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_GoogleRecaptcha/js/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uikit" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/uikit.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/collection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/types.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="paypalInContextExpressCheckout" src="https://www.paypalobjects.com/api/checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/validate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/components/slideshow" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/components/slideshow.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/links.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/view/minicart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/view/minicart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Tax/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Tax/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Msrp/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Msrp/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Cmsmart_Promotion/js/view/checkout/minicart/discount" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Cmsmart_Promotion/js/view/checkout/minicart/discount.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/image" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/view/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/view/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/loginCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/loginCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_SocialLogin/js/view/social-buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/view/social-buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/bindEvents" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/bindEvents.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/dataProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/dataProvider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.metadata.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/storage-manager" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/storage-manager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/sidebar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdown" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dropdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-rules/website-rule" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-rules/website-rule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/form" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/action/login" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/action/login.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/model/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/alert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/defaultCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/defaultCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captchaList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captchaList.js"></script><script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=www.pichau.com.br&amp;source=checkoutjs&amp;t=xo&amp;v=4.0.314"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="socialProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/provider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/storage-service" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/storage-service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/decorate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/decorate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messageList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messageList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/data-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/data-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage-compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage-compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/action/refresh" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/action/refresh.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/query-builder" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/query-builder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter/buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter/buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit" src="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit"></script></head>
-<body data-container="body" class="dailydeal-index-index page-layout-2columns-right ajax-loading header-sticked" style="background-image: url(&quot;https://cdn.pichau.com.br/aw_rbslider/slides/bg-daily-quest-season4_9.jpg&quot;);" aria-busy="true"><script>!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://js.datadome.co/tags.js","6D7FE42D59136B36A64C1AB393707E");</script>
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider-ajax" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider-ajax.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_PageCache/js/page-cache" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_PageCache/js/page-cache.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Search/js/form-mini" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Search/js/form-mini.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/menu" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/menu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/aw-rbslider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/aw-rbslider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/cookies" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/cookies.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Paypal/js/in-context/express-checkout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Paypal/js/in-context/express-checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/block-loader" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/block-loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-processor" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-processor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_GoogleRecaptcha/js/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_GoogleRecaptcha/js/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="uikit" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/uikit.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/types.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/core/renderer/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/collection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="paypalInContextExpressCheckout" src="https://www.paypalobjects.com/api/checkout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Aheadworks_Rbslider/js/components/slideshow" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Aheadworks_Rbslider/js/components/slideshow.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/validate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/view/minicart" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/view/minicart.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Tax/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Tax/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Msrp/js/view/checkout/minicart/subtotal/totals" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Msrp/js/view/checkout/minicart/subtotal/totals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Cmsmart_Promotion/js/view/checkout/minicart/discount" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Cmsmart_Promotion/js/view/checkout/minicart/discount.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/view/image" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/view/image.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/view/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/view/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/loginCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/loginCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Mageplaza_SocialLogin/js/view/social-buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/view/social-buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/autocomplete" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/autocomplete.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/bindEvents" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/bindEvents.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="MageWorx_SearchSuiteAutocomplete/js/dataProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/MageWorx_SearchSuiteAutocomplete/js/dataProvider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Theme/js/view/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Theme/js/view/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/storage-manager" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/storage-manager.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/core/element/links.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/jquery/jquery.metadata.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/form" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/action/login" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/action/login.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/model/authentication-popup" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/model/authentication-popup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/modal/alert.js"></script><script async="true" id="xo-pptm" src="https://www.paypal.com/tagmanager/pptm.js?id=www.pichau.com.br&amp;source=checkoutjs&amp;t=xo&amp;v=4.0.314"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Checkout/js/sidebar" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Checkout/js/sidebar.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdown" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/dropdown.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/view/checkout/defaultCaptcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/view/checkout/defaultCaptcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captchaList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captchaList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="socialProvider" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Mageplaza_SocialLogin/js/provider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messageList" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messageList.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/storage-service" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/storage-service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/lib/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/requirejs/resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Customer/js/invalidation-rules/website-rule" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Customer/js/invalidation-rules/website-rule.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/model/captcha" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/model/captcha.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/decorate" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/mage/decorate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/data-storage" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/data-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/storage/ids-storage-compare" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/storage/ids-storage-compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/model/messages" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/model/messages.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Captcha/js/action/refresh" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Captcha/js/action/refresh.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/adapter/buttons" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Ui/js/form/adapter/buttons.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/js/product/query-builder" src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/Magento_Catalog/js/product/query-builder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit" src="//www.google.com/recaptcha/api.js?onload=recaptchaOnload&amp;render=explicit"></script></head>
+<body data-container="body" class="dailydeal-index-index page-layout-2columns-right ajax-loading header-sticked" style="background-image: url(&quot;https://cdn.pichau.com.br/aw_rbslider/slides/bg-diadasmae2020.jpg&quot;);" aria-busy="true"><script>!function(a,b,c,d,e,f){a.ddjskey=e;a.ddoptions=f||null;var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.async=1,m.src=d,n.parentNode.insertBefore(m,n)}(window,document,"script","https://js.datadome.co/tags.js","6D7FE42D59136B36A64C1AB393707E");</script>
 <script>
     try {
         if (!window.localStorage || !window.sessionStorage) {
@@ -2394,7 +2404,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav></li>
 <li class="sac-phone"><a id="nav-sac-1" class="open-tel"> <i class="fa fa-phone"></i> Atendimento <span>por Telefone</span> </a></li>
 <li class="sac-chat"><a id="nav-sac-2" class="btn-chat" href="https://pichau.freshdesk.com" target="_blank"> <i class="fa fa-comments-o"></i>SAC </a></li>
-<li class="banner-nav"><a href="//pichaugaming.com.br" target="_blank"> <img src="https://cdn.pichau.com.br/wysiwyg/btn-pichaugaming-home.png" alt="Loja fisica - Pichau" width="147" height="34" data-pagespeed-lsc-url="https://static.pichau.com.br/wysiwyg/btn-pichaugaming-home.png"> </a></li>
+<li class="banner-nav"><a href="//pichaugaming.com.br" target="_blank"> <img src="https://cdn.pichau.com.br/wysiwyg/btn-pichaugaming-home.png" alt="Loja fisica - Pichau" data-pagespeed-lsc-url="https://static.pichau.com.br/wysiwyg/btn-pichaugaming-home.png" width="147" height="34"> </a></li>
 </ul>
 </div>
 <div id="modal-telefone" class="modal">
@@ -2488,7 +2498,7 @@ Carrinho <span class="counter qty empty" data-bind="css: { empty: !!getCartParam
 Acesse todos os <span>departamentos</span>
 </a>
 <ul id="ui-id-1" class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0" style="display: none; height: 366px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
-<li class="level0 nav-1 category-item first level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-2" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Hardware</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-1-1 category-item first parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores" aria-haspopup="true" id="ui-id-13" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Processadores</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level2 nav-1-1-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/intel" id="ui-id-27" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Intel</span></a></li><li class="level2 nav-1-1-2 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/amd" id="ui-id-28" class="ui-corner-all" tabindex="-1" role="menuitem"><span>AMD</span></a></li></ul></li><li class="level1 nav-1-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-m-e" id="ui-id-14" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa Mãe</span></a></li><li class="level1 nav-1-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/memorias" id="ui-id-15" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Memórias</span></a></li><li class="level1 nav-1-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-de-video" id="ui-id-16" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa de Vídeo</span></a></li><li class="level1 nav-1-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/hard-disk-e-ssd" id="ui-id-17" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Disco rígido interno (HD)</span></a></li><li class="level1 nav-1-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ssd" id="ui-id-18" class="ui-corner-all" tabindex="-1" role="menuitem"><span>SSD</span></a></li><li class="level1 nav-1-7 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/gabinete" id="ui-id-19" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Gabinete</span></a></li><li class="level1 nav-1-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/fonte" id="ui-id-20" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fonte</span></a></li><li class="level1 nav-1-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cabos-extensores-sleeved" id="ui-id-21" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos Extensores Sleeved</span></a></li><li class="level1 nav-1-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cooler-processador" id="ui-id-22" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Coolers e Watercoolers</span></a></li><li class="level1 nav-1-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ventoinhas-e-casemod" id="ui-id-23" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Ventoinhas e Casemod</span></a></li><li class="level1 nav-1-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/pasta-termica-e-refrigerantes" id="ui-id-24" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pasta Térmica e Refrigerantes</span></a></li><li class="level1 nav-1-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placas-de-som" id="ui-id-25" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placas de Som</span></a></li><li class="level1 nav-1-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/drive-optico" id="ui-id-26" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drive Óptico</span></a></li></ul></li><li class="level0 nav-2 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-3" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Periféricos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-2-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/caixa-de-som" id="ui-id-29" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Caixa de Som</span></a></li><li class="level1 nav-2-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/teclado" id="ui-id-30" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Teclado</span></a></li><li class="level1 nav-2-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/fone-de-ouvido" id="ui-id-31" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fone de Ouvido</span></a></li><li class="level1 nav-2-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse" id="ui-id-32" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Kit Teclado e Mouse</span></a></li><li class="level1 nav-2-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mouse" id="ui-id-33" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mouse</span></a></li><li class="level1 nav-2-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mousepad" id="ui-id-34" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mousepad</span></a></li><li class="level1 nav-2-7 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/cabos-e-adaptadores" id="ui-id-35" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos e Adaptadores</span></a></li><li class="level1 nav-2-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/impressoras" id="ui-id-36" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Impressoras</span></a></li><li class="level1 nav-2-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/armazenamento" id="ui-id-37" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Armazenamento</span></a></li><li class="level1 nav-2-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/energia" id="ui-id-38" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Energia</span></a></li><li class="level1 nav-2-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/acessorios" id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios</span></a></li><li class="level1 nav-2-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/webcam" id="ui-id-40" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Webcam</span></a></li><li class="level1 nav-2-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/pendrives" id="ui-id-41" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pendrives</span></a></li><li class="level1 nav-2-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mesa-digitalizadora" id="ui-id-42" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesa Digitalizadora</span></a></li></ul></li><li class="level0 nav-3 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-4" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Computadores</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-3-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-gamer" id="ui-id-43" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer</span></a></li><li class="level1 nav-3-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/rtb" id="ui-id-44" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer RTB-Pronta Entrega</span></a></li><li class="level1 nav-3-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-moba" id="ui-id-45" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Moba</span></a></li><li class="level1 nav-3-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-workstation" id="ui-id-46" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Professional Workstation</span></a></li><li class="level1 nav-3-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-home" id="ui-id-47" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Home</span></a></li><li class="level1 nav-3-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/highflyer" id="ui-id-48" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Highflyer Intel</span></a></li><li class="level1 nav-3-7 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/skycutter" id="ui-id-49" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Skycutter AMD</span></a></li></ul></li><li class="level0 nav-4 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monitores" class="level-top ui-corner-all" id="ui-id-5" tabindex="-1" role="menuitem"><span>Monitores</span></a></li><li class="level0 nav-5 category-item has-active level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-6" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Cadeiras e Mesas Gamer</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-5-1 category-item first active ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/gamer" id="ui-id-50" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cadeiras Gamer</span></a></li><li class="level1 nav-5-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/escritorio" id="ui-id-51" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Escritório</span></a></li><li class="level1 nav-5-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/mesas-gamer" id="ui-id-52" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesas Gamer</span></a></li></ul></li><li class="level0 nav-6 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-7" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Eletronicos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-6-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/consoles-e-acessorios" id="ui-id-53" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Consoles e Acessórios</span></a></li><li class="level1 nav-6-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/acessorios-mobile" id="ui-id-54" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios Mobile</span></a></li><li class="level1 nav-6-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/smartwatch" id="ui-id-55" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Smartwatch</span></a></li></ul></li><li class="level0 nav-7 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-8" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Notebooks e Portáteis</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-7-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/refrigerac-o-e-bases" id="ui-id-56" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Refrigeração e Bases</span></a></li><li class="level1 nav-7-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/carregadores-e-fontes" id="ui-id-57" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Carregadores e Fontes</span></a></li><li class="level1 nav-7-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebook-gamer" id="ui-id-58" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebook Gamer</span></a></li><li class="level1 nav-7-4 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebooks" id="ui-id-59" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebooks</span></a></li></ul></li><li class="level0 nav-8 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/redes-wireless" class="level-top ui-corner-all" id="ui-id-9" tabindex="-1" role="menuitem"><span>Redes &amp; Wireless</span></a></li><li class="level0 nav-9 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-10" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Mundo Geek</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" aria-hidden="true" aria-expanded="false" style="display: none;"><li class="level1 nav-9-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/camisetas" id="ui-id-60" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Camisetas</span></a></li><li class="level1 nav-9-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/action-figures" id="ui-id-61" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Action Figures</span></a></li><li class="level1 nav-9-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/drone" id="ui-id-62" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drone</span></a></li></ul></li><li class="level0 nav-10 category-item last level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/kit-upgrade" class="level-top ui-corner-all" id="ui-id-11" tabindex="-1" role="menuitem"><span>Kit Upgrade</span></a></li> <li class="img-pc ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monte-seu-computador/processador/" id="ui-id-12" class="ui-corner-all" tabindex="-1" role="menuitem"><img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/monte-pc.png" alt="Monte seu PC - Pichau" border="0"></a></li>
+<li class="level0 nav-1 category-item first has-active level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-2" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Hardware</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-1-1 category-item first parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores" aria-haspopup="true" id="ui-id-13" class="ui-corner-all" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Processadores</span></a><ul class="level1 submenu ui-menu ui-widget ui-widget-content ui-corner-all expanded" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level2 nav-1-1-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/intel" id="ui-id-27" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Intel</span></a></li><li class="level2 nav-1-1-2 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/processadores/amd" id="ui-id-28" class="ui-corner-all" tabindex="-1" role="menuitem"><span>AMD</span></a></li></ul></li><li class="level1 nav-1-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-m-e" id="ui-id-14" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa Mãe</span></a></li><li class="level1 nav-1-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/memorias" id="ui-id-15" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Memórias</span></a></li><li class="level1 nav-1-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placa-de-video" id="ui-id-16" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placa de Vídeo</span></a></li><li class="level1 nav-1-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/hard-disk-e-ssd" id="ui-id-17" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Disco rígido interno (HD)</span></a></li><li class="level1 nav-1-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ssd" id="ui-id-18" class="ui-corner-all" tabindex="-1" role="menuitem"><span>SSD</span></a></li><li class="level1 nav-1-7 category-item active ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/gabinete" id="ui-id-19" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Gabinete</span></a></li><li class="level1 nav-1-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/fonte" id="ui-id-20" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fonte</span></a></li><li class="level1 nav-1-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cabos-extensores-sleeved" id="ui-id-21" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos Extensores Sleeved</span></a></li><li class="level1 nav-1-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/cooler-processador" id="ui-id-22" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Coolers e Watercoolers</span></a></li><li class="level1 nav-1-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/ventoinhas-e-casemod" id="ui-id-23" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Ventoinhas e Casemod</span></a></li><li class="level1 nav-1-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/pasta-termica-e-refrigerantes" id="ui-id-24" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pasta Térmica e Refrigerantes</span></a></li><li class="level1 nav-1-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/placas-de-som" id="ui-id-25" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Placas de Som</span></a></li><li class="level1 nav-1-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/hardware/drive-optico" id="ui-id-26" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drive Óptico</span></a></li></ul></li><li class="level0 nav-2 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-3" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Periféricos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-2-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/caixa-de-som" id="ui-id-29" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Caixa de Som</span></a></li><li class="level1 nav-2-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/teclado" id="ui-id-30" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Teclado</span></a></li><li class="level1 nav-2-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/fone-de-ouvido" id="ui-id-31" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Fone de Ouvido</span></a></li><li class="level1 nav-2-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse" id="ui-id-32" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Kit Teclado e Mouse</span></a></li><li class="level1 nav-2-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mouse" id="ui-id-33" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mouse</span></a></li><li class="level1 nav-2-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mousepad" id="ui-id-34" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mousepad</span></a></li><li class="level1 nav-2-7 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/cabos-e-adaptadores" id="ui-id-35" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cabos e Adaptadores</span></a></li><li class="level1 nav-2-8 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/impressoras" id="ui-id-36" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Impressoras</span></a></li><li class="level1 nav-2-9 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/armazenamento" id="ui-id-37" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Armazenamento</span></a></li><li class="level1 nav-2-10 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/energia" id="ui-id-38" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Energia</span></a></li><li class="level1 nav-2-11 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/acessorios" id="ui-id-39" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios</span></a></li><li class="level1 nav-2-12 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/webcam" id="ui-id-40" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Webcam</span></a></li><li class="level1 nav-2-13 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/pendrives" id="ui-id-41" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pendrives</span></a></li><li class="level1 nav-2-14 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/perifericos/mesa-digitalizadora" id="ui-id-42" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesa Digitalizadora</span></a></li></ul></li><li class="level0 nav-3 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-4" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Computadores</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-3-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-gamer" id="ui-id-43" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer</span></a></li><li class="level1 nav-3-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/rtb" id="ui-id-44" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Gamer RTB-Pronta Entrega</span></a></li><li class="level1 nav-3-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-moba" id="ui-id-45" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Moba</span></a></li><li class="level1 nav-3-4 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-workstation" id="ui-id-46" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Professional Workstation</span></a></li><li class="level1 nav-3-5 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/pichau-home" id="ui-id-47" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Pichau Home</span></a></li><li class="level1 nav-3-6 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/highflyer" id="ui-id-48" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Highflyer Intel</span></a></li><li class="level1 nav-3-7 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/computadores/skycutter" id="ui-id-49" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Skycutter AMD</span></a></li></ul></li><li class="level0 nav-4 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monitores" class="level-top ui-corner-all" id="ui-id-5" tabindex="-1" role="menuitem"><span>Monitores</span></a></li><li class="level0 nav-5 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-6" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Cadeiras e Mesas Gamer</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-5-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/gamer" id="ui-id-50" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Cadeiras Gamer</span></a></li><li class="level1 nav-5-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/escritorio" id="ui-id-51" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Escritório</span></a></li><li class="level1 nav-5-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/cadeiras/mesas-gamer" id="ui-id-52" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Mesas Gamer</span></a></li></ul></li><li class="level0 nav-6 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-7" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Eletronicos</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-6-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/consoles-e-acessorios" id="ui-id-53" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Consoles e Acessórios</span></a></li><li class="level1 nav-6-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/acessorios-mobile" id="ui-id-54" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Acessórios Mobile</span></a></li><li class="level1 nav-6-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/eletronicos/smartwatch" id="ui-id-55" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Smartwatch</span></a></li></ul></li><li class="level0 nav-7 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-8" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Notebooks e Portáteis</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-7-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/refrigerac-o-e-bases" id="ui-id-56" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Refrigeração e Bases</span></a></li><li class="level1 nav-7-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/carregadores-e-fontes" id="ui-id-57" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Carregadores e Fontes</span></a></li><li class="level1 nav-7-3 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebook-gamer" id="ui-id-58" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebook Gamer</span></a></li><li class="level1 nav-7-4 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/notebooks/notebooks" id="ui-id-59" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Notebooks</span></a></li></ul></li><li class="level0 nav-8 category-item level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/redes-wireless" class="level-top ui-corner-all" id="ui-id-9" tabindex="-1" role="menuitem"><span>Redes &amp; Wireless</span></a></li><li class="level0 nav-9 category-item level-top parent ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek" class="level-top ui-corner-all" aria-haspopup="true" id="ui-id-10" tabindex="-1" role="menuitem"><span class="ui-menu-icon ui-icon ui-icon-carat-1-e"></span><span>Mundo Geek</span></a><ul class="level0 submenu ui-menu ui-widget ui-widget-content ui-corner-all" style="display: none;" role="menu" aria-hidden="true" aria-expanded="false"><li class="level1 nav-9-1 category-item first ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/camisetas" id="ui-id-60" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Camisetas</span></a></li><li class="level1 nav-9-2 category-item ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/action-figures" id="ui-id-61" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Action Figures</span></a></li><li class="level1 nav-9-3 category-item last ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/mundo-geek/drone" id="ui-id-62" class="ui-corner-all" tabindex="-1" role="menuitem"><span>Drone</span></a></li></ul></li><li class="level0 nav-10 category-item last level-top ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/kit-upgrade" class="level-top ui-corner-all" id="ui-id-11" tabindex="-1" role="menuitem"><span>Kit Upgrade</span></a></li> <li class="img-pc ui-menu-item" role="presentation"><a href="https://www.pichau.com.br/monte-seu-computador/processador/" id="ui-id-12" class="ui-corner-all" tabindex="-1" role="menuitem"><img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/monte-pc.png" alt="Monte seu PC - Pichau" border="0"></a></li>
 </ul>
 </nav>
 </div>
@@ -2509,7 +2519,7 @@ Acesse todos os <span>departamentos</span>
 }
 </style>
 <div class="awating" style="width: 1100px; height: 360px; display: block; margin: 0 auto; position: relative; z-index:-1;"><div class="aw-rbslider-container uk-slidenav-position banner_daily_deal_menu_bottom" style="">
-<a href="https://www.pichau.com.br/dailydeal" class="link" target="blank"></a>
+<a href="https://www.pichau.com.br/maes" class="link" target="blank"></a>
 </div></div>
 <script type="text/javascript">
                     require(['jquery', 'jquery/ui'], function($){
@@ -2524,7 +2534,7 @@ Acesse todos os <span>departamentos</span>
             require([
                 'jquery'
             ], function($){
-                var imagePath = "https://cdn.pichau.com.br/aw_rbslider/slides/bg-daily-quest-season4_9.jpg";
+                var imagePath = "https://cdn.pichau.com.br/aw_rbslider/slides/bg-diadasmae2020.jpg";
                 $('body').css({'background-image': 'url('+imagePath+')'});
                 $('.page-wrapper > .aw-rbslider-container').appendTo($('.awating'));
             });
@@ -2594,7 +2604,7 @@ require([
 
 });
 </script>
-<input name="form_key" type="hidden" value="eeAPnLjt7Eq6vV6f"><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+<input name="form_key" type="hidden" value="bQtJtJ1iUdwGRd8D"><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
 <script>
         window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/www.pichau.com.br\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/www.pichau.com.br\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/www.pichau.com.br\/"};
     </script>
@@ -2628,11 +2638,14 @@ require([
 Categorias </label>
 <select name="catid" id="catid" class="chosen-select" style="display: none;">
 <option value="">Todas</option>
+<option value="2">Home</option>
 <option value="4">Hardware</option>
 <option value="5">Computadores</option>
-<option value="7">Periféricos</option>
+ <option value="7">Periféricos</option>
 <option value="14">Processadores</option>
 <option value="17">Memórias</option>
+<option value="18">Fonte</option>
+<option value="19">Placa de Vídeo</option>
 <option value="22">Gabinete</option>
 <option value="25">SSD</option>
 <option value="26">Coolers e Watercoolers</option>
@@ -2640,15 +2653,18 @@ Categorias </label>
 <option value="29">Fone de Ouvido</option>
 <option value="30">Kit Teclado e Mouse</option>
 <option value="32">Mouse</option>
+<option value="34">Pichau Gamer</option>
 <option value="37">Redes &amp; Wireless</option>
+<option value="42">Pichau Professional Workstation</option>
 <option value="47">Acessórios</option>
 <option value="52">Pichau Home</option>
 <option value="54">Ventoinhas e Casemod</option>
+<option value="58">Cadeiras e Mesas Gamer</option>
+<option value="59">Cadeiras Gamer</option>
 <option value="66">Monitores</option>
 <option value="155">Mesa Digitalizadora</option>
-<option value="245">Intel</option>
 <option value="246">AMD</option>
-</select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="catid_chosen" style="width: 191px;"><a class="chosen-single">
+</select><div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="catid_chosen" style="width: 257px;"><a class="chosen-single">
   <span>Todas</span>
   <div><b></b></div>
 </a>
@@ -2661,19 +2677,19 @@ Categorias </label>
 </form>
 </div>
 <span class="title-product-list">produtos</span>
-<span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589148600"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">18</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">46</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">21</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">09</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">02</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">09</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">09</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">05</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">20</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">35</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">02</span><span class="timeleft-label">seg</span></li></ul></span><table class="deal-grid">
+<span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590710340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">19</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">08</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1590796740"><ul class="dailydeal-countdown"><li><span class="timeleft-value">20</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589759940"><ul class="dailydeal-countdown"><li><span class="timeleft-value">08</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589155140"><ul class="dailydeal-countdown"><li><span class="timeleft-value">01</span><span class="timeleft-label"> dia</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><span class="timeleft-today" data-totime="1589414340"><ul class="dailydeal-countdown"><li><span class="timeleft-value">04</span><span class="timeleft-label"> dias</span></li><li><span class="timeleft-value">17</span><span class="timeleft-label">horas</span></li><li><span class="timeleft-value">15</span><span class="timeleft-label">min</span></li><li><span class="timeleft-value">07</span><span class="timeleft-label">seg</span></li></ul></span><table class="deal-grid">
 <tbody><tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlpbd48g2666hc18h01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9400f-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-pouter-rgb" title="Computador Pichau Gamer, i5-9400f, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, POUTER RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/u/puteriialrgb001.jpg" alt="Computador Pichau Gamer, i5-9400f, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, POUTER RGB">
 <div class="save-price">
-<div class="price">6%</div>
+<div class="price">5%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9400f-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-pouter-rgb" title="Computador Pichau Gamer, i5-9400f, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, POUTER RGB">Computador Pichau Gamer, i5-9400f, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, POUTER RGB</a>
 </h4>
 </td>
 </tr>
@@ -2681,25 +2697,25 @@ Categorias </label>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$328,42</strong>
-<span class="valor">10x de R$32,84</span>
+<strong class="regular-price">R$4.146,54</strong>
+<span class="valor">10x de R$414,65</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$289,01</span><br>
+<span class="valor">R$3.648,96</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
+ </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 189 item(s)!</h4>
+<h4 class="text-available">Apenas 47 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9400f-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-pouter-rgb">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9400f-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-pouter-rgb" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -2708,8 +2724,140 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/processador-intel-core-i3-9100-quad-core-3-6ghz-4-2ghz-turbo-6mb-cache-lga1151-bx80684i39100f" title="Processador Intel Core i3-9100F Quad-Core 3.6GHz (4.2GHz Turbo) 6MB Cache LGA1151, BX80684I39100F" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/x/bx80684i39100f1.jpg" alt="Processador Intel Core i3-9100F Quad-Core 3.6GHz (4.2GHz Turbo) 6MB Cache LGA1151, BX80684I39100F">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-amd-ryzen-5-3600-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon" title="Computador Pichau WorkStation, AMD Ryzen 5 3600, Quadro P1000, 8GB RAM, HD 2TB, SSD 480GB  , 500W, Dragoon" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/7/17280-01.jpg" alt="Computador Pichau WorkStation, AMD Ryzen 5 3600, Quadro P1000, 8GB RAM, HD 2TB, SSD 480GB  , 500W, Dragoon">
+<div class="save-price">
+<div class="price">15%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-amd-ryzen-5-3600-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon" title="Computador Pichau WorkStation, AMD Ryzen 5 3600, Quadro P1000, 8GB RAM, HD 2TB, SSD 480GB  , 500W, Dragoon">Computador Pichau WorkStation, AMD Ryzen 5 3600, Quadro P1000, 8GB RAM, HD 2TB, SSD 480GB , 500W, Dragoon</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$5.226,07</strong>
+<span class="valor">10x de R$522,61</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$4.598,94</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 4 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-workstation-amd-ryzen-5-3600-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-amd-ryzen-5-3600-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-pouter-2-rgb" title="Computador Pichau Gamer, Ryzen 5 3500X, RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Pouter 2 RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/o/pouter2rgb-amd-rx-01_3.jpg" alt="Computador Pichau Gamer, Ryzen 5 3500X, RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Pouter 2 RGB">
+<div class="save-price">
+<div class="price">13%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-pouter-2-rgb" title="Computador Pichau Gamer, Ryzen 5 3500X, RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Pouter 2 RGB">Computador Pichau Gamer, Ryzen 5 3500X, RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Pouter 2 RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$5.103,56</strong>
+<span class="valor">10x de R$510,36</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$4.491,13</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 12 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-pouter-2-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-pouter-2-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/intel/computador-pichau-workstation-intel-i5-9400f-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon-led" title="Computador Pichau WorkStation, Intel i5-9400F, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon led" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/w/o/workstation-intel-p1000-01.jpg" alt="Computador Pichau WorkStation, Intel i5-9400F, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon led">
+<div class="save-price">
+<div class="price">15%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/intel/computador-pichau-workstation-intel-i5-9400f-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon-led" title="Computador Pichau WorkStation, Intel i5-9400F, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon led">Computador Pichau WorkStation, Intel i5-9400F, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon led</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$3.977,21</strong>
+<span class="valor">10x de R$397,72</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$3.499,94</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 4 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/intel/computador-pichau-workstation-intel-i5-9400f-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon-led">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/intel/computador-pichau-workstation-intel-i5-9400f-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon-led" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" title="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/0/100-100000158box.jpg" alt="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX">
 <div class="save-price">
 <div class="price">10%</div>
 </div>
@@ -2717,33 +2865,33 @@ Detalhes </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/processador-intel-core-i3-9100-quad-core-3-6ghz-4-2ghz-turbo-6mb-cache-lga1151-bx80684i39100f" title="Processador Intel Core i3-9100F Quad-Core 3.6GHz (4.2GHz Turbo) 6MB Cache LGA1151, BX80684I39100F">Processador Intel Core i3-9100F Quad-Core 3.6GHz (4.2GHz Turbo) 6MB Cache LGA1151, BX80684I39100F</a>
+<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" title="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX">Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX</a>
 </h4>
 </td>
 </tr>
 <tr class="item">
 <td>
- <ul class="payment">
+<ul class="payment">
 <li class="other">
-<strong class="regular-price">R$510,24</strong>
-<span class="valor">10x de R$51,02</span>
+<strong class="regular-price">R$1.124,88</strong>
+<span class="valor">10x de R$112,49</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$449,01</span><br>
+<span class="valor">R$989,89</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 34 item(s)!</h4>
+<h4 class="text-available">Apenas 340 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/processador-intel-core-i3-9100-quad-core-3-6ghz-4-2ghz-turbo-6mb-cache-lga1151-bx80684i39100f">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/hardware/processador-intel-core-i3-9100-quad-core-3-6ghz-4-2ghz-turbo-6mb-cache-lga1151-bx80684i39100f" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -2752,8 +2900,272 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlpbd48g3200hc16c01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01">
+<a href="https://www.pichau.com.br/hardware/placa-de-video-asrock-radeon-rx-5700-xt-8gb-challenger-d-oc-256-bit-90-ga18zz-00uanz" title="Placa de Video ASRock Radeon RX 5700 XT 8GB Challenger D OC 256-BIT, 90-GA18ZZ-00UANZ" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/9/0/90-ga18zz-00uanz.jpg" alt="Placa de Video ASRock Radeon RX 5700 XT 8GB Challenger D OC 256-BIT, 90-GA18ZZ-00UANZ">
+ <div class="save-price">
+<div class="price">12%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/placa-de-video-asrock-radeon-rx-5700-xt-8gb-challenger-d-oc-256-bit-90-ga18zz-00uanz" title="Placa de Video ASRock Radeon RX 5700 XT 8GB Challenger D OC 256-BIT, 90-GA18ZZ-00UANZ">Placa de Video ASRock Radeon RX 5700 XT 8GB Challenger D OC 256-BIT, 90-GA18ZZ-00UANZ</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$2.499,99</strong>
+<span class="valor">10x de R$250,00</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$2.199,99</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 36 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/placa-de-video-asrock-radeon-rx-5700-xt-8gb-challenger-d-oc-256-bit-90-ga18zz-00uanz">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/placa-de-video-asrock-radeon-rx-5700-xt-8gb-challenger-d-oc-256-bit-90-ga18zz-00uanz" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i3-9100f-geforce-gtx-1660-super-6gb-8gb-ddr4-hd-1tb-500w-rostock" title="Computador Pichau Gamer, i3-9100F, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, ROSTOCK" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/o/rotocks01.jpg" alt="Computador Pichau Gamer, i3-9100F, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, ROSTOCK">
+<div class="save-price">
+<div class="price">4%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i3-9100f-geforce-gtx-1660-super-6gb-8gb-ddr4-hd-1tb-500w-rostock" title="Computador Pichau Gamer, i3-9100F, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, ROSTOCK">Computador Pichau Gamer, i3-9100F, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, ROSTOCK</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$3.521,55</strong>
+<span class="valor">10x de R$352,16</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$3.098,96</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 139 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i3-9100f-geforce-gtx-1660-super-6gb-8gb-ddr4-hd-1tb-500w-rostock">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i3-9100f-geforce-gtx-1660-super-6gb-8gb-ddr4-hd-1tb-500w-rostock" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3700x-quadro-p2000-16gb-ram-1tb-600w-dragoon" title="Computador Pichau WorkStation, AMD Ryzen 7 3700X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/1/11151-sfb.png" alt="Computador Pichau WorkStation, AMD Ryzen 7 3700X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon">
+<div class="save-price">
+<div class="price">15%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3700x-quadro-p2000-16gb-ram-1tb-600w-dragoon" title="Computador Pichau WorkStation, AMD Ryzen 7 3700X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon">Computador Pichau WorkStation, AMD Ryzen 7 3700X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$7.044,23</strong>
+<span class="valor">10x de R$704,42</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$6.198,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 10 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3700x-quadro-p2000-16gb-ram-1tb-600w-dragoon">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3700x-quadro-p2000-16gb-ram-1tb-600w-dragoon" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3800x-quadro-p2000-16gb-ram-1tb-600w-dragoon" title="Computador Pichau WorkStation, AMD Ryzen 7 3800X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/1/11759-ad.png" alt="Computador Pichau WorkStation, AMD Ryzen 7 3800X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon">
+<div class="save-price">
+<div class="price">14%</div>
+</div>
+</a>
+ </td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3800x-quadro-p2000-16gb-ram-1tb-600w-dragoon" title="Computador Pichau WorkStation, AMD Ryzen 7 3800X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon">Computador Pichau WorkStation, AMD Ryzen 7 3800X, Quadro P2000, 16GB RAM, HD 2TB + SSD 120, 600W, Dragoon</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$7.513,55</strong>
+<span class="valor">10x de R$751,36</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$6.611,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 3 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3800x-quadro-p2000-16gb-ram-1tb-600w-dragoon">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/corsair/computador-pichau-workstation-amd-ryzen-7-3800x-quadro-p2000-16gb-ram-1tb-600w-dragoon" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/placa-de-video-gigabyte-radeon-rx-5700-xt-8gb-gaming-oc-256-bit-gv-r57xtgaming-oc-8gd" title="Placa de Video Gigabyte Radeon RX 5700 XT 8GB Gaming OC 256-bit, GV-R57XTGAMING OC-8GD" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/g/v/gv-r57xtgaming-oc-8gd5.jpg" alt="Placa de Video Gigabyte Radeon RX 5700 XT 8GB Gaming OC 256-bit, GV-R57XTGAMING OC-8GD">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/placa-de-video-gigabyte-radeon-rx-5700-xt-8gb-gaming-oc-256-bit-gv-r57xtgaming-oc-8gd" title="Placa de Video Gigabyte Radeon RX 5700 XT 8GB Gaming OC 256-bit, GV-R57XTGAMING OC-8GD">Placa de Video Gigabyte Radeon RX 5700 XT 8GB Gaming OC 256-bit, GV-R57XTGAMING OC-8GD</a>
+</h4>
+</td>
+</tr>
+ <tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$2.499,99</strong>
+<span class="valor">10x de R$250,00</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$2.199,99</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 151 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/placa-de-video-gigabyte-radeon-rx-5700-xt-8gb-gaming-oc-256-bit-gv-r57xtgaming-oc-8gd">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/placa-de-video-gigabyte-radeon-rx-5700-xt-8gb-gaming-oc-256-bit-gv-r57xtgaming-oc-8gd" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-rostock" title="Computador Pichau Gamer, Ryzen 5 3500X, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, Rostock" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/g/a/gabinrostocka101.jpg" alt="Computador Pichau Gamer, Ryzen 5 3500X, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, Rostock">
+<div class="save-price">
+<div class="price">5%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-rostock" title="Computador Pichau Gamer, Ryzen 5 3500X, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, Rostock">Computador Pichau Gamer, Ryzen 5 3500X, GEFORCE GTX 1650 SUPER 4GB, 8GB DDR4, HD 1TB, 500W, Rostock</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$3.977,21</strong>
+<span class="valor">10x de R$397,72</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$3.499,94</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 44 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-rostock">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-ryzen-5-3500x-geforce-gtx-1650-super-4gb-8gb-ddr4-hd-1tb-500w-rostock" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-intel-i5-9400f-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon" title="Computador Pichau WorkStation, Intel i5-9400F, Quadro P1000, 8GB RAM, HD 2Tb, SSD 480GB, 500W, Dragoon" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/w/o/workstation-intel-p1000-01_1_1.jpg" alt="Computador Pichau WorkStation, Intel i5-9400F, Quadro P1000, 8GB RAM, HD 2Tb, SSD 480GB, 500W, Dragoon">
 <div class="save-price">
 <div class="price">11%</div>
 </div>
@@ -2761,7 +3173,7 @@ Detalhes </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-intel-i5-9400f-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon" title="Computador Pichau WorkStation, Intel i5-9400F, Quadro P1000, 8GB RAM, HD 2Tb, SSD 480GB, 500W, Dragoon">Computador Pichau WorkStation, Intel i5-9400F, Quadro P1000, 8GB RAM, HD 2Tb, SSD 480GB, 500W, Dragoon</a>
 </h4>
 </td>
 </tr>
@@ -2769,25 +3181,25 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$351,15</strong>
-<span class="valor">10x de R$35,12</span>
+<strong class="regular-price">R$5.191,98</strong>
+<span class="valor">10x de R$519,20</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$309,01</span><br>
+<span class="valor">R$4.568,94</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 197 item(s)!</h4>
-</td>
+<h4 class="text-available">Apenas 5 item(s)!</h4>
+ </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-workstation-intel-i5-9400f-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-intel-i5-9400f-quadro-p1000-8gb-ram-hd-2tb-ssd-512gb-500w-dragoon" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -2796,16 +3208,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide" title="Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" wide"="" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/i/m/imgmonitor19.5pol_2_1.jpg" alt="Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" wide"="">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-spec-omega" title="Computador Pichau Gamer, I5-9600KF, Radeon RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Dragon R" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/x/rxid01_2_4_1.jpg" alt="Computador Pichau Gamer, I5-9600KF, Radeon RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Dragon R">
 <div class="save-price">
-<div class="price">0%</div>
+<div class="price">5%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide" title="Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" wide"="">Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" Wide</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-spec-omega" title="Computador Pichau Gamer, I5-9600KF, Radeon RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Dragon R">Computador Pichau Gamer, I5-9600KF, Radeon RX 5700 XT 8GB, 8GB DDR4, HD 1Tb, 600w, Dragon R</a>
 </h4>
 </td>
 </tr>
@@ -2813,24 +3225,25 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$1.706,93</strong>
-<span class="valor">10x de R$170,69</span>
+<strong class="regular-price">R$6.250,00</strong>
+<span class="valor">10x de R$625,00</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$1.502,10</span><br>
+<span class="valor">R$5.500,00</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
+<h4 class="text-available">Apenas 20 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-spec-omega">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide" class="more-details bt-list-product">
+ <a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5700-xt-8gb-8gb-ddr4-hd-1tb-600w-spec-omega" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -2839,16 +3252,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk" title="Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/a/dasc501bk-1_6.jpg" alt="Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-ryzen-5-3500x-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon" title="Computador Pichau WorkStation, Ryzen 5 3500X, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/3/5/3500x-p620-new.jpg" alt="Computador Pichau WorkStation, Ryzen 5 3500X, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon">
 <div class="save-price">
-<div class="price">0%</div>
+<div class="price">13%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk" title="Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK">Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-ryzen-5-3500x-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon" title="Computador Pichau WorkStation, Ryzen 5 3500X, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon">Computador Pichau WorkStation, Ryzen 5 3500X, Quadro P620, 8GB RAM, HD 2TB + SSD 120, 500W, Dragoon</a>
 </h4>
 </td>
 </tr>
@@ -2856,24 +3269,25 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$1.102,16</strong>
-<span class="valor">10x de R$110,22</span>
+<strong class="regular-price">R$3.903,36</strong>
+<span class="valor">10x de R$390,34</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$969,90</span><br>
+<span class="valor">R$3.434,96</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
+<h4 class="text-available">Apenas 20 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-workstation-ryzen-5-3500x-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-workstation-ryzen-5-3500x-quadro-p620-8gb-ram-hd-2tb-ssd-120-500w-dragoon" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -2882,16 +3296,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat" title="Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-combat-ammd-01_1_5.jpg" alt="Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5600-xt-6gb-pulse-8gb-ddr4-hd-1tb-500w-archangel" title="Computador Pichau Gamer, I5-9600KF, Radeon RX 5600 XT 6GB Pulse, 8GB DDR4, HD 1Tb, 500w, Water 120mm, Frillback RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/f/r/frillback-gtx_1.jpg" alt="Computador Pichau Gamer, I5-9600KF, Radeon RX 5600 XT 6GB Pulse, 8GB DDR4, HD 1Tb, 500w, Water 120mm, Frillback RGB">
 <div class="save-price">
-<div class="price">0%</div>
+<div class="price">4%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat" title="Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat">Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5600-xt-6gb-pulse-8gb-ddr4-hd-1tb-500w-archangel" title="Computador Pichau Gamer, I5-9600KF, Radeon RX 5600 XT 6GB Pulse, 8GB DDR4, HD 1Tb, 500w, Water 120mm, Frillback RGB">Computador Pichau Gamer, I5-9600KF, Radeon RX 5600 XT 6GB Pulse, 8GB DDR4, HD 1Tb, 500w, Water 120mm, Frillback RGB</a>
 </h4>
 </td>
 </tr>
@@ -2899,24 +3313,25 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$2.249,88</strong>
-<span class="valor">10x de R$224,99</span>
+<strong class="regular-price">R$5.566,98</strong>
+<span class="valor">10x de R$556,70</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$1.979,89</span><br>
+<span class="valor">R$4.898,94</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
+<h4 class="text-available">Apenas 19 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5600-xt-6gb-pulse-8gb-ddr4-hd-1tb-500w-archangel">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-gamer-i5-9600kf-radeon-rx-5600-xt-6gb-pulse-8gb-ddr4-hd-1tb-500w-archangel" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3054,50 +3469,6 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" title="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/0/100-100000158box.jpg" alt="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX">
-<div class="save-price">
-<div class="price">10%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" title="Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX">Processador AMD Ryzen 5 3500X Hexa-Core 3.6GHz (4.1GHz Turbo) 35MB Cache AM4, 100-100000158BOX</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$1.124,88</strong>
-<span class="valor">10x de R$112,49</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$989,89</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 5 item(s)!</h4>
- </td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-5-3500x-hexa-core-3-6ghz-4-1ghz-turbo-35mb-cache-am4-100-100000158box" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
 <a href="https://www.pichau.com.br/intel/computador-pichau-home-express-g4930-8gb-ddr4-ssd-128gb-500w-sc501bk" title="Computador Pichau Home Express, G4930, 8GB DDR4, SSD 128GB, 500W, SC501BK" class="product-image">
 <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/c/sc501bk-1_1_1_1.jpg" alt="Computador Pichau Home Express, G4930, 8GB DDR4, SSD 128GB, 500W, SC501BK">
 <div class="save-price">
@@ -3182,7 +3553,7 @@ Detalhes </a>
 </td>
 
 </tr>
-<tr class="item">
+ <tr class="item">
 <td rowspan="2">
 <a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i5-9400f-geforce-gt-710-1gb-8gb-ddr4-ssd-256gb-500w-tgt-combat-1" title="Computador Pichau Home Express, i5-9400F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, SC501BK" class="product-image">
 <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/c/sc501bk-1_9.jpg" alt="Computador Pichau Home Express, i5-9400F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, SC501BK">
@@ -3219,6 +3590,94 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i5-9400f-geforce-gt-710-1gb-8gb-ddr4-ssd-256gb-500w-tgt-combat-1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3900x-12-cores-3-8ghz-4-6ghz-turbo-70mb-cache-am4-100-100000023box" title="Processador AMD Ryzen 9 3900X 12 Cores 3.8GHz (4.6GHz Turbo) 70MB Cache AM4, 100-100000023BOX" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/y/ryzen-9-3900x.jpg" alt="Processador AMD Ryzen 9 3900X 12 Cores 3.8GHz (4.6GHz Turbo) 70MB Cache AM4, 100-100000023BOX">
+<div class="save-price">
+<div class="price">5%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3900x-12-cores-3-8ghz-4-6ghz-turbo-70mb-cache-am4-100-100000023box" title="Processador AMD Ryzen 9 3900X 12 Cores 3.8GHz (4.6GHz Turbo) 70MB Cache AM4, 100-100000023BOX">Processador AMD Ryzen 9 3900X 12 Cores 3.8GHz (4.6GHz Turbo) 70MB Cache AM4, 100-100000023BOX</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$3.521,70</strong>
+<span class="valor">10x de R$352,17</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$3.099,10</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 18 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3900x-12-cores-3-8ghz-4-6ghz-turbo-70mb-cache-am4-100-100000023box">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3900x-12-cores-3-8ghz-4-6ghz-turbo-70mb-cache-am4-100-100000023box" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlpbd48g2666hc18h01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666MHz Branca, TLPBD48G2666HC18H01</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$328,42</strong>
+<span class="valor">10x de R$32,84</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$289,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 363 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-branca-tlpbd48g2666hc18h01" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3270,6 +3729,50 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x" title="SSD Pichau Gaming 256GB 2.5" sata="" 6gb="" s,="" pg256x"="" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg256x1.jpg" alt="SSD Pichau Gaming 256GB 2.5" sata="" 6gb="" s,="" pg256x"="">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x" title="SSD Pichau Gaming 256GB 2.5" sata="" 6gb="" s,="" pg256x"="">SSD Pichau Gaming 256GB 2.5" Sata 6GB/s, PG256X</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$306,71</strong>
+<span class="valor">10x de R$30,67</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$269,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 240 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
 <a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-ryzen-3-3200g-8gb-ddr4-ssd-256gb-500w-tgt-combat-1" title="Computador Pichau Home Express, Ryzen 3 3200G, 8GB DDR4, SSD 128Gb, 500W, TGT Combat" class="product-image">
 <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgtcombatpreto01_gabinsgpu_6.jpg" alt="Computador Pichau Home Express, Ryzen 3 3200G, 8GB DDR4, SSD 128Gb, 500W, TGT Combat">
 <div class="save-price">
@@ -3311,18 +3814,18 @@ Detalhes </a>
 </td>
 
 </tr>
-<tr class="item">
+ <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/aoc/monitor-gamer-aoc-sniper-24-led-1ms-75hz-fhd-freesync-hdmi-vga-dp-g2460vq6" title="Monitor Gamer AOC Sniper 24" led="" 1ms="" 75hz="" fhd="" freesync="" hdmi="" vga="" dp,="" g2460vq6"="" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/g/2/g2460vq6321322.jpg" alt="Monitor Gamer AOC Sniper 24" led="" 1ms="" 75hz="" fhd="" freesync="" hdmi="" vga="" dp,="" g2460vq6"="">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide" title="Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" wide"="" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/i/m/imgmonitor19.5pol_2_1.jpg" alt="Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" wide"="">
 <div class="save-price">
-<div class="price">4%</div>
+<div class="price">0%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/aoc/monitor-gamer-aoc-sniper-24-led-1ms-75hz-fhd-freesync-hdmi-vga-dp-g2460vq6" title="Monitor Gamer AOC Sniper 24" led="" 1ms="" 75hz="" fhd="" freesync="" hdmi="" vga="" dp,="" g2460vq6"="">Monitor Gamer AOC Sniper 24" LED 1ms 75hz FHD FreeSync HDMI/VGA/DP, G2460VQ6</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide" title="Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" wide"="">Computador Pichau Home Express, AMD APU A6-9500 3.5GHZ, 8GB DDR4, HD 1TB, 500W, SC501BK + Monitor 19.5" Wide</a>
 </h4>
 </td>
 </tr>
@@ -3330,25 +3833,24 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$862,50</strong>
-<span class="valor">10x de R$86,25</span>
+<strong class="regular-price">R$2.158,97</strong>
+<span class="valor">10x de R$215,90</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$759,00</span><br>
+<span class="valor">R$1.899,89</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 44 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/aoc/monitor-gamer-aoc-sniper-24-led-1ms-75hz-fhd-freesync-hdmi-vga-dp-g2460vq6">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/aoc/monitor-gamer-aoc-sniper-24-led-1ms-75hz-fhd-freesync-hdmi-vga-dp-g2460vq6" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-amd-apu-a6-9500-3-5ghz-8gb-ddr4-hd-1tb-500w-sc501bk-monitor-19-5-wide" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3357,16 +3859,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f" title="Monitor Gamer Gigabyte Aorus CV27F 27" led="" 1ms="" 165hz="" fhd="" freesync2="" hdmi="" dp,="" aorus="" cv27f"="" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/a/o/aorus-cv27f.jpg" alt="Monitor Gamer Gigabyte Aorus CV27F 27" led="" 1ms="" 165hz="" fhd="" freesync2="" hdmi="" dp,="" aorus="" cv27f"="">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk" title="Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/a/dasc501bk-1_6.jpg" alt="Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK">
 <div class="save-price">
-<div class="price">6%</div>
+<div class="price">0%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f" title="Monitor Gamer Gigabyte Aorus CV27F 27" led="" 1ms="" 165hz="" fhd="" freesync2="" hdmi="" dp,="" aorus="" cv27f"="">Monitor Gamer Gigabyte Aorus CV27F 27" LED 1ms 165Hz FHD FreeSync2 HDMI/DP, AORUS CV27F</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk" title="Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK">Computador Pichau Home Express, Celeron J1800 Dual-core, 8GB DDR3, HD 1TB, 200W, SC501BK</a>
 </h4>
 </td>
 </tr>
@@ -3374,25 +3876,24 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$3.408,01</strong>
-<span class="valor">10x de R$340,80</span>
+<strong class="regular-price">R$1.102,16</strong>
+<span class="valor">10x de R$110,22</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$2.999,05</span><br>
+<span class="valor">R$969,90</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 6 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-celeron-j1800-dual-core-4gb-ddr3-hd-1tb-500w-fortrek-sc-501bk" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3401,16 +3902,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd" title="Monitor Gamer Samsung 24" sd332="" 75hz="" 1ms,="" ls24d332hsxzd"="" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/l/s/ls24d332hsxzd.jpg" alt="Monitor Gamer Samsung 24" sd332="" 75hz="" 1ms,="" ls24d332hsxzd"="">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat" title="Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-combat-ammd-01_1_5.jpg" alt="Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat">
 <div class="save-price">
-<div class="price">6%</div>
+<div class="price">0%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd" title="Monitor Gamer Samsung 24" sd332="" 75hz="" 1ms,="" ls24d332hsxzd"="">Monitor Gamer Samsung 24" SD332 75Hz 1ms, LS24D332HSXZD</a>
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat" title="Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat">Computador Pichau Home Express, i3-9100F, GeForce GT 710 1GB, 8GB DDR4, SSD 128GB, 500W, TGT Combat</a>
 </h4>
 </td>
 </tr>
@@ -3418,25 +3919,68 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$748,88</strong>
-<span class="valor">10x de R$74,89</span>
+<strong class="regular-price">R$2.249,88</strong>
+<span class="valor">10x de R$224,99</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$659,01</span><br>
+<span class="valor">R$1.979,89</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 18 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/computadores/computador-pichau-home-express-i3-9100f-geforce-gt-710-1gb-4gb-ddr4-hd-1tb-500w-tgt-combat" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-preta-cmk8gx4m1a2666c16" title="Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Preta, CMK8GX4M1A2666C16" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/c/m/cmk8gx4m1a2666c16.jpg" alt="Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Preta, CMK8GX4M1A2666C16">
+<div class="save-price">
+<div class="price">15%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-preta-cmk8gx4m1a2666c16" title="Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Preta, CMK8GX4M1A2666C16">Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Preta, CMK8GX4M1A2666C16</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$328,42</strong>
+<span class="valor">10x de R$32,84</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+ <span class="valor">R$289,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 115 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-preta-cmk8gx4m1a2666c16">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-preta-cmk8gx4m1a2666c16" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3473,14 +4017,234 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 33 item(s)!</h4>
+<h4 class="text-available">Apenas 29 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3950x-16-core-3-5ghz-4-7ghz-turbo-73mb-cache-am4-100-000000051">
+ <a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3950x-16-core-3-5ghz-4-7ghz-turbo-73mb-cache-am4-100-000000051">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/hardware/processador-amd-ryzen-9-3950x-16-core-3-5ghz-4-7ghz-turbo-73mb-cache-am4-100-000000051" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-vermelha-tlprd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666Mhz Vermelha, TLPRD48G2666HC18H01" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlprd48g2666hc18h013212.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666Mhz Vermelha, TLPRD48G2666HC18H01">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-vermelha-tlprd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666Mhz Vermelha, TLPRD48G2666HC18H01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 2666Mhz Vermelha, TLPRD48G2666HC18H01</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$328,42</strong>
+<span class="valor">10x de R$32,84</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$289,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 372 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-vermelha-tlprd48g2666hc18h01">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-2666mhz-vermelha-tlprd48g2666hc18h01" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ssd-wd-green-240gb-2-5-sata-iii-6gb-s-wds240g2g0a" title="SSD WD Green 240GB 2.5" sata="" iii="" 6gb="" s,="" wds240g2g0a"="" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/w/d/wds240g2g0a_1.jpg" alt="SSD WD Green 240GB 2.5" sata="" iii="" 6gb="" s,="" wds240g2g0a"="">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ssd-wd-green-240gb-2-5-sata-iii-6gb-s-wds240g2g0a" title="SSD WD Green 240GB 2.5" sata="" iii="" 6gb="" s,="" wds240g2g0a"="">SSD WD Green 240GB 2.5" Sata III 6GB/s, WDS240G2G0A</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$294,32</strong>
+<span class="valor">10x de R$29,43</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$259,00</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 71 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ssd-wd-green-240gb-2-5-sata-iii-6gb-s-wds240g2g0a">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ssd-wd-green-240gb-2-5-sata-iii-6gb-s-wds240g2g0a" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-red-cmk8gx4m1a2666c16r" title="Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Vermelho, CMK8GX4M1A2666C16R" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/c/m/cmk8gx4m1a2666c16r1.jpg" alt="Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Vermelho, CMK8GX4M1A2666C16R">
+<div class="save-price">
+<div class="price">17%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-red-cmk8gx4m1a2666c16r" title="Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Vermelho, CMK8GX4M1A2666C16R">Memoria Corsair Vengeance LPX 8GB (1x8) DDR4 2666MHz Vermelho, CMK8GX4M1A2666C16R</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$328,42</strong>
+<span class="valor">10x de R$32,84</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$289,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 272 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-red-cmk8gx4m1a2666c16r">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/corsair/memoria-corsair-vengeance-lpx-8gb-2666mhz-ddr4-red-cmk8gx4m1a2666c16r" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f" title="Monitor Gamer Gigabyte Aorus CV27F 27" led="" 1ms="" 165hz="" fhd="" freesync2="" hdmi="" dp,="" aorus="" cv27f"="" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/a/o/aorus-cv27f.jpg" alt="Monitor Gamer Gigabyte Aorus CV27F 27" led="" 1ms="" 165hz="" fhd="" freesync2="" hdmi="" dp,="" aorus="" cv27f"="">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f" title="Monitor Gamer Gigabyte Aorus CV27F 27" led="" 1ms="" 165hz="" fhd="" freesync2="" hdmi="" dp,="" aorus="" cv27f"="">Monitor Gamer Gigabyte Aorus CV27F 27" LED 1ms 165Hz FHD FreeSync2 HDMI/DP, AORUS CV27F</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$3.408,01</strong>
+<span class="valor">10x de R$340,80</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$2.999,05</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 5 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/monitores/monitor-gamer-gigabyte-aorus-cv27f-27-led-1ms-165hz-fhd-freesync2-hdmi-dp-aorus-cv27f" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/teclab/ssd-kingston-a400-240gb-sata-3-2-5-sa400s37-240g" title="SSD Kingston A400  240GB SATA 3 2.5, SA400S37/240G" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/a/sa400s37240g.jpg" alt="SSD Kingston A400  240GB SATA 3 2.5, SA400S37/240G">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/teclab/ssd-kingston-a400-240gb-sata-3-2-5-sa400s37-240g" title="SSD Kingston A400  240GB SATA 3 2.5, SA400S37/240G">SSD Kingston A400 240GB SATA 3 2.5, SA400S37/240G</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$305,69</strong>
+<span class="valor">10x de R$30,57</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$269,01</span><br>
+ <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 207 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/teclab/ssd-kingston-a400-240gb-sata-3-2-5-sa400s37-240g">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/teclab/ssd-kingston-a400-240gb-sata-3-2-5-sa400s37-240g" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3517,278 +4281,14 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 172 item(s)!</h4>
+<h4 class="text-available">Apenas 232 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
 <a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-gamer-msi-interceptor-ds-b1-1600dpi-us-preto-msi-ds-b1">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
+Comprar  </a>
 <a href="https://www.pichau.com.br/perifericos/mouse-gamer-msi-interceptor-ds-b1-1600dpi-us-preto-msi-ds-b1" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlprd48g3200hc16c01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01">
-<div class="save-price">
-<div class="price">11%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$351,15</strong>
-<span class="valor">10x de R$35,12</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$309,01</span><br>
- <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 164 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c" title="SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/a/g/agammixs11p-256gt-c1.jpg" alt="SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C">
-<div class="save-price">
-<div class="price">12%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c" title="SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C">SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$567,06</strong>
-<span class="valor">10x de R$56,71</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$499,01</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 71 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c">
- <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501" title="Headset Gamer MSI DS501 Preto/Vermelho, DS501" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/s/ds5013.jpg" alt="Headset Gamer MSI DS501 Preto/Vermelho, DS501">
-<div class="save-price">
-<div class="price">54%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501" title="Headset Gamer MSI DS501 Preto/Vermelho, DS501">Headset Gamer MSI DS501 Preto/Vermelho, DS501</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$68,07</strong>
-<span class="valor">6x de R$11,35</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$59,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 37 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlzrd432g3200hc16cdc013_1.jpg" alt="Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01">
-<div class="save-price">
-<div class="price">6%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01">Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$328,42</strong>
-<span class="valor">10x de R$32,84</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$289,01</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 223 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x" title="SSD Pichau Gaming 256GB 2.5" sata="" 6gb="" s,="" pg256x"="" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg256x1.jpg" alt="SSD Pichau Gaming 256GB 2.5" sata="" 6gb="" s,="" pg256x"="">
-<div class="save-price">
-<div class="price">10%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
- <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x" title="SSD Pichau Gaming 256GB 2.5" sata="" 6gb="" s,="" pg256x"="">SSD Pichau Gaming 256GB 2.5" Sata 6GB/s, PG256X</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$306,71</strong>
-<span class="valor">10x de R$30,67</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$269,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 21 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/ssd-pichau-gaming-256gb-2-5-sata-6gb-s-pg256x" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1" title="Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/z/rz04-02051100-r3u11.jpg" alt="Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1">
-<div class="save-price">
-<div class="price">8%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1" title="Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1">Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$624,89</strong>
-<span class="valor">10x de R$62,49</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$549,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 92 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3825,7 +4325,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 29 item(s)!</h4>
+<h4 class="text-available">Apenas 30 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -3841,16 +4341,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1" title="Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/z/rz01-02650100-r3m13.jpg" alt="Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlpbd48g3200hc16c01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01">
 <div class="save-price">
-<div class="price">14%</div>
+<div class="price">11%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1" title="Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1">Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1</a>
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200MHz Branca, TLPBD48G3200HC16C01</a>
 </h4>
 </td>
 </tr>
@@ -3858,12 +4358,408 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$340,80</strong>
-<span class="valor">10x de R$34,08</span>
+<strong class="regular-price">R$351,15</strong>
+<span class="valor">10x de R$35,12</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$299,90</span><br>
+<span class="valor">R$309,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 379 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-branca-tlpbd48g3200hc16c01" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501" title="Headset Gamer MSI DS501 Preto/Vermelho, DS501" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/s/ds5013.jpg" alt="Headset Gamer MSI DS501 Preto/Vermelho, DS501">
+<div class="save-price">
+<div class="price">54%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501" title="Headset Gamer MSI DS501 Preto/Vermelho, DS501">Headset Gamer MSI DS501 Preto/Vermelho, DS501</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$68,07</strong>
+<span class="valor">6x de R$11,35</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$59,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 60 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/headset-gamer-msi-ds501-preto-vermelho-ds501" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlprd48g3200hc16c01.jpg" alt="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01">
+<div class="save-price">
+<div class="price">11%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01" title="Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01">Memoria Team Group T-Force Vulcan Pichau 8GB (1x8) DDR4 3200Mhz Vermelha, TLPRD48G3200HC16C01</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$351,15</strong>
+ <span class="valor">10x de R$35,12</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$309,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 373 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-pichau-8gb-1x8-ddr4-3200mhz-vermelha-tlprd48g3200hc16c01" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1" title="Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/z/rz04-02051100-r3u11.jpg" alt="Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1">
+<div class="save-price">
+<div class="price">8%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1" title="Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1">Headset Gamer Razer KRAKEN Tournament Edition Verde, RZ04-02051100-R3U1</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$624,89</strong>
+<span class="valor">10x de R$62,49</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$549,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 80 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/razer/headset-gamer-razer-kranen-tournament-edition-verde-rz04-02051100-r3u1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c" title="SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/a/g/agammixs11p-256gt-c1.jpg" alt="SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C">
+<div class="save-price">
+<div class="price">12%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c" title="SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C">SSD Adata XPG GAMMIX S11 Pro 256GB M.2 2280 NVMe, AGAMMIXS11P-256GT-C</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$567,06</strong>
+<span class="valor">10x de R$56,71</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$499,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 48 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ssd-adata-xpg-gammix-s11-pro-256gb-m-2-2280-nvme-agammixs11p-256gt-c" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/l/tlzrd432g3200hc16cdc013_1.jpg" alt="Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01" title="Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01">Memoria Team Group T-Force Vulcan Z 8GB (1x8) DDR4 2666MHz Vermelha, TLZRD48G2666HC18H01</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$328,42</strong>
+<span class="valor">10x de R$32,84</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$289,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 280 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/memoria-team-group-t-force-vulcan-z-8gb-1x8-ddr4-2666mhz-vermelha-tlzrd48g2666hc18h01" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-gamer-pichau-lark-vidro-temp-preto-pg-lk-01" title="Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-lk-012324.jpg" alt="Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01">
+<div class="save-price">
+<div class="price">7%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-gamer-pichau-lark-vidro-temp-preto-pg-lk-01" title="Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01">Gabinete Gamer Pichau Lark Vidro Temp Preto, PG-LK-01</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$295,34</strong>
+<span class="valor">10x de R$29,53</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$259,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 194 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-gamer-pichau-lark-vidro-temp-preto-pg-lk-01">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-gamer-pichau-lark-vidro-temp-preto-pg-lk-01" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd" title="Monitor Gamer Samsung 24" sd332="" 75hz="" 1ms,="" ls24d332hsxzd"="" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/l/s/ls24d332hsxzd.jpg" alt="Monitor Gamer Samsung 24" sd332="" 75hz="" 1ms,="" ls24d332hsxzd"="">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd" title="Monitor Gamer Samsung 24" sd332="" 75hz="" 1ms,="" ls24d332hsxzd"="">Monitor Gamer Samsung 24" SD332 75Hz 1ms, LS24D332HSXZD</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$748,88</strong>
+<span class="valor">10x de R$74,89</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$659,01</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 26 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/monitor-gamer-samsung-24-sd332-75hz-1ms-ls24d332hsxzd" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p301-rgb-4000dpi-preto-pgm-p301-rgb" title="Mouse Gamer Pichau P301 RGB 4000DPI Preto, PGM-P301-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgm-p301-rgb210123.jpg" alt="Mouse Gamer Pichau P301 RGB 4000DPI Preto, PGM-P301-RGB">
+<div class="save-price">
+<div class="price">30%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p301-rgb-4000dpi-preto-pgm-p301-rgb" title="Mouse Gamer Pichau P301 RGB 4000DPI Preto, PGM-P301-RGB">Mouse Gamer Pichau P301 RGB 4000DPI Preto, PGM-P301-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$79,43</strong>
+<span class="valor">7x de R$11,35</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$69,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+ </li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 83 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p301-rgb-4000dpi-preto-pgm-p301-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p301-rgb-4000dpi-preto-pgm-p301-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120rgb-led-rgb-pgw120-rgb" title="Ventoinha Pichau Gaming Wave 120RGB Led RGB, PGW120-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgw120-rgb1.jpg" alt="Ventoinha Pichau Gaming Wave 120RGB Led RGB, PGW120-RGB">
+<div class="save-price">
+<div class="price">17%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120rgb-led-rgb-pgw120-rgb" title="Ventoinha Pichau Gaming Wave 120RGB Led RGB, PGW120-RGB">Ventoinha Pichau Gaming Wave 120RGB Led RGB, PGW120-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$28,30</strong>
+<span class="valor">2x de R$14,15</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$24,90</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
@@ -3873,10 +4769,10 @@ Detalhes </a>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120rgb-led-rgb-pgw120-rgb">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120rgb-led-rgb-pgw120-rgb" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -3913,7 +4809,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 3 item(s)!</h4>
+<h4 class="text-available">Apenas 1 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -3923,6 +4819,402 @@ Comprar </a>
 <a href="https://www.pichau.com.br/razer/mouse-razer-lancehead-chroma-16-000dpi-wireless-rz01-02120100-r3u1" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-branca-by-8146-white" title="Cadeira Gamer Pichau Gallati Branca, BY-8146-WHITE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8146-white.jpg" alt="Cadeira Gamer Pichau Gallati Branca, BY-8146-WHITE">
+<div class="save-price">
+<div class="price">30%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-branca-by-8146-white" title="Cadeira Gamer Pichau Gallati Branca, BY-8146-WHITE">Cadeira Gamer Pichau Gallati Branca, BY-8146-WHITE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$795,37</strong>
+<span class="valor">10x de R$79,54</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$699,93</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 39 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-branca-by-8146-white">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-branca-by-8146-white" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p421-rgb-rainbow-pgk-p421-rgb" title="Teclado Gamer Pichau P421 RGB Rainbow, PGK-P421-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgk-p421-rgb321.jpg" alt="Teclado Gamer Pichau P421 RGB Rainbow, PGK-P421-RGB">
+<div class="save-price">
+<div class="price">30%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p421-rgb-rainbow-pgk-p421-rgb" title="Teclado Gamer Pichau P421 RGB Rainbow, PGK-P421-RGB">Teclado Gamer Pichau P421 RGB Rainbow, PGK-P421-RGB</a>
+</h4>
+</td>
+</tr>
+ <tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$63,52</strong>
+<span class="valor">6x de R$10,59</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$55,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 58 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p421-rgb-rainbow-pgk-p421-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p421-rgb-rainbow-pgk-p421-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-vermelho-pgfea-red" title="Ventoinha Pichau Gaming Feather 120mm Vermelho, PGFEA-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgfea-red_1.jpg" alt="Ventoinha Pichau Gaming Feather 120mm Vermelho, PGFEA-RED">
+<div class="save-price">
+<div class="price">9%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-vermelho-pgfea-red" title="Ventoinha Pichau Gaming Feather 120mm Vermelho, PGFEA-RED">Ventoinha Pichau Gaming Feather 120mm Vermelho, PGFEA-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$22,61</strong>
+<span class="valor">2x de R$11,31</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$19,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 72 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-vermelho-pgfea-red">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-vermelho-pgfea-red" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-vermelha-pg-dnkii-red" title="Cadeira Gamer Pichau Donek II Vermelha, PG-DNKII-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-dnkii-red.jpg" alt="Cadeira Gamer Pichau Donek II Vermelha, PG-DNKII-RED">
+<div class="save-price">
+<div class="price">13%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-vermelha-pg-dnkii-red" title="Cadeira Gamer Pichau Donek II Vermelha, PG-DNKII-RED">Cadeira Gamer Pichau Donek II Vermelha, PG-DNKII-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$988,55</strong>
+<span class="valor">10x de R$98,86</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$869,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 44 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-vermelha-pg-dnkii-red">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-vermelha-pg-dnkii-red" class="more-details bt-list-product">
+ <i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-verde-pg-fx120-green" title="Ventoinha Pichau Gaming Feather X Led Verde, PG-FX120-GREEN" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-fx120-green.jpg" alt="Ventoinha Pichau Gaming Feather X Led Verde, PG-FX120-GREEN">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-verde-pg-fx120-green" title="Ventoinha Pichau Gaming Feather X Led Verde, PG-FX120-GREEN">Ventoinha Pichau Gaming Feather X Led Verde, PG-FX120-GREEN</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$30,57</strong>
+<span class="valor">3x de R$10,19</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$26,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 99 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-verde-pg-fx120-green">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-verde-pg-fx120-green" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-verde-by-8179-verde" title="Cadeira Gamer Pichau Fantail Verde, BY-8179-VERDE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8179-verdez2121.jpg" alt="Cadeira Gamer Pichau Fantail Verde, BY-8179-VERDE">
+ <div class="save-price">
+<div class="price">23%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-verde-by-8179-verde" title="Cadeira Gamer Pichau Fantail Verde, BY-8179-VERDE">Cadeira Gamer Pichau Fantail Verde, BY-8179-VERDE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$874,91</strong>
+<span class="valor">10x de R$87,49</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$769,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 36 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-verde-by-8179-verde">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-verde-by-8179-verde" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-branco-pg-fx120-white" title="Ventoinha Pichau Gaming Feather X Led Branco, PG-FX120-WHITE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-fx120-white.jpg" alt="Ventoinha Pichau Gaming Feather X Led Branco, PG-FX120-WHITE">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-branco-pg-fx120-white" title="Ventoinha Pichau Gaming Feather X Led Branco, PG-FX120-WHITE">Ventoinha Pichau Gaming Feather X Led Branco, PG-FX120-WHITE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+ <strong class="regular-price">R$30,57</strong>
+<span class="valor">3x de R$10,19</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$26,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 92 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-branco-pg-fx120-white">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-branco-pg-fx120-white" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/novidades/suporte-para-headset-pichau-pgs-100-rgb-hub-usb3-0-pgs-100-rgb" title="Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgs-100-rgb.jpg" alt="Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB">
+<div class="save-price">
+<div class="price">24%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/novidades/suporte-para-headset-pichau-pgs-100-rgb-hub-usb3-0-pgs-100-rgb" title="Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB">Suporte para Headset Pichau PGS 100 RGB HUB USB3.0, PGS-100-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$147,62</strong>
+<span class="valor">10x de R$14,76</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$129,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 85 item(s)!</h4>
+ </td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/novidades/suporte-para-headset-pichau-pgs-100-rgb-hub-usb3-0-pgs-100-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/novidades/suporte-para-headset-pichau-pgs-100-rgb-hub-usb3-0-pgs-100-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p501-rgb-10000dpi-preto-pgm-p501-rgb" title="Mouse Gamer Pichau P501 RGB 10000DPI Preto, PGM-P501-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgm-p501-rgb.jpg" alt="Mouse Gamer Pichau P501 RGB 10000DPI Preto, PGM-P501-RGB">
+<div class="save-price">
+<div class="price">31%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p501-rgb-10000dpi-preto-pgm-p501-rgb" title="Mouse Gamer Pichau P501 RGB 10000DPI Preto, PGM-P501-RGB">Mouse Gamer Pichau P501 RGB 10000DPI Preto, PGM-P501-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$102,16</strong>
+<span class="valor">10x de R$10,22</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$89,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 90 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p501-rgb-10000dpi-preto-pgm-p501-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/mouse-gamer-pichau-p501-rgb-10000dpi-preto-pgm-p501-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+ Detalhes </a>
 </div>
 </td>
 
@@ -3957,7 +5249,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 25 item(s)!</h4>
+<h4 class="text-available">Apenas 24 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -3973,16 +5265,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-abyssus-2000dpi-goliathus-control-fissure-rz83-02020200-b3u1" title="Mouse Gamer Razer Abyssus 2000DPI + Goliathus Control Fissure, RZ83-02020200-B3U1" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/z/rz83-02020200-b3u1_2.jpg" alt="Mouse Gamer Razer Abyssus 2000DPI + Goliathus Control Fissure, RZ83-02020200-B3U1">
+<a href="https://www.pichau.com.br/hardware/cooler-para-processador-pichau-gaming-sparrow-rgb-rainbow-pgspa-01-rgb" title="Cooler para Processador Pichau Gaming Sparrow RGB Rainbow, PGSPA-01-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgspa-01-rgb4.jpg" alt="Cooler para Processador Pichau Gaming Sparrow RGB Rainbow, PGSPA-01-RGB">
 <div class="save-price">
-<div class="price">15%</div>
+<div class="price">25%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-abyssus-2000dpi-goliathus-control-fissure-rz83-02020200-b3u1" title="Mouse Gamer Razer Abyssus 2000DPI + Goliathus Control Fissure, RZ83-02020200-B3U1">Mouse Gamer Razer Abyssus 2000DPI + Goliathus Control Fissure, RZ83-02020200-B3U1</a>
+<a href="https://www.pichau.com.br/hardware/cooler-para-processador-pichau-gaming-sparrow-rgb-rainbow-pgspa-01-rgb" title="Cooler para Processador Pichau Gaming Sparrow RGB Rainbow, PGSPA-01-RGB">Cooler para Processador Pichau Gaming Sparrow RGB Rainbow, PGSPA-01-RGB</a>
 </h4>
 </td>
 </tr>
@@ -3990,25 +5282,1389 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$193,07</strong>
-<span class="valor">10x de R$19,31</span>
+<strong class="regular-price">R$33,98</strong>
+<span class="valor">3x de R$11,33</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$169,90</span><br>
+<span class="valor">R$29,90</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 3 item(s)!</h4>
+<h4 class="text-available">Apenas 60 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/razer/mouse-gamer-razer-abyssus-2000dpi-goliathus-control-fissure-rz83-02020200-b3u1">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/cooler-para-processador-pichau-gaming-sparrow-rgb-rainbow-pgspa-01-rgb">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-abyssus-2000dpi-goliathus-control-fissure-rz83-02020200-b3u1" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/hardware/cooler-para-processador-pichau-gaming-sparrow-rgb-rainbow-pgspa-01-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p431-rgb-rainbow-pgk-p431-rgb" title="Teclado Gamer Pichau P431 RGB Rainbow, PGK-P431-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgk-p431-rgb321.jpg" alt="Teclado Gamer Pichau P431 RGB Rainbow, PGK-P431-RGB">
+<div class="save-price">
+<div class="price">22%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p431-rgb-rainbow-pgk-p431-rgb" title="Teclado Gamer Pichau P431 RGB Rainbow, PGK-P431-RGB">Teclado Gamer Pichau P431 RGB Rainbow, PGK-P431-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$79,43</strong>
+<span class="valor">7x de R$11,35</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$69,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 89 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p431-rgb-rainbow-pgk-p431-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/teclado-gamer-pichau-p431-rgb-rainbow-pgk-p431-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-branco-pgfea-white" title="Ventoinha Pichau Gaming Feather 120mm Branco, PGFEA-WHITE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgfea-white.jpg" alt="Ventoinha Pichau Gaming Feather 120mm Branco, PGFEA-WHITE">
+<div class="save-price">
+<div class="price">9%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-branco-pgfea-white" title="Ventoinha Pichau Gaming Feather 120mm Branco, PGFEA-WHITE">Ventoinha Pichau Gaming Feather 120mm Branco, PGFEA-WHITE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$22,61</strong>
+<span class="valor">2x de R$11,31</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$19,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 44 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-branco-pgfea-white">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-branco-pgfea-white" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-vermelha-by-8146-red" title="Cadeira Gamer Pichau Gallati Vermelha, BY-8146-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8146-red7.jpg" alt="Cadeira Gamer Pichau Gallati Vermelha, BY-8146-RED">
+<div class="save-price">
+<div class="price">30%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-vermelha-by-8146-red" title="Cadeira Gamer Pichau Gallati Vermelha, BY-8146-RED">Cadeira Gamer Pichau Gallati Vermelha, BY-8146-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$795,37</strong>
+<span class="valor">10x de R$79,54</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$699,93</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 39 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-vermelha-by-8146-red">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-vermelha-by-8146-red" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes  </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/teclab/cadeira-gamer-pichau-donek-vermelha-by-8188-vermelho" title="Cadeira Gamer Pichau Donek Vermelha, BY-8188-VERMELHO" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8188-vermelho5612.jpg" alt="Cadeira Gamer Pichau Donek Vermelha, BY-8188-VERMELHO">
+<div class="save-price">
+<div class="price">16%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/teclab/cadeira-gamer-pichau-donek-vermelha-by-8188-vermelho" title="Cadeira Gamer Pichau Donek Vermelha, BY-8188-VERMELHO">Cadeira Gamer Pichau Donek Vermelha, BY-8188-VERMELHO</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$761,27</strong>
+<span class="valor">10x de R$76,13</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$669,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Desculpe, esse produto está esgotado!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/teclab/cadeira-gamer-pichau-donek-vermelha-by-8188-vermelho">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/teclab/cadeira-gamer-pichau-donek-vermelha-by-8188-vermelho" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120g-led-verde-pgw120-green" title="Ventoinha Pichau Gaming Wave 120G Led Verde, PGW120-GREEN" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgw120-green2.jpg" alt="Ventoinha Pichau Gaming Wave 120G Led Verde, PGW120-GREEN">
+<div class="save-price">
+<div class="price">10%</div>
+ </div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120g-led-verde-pgw120-green" title="Ventoinha Pichau Gaming Wave 120G Led Verde, PGW120-GREEN">Ventoinha Pichau Gaming Wave 120G Led Verde, PGW120-GREEN</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$20,34</strong>
+<span class="valor">2x de R$10,17</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$17,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 80 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120g-led-verde-pgw120-green">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-wave-120g-led-verde-pgw120-green" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-verde-by-8188-verde" title="Cadeira Gamer Pichau Donek Verde, BY-8188-VERDE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8188-verde67445.jpg" alt="Cadeira Gamer Pichau Donek Verde, BY-8188-VERDE">
+<div class="save-price">
+<div class="price">25%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-verde-by-8188-verde" title="Cadeira Gamer Pichau Donek Verde, BY-8188-VERDE">Cadeira Gamer Pichau Donek Verde, BY-8188-VERDE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$681,73</strong>
+<span class="valor">10x de R$68,17</span>
+ <span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$599,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 20 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-verde-by-8188-verde">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-verde-by-8188-verde" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-vermelho-pg-fx120-red" title="Ventoinha Pichau Gaming Feather X Led Vermelho, PG-FX120-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-fx120-red.jpg" alt="Ventoinha Pichau Gaming Feather X Led Vermelho, PG-FX120-RED">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-vermelho-pg-fx120-red" title="Ventoinha Pichau Gaming Feather X Led Vermelho, PG-FX120-RED">Ventoinha Pichau Gaming Feather X Led Vermelho, PG-FX120-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$30,57</strong>
+<span class="valor">3x de R$10,19</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$26,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 88 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-vermelho-pg-fx120-red">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-vermelho-pg-fx120-red" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-azul-by-8179-azul" title="Cadeira Gamer Pichau Fantail Azul, BY-8179-AZUL" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8179-azulb821.jpg" alt="Cadeira Gamer Pichau Fantail Azul, BY-8179-AZUL">
+<div class="save-price">
+<div class="price">23%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-azul-by-8179-azul" title="Cadeira Gamer Pichau Fantail Azul, BY-8179-AZUL">Cadeira Gamer Pichau Fantail Azul, BY-8179-AZUL</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$874,91</strong>
+<span class="valor">10x de R$87,49</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$769,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 22 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-azul-by-8179-azul">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-fantail-azul-by-8179-azul" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/kit-gamer-pichau-px435-rgb-pg-px435-rgb" title="Kit Gamer Pichau PX435 RGB, PG-PX435-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-px435-rgb2.jpg" alt="Kit Gamer Pichau PX435 RGB, PG-PX435-RGB">
+<div class="save-price">
+<div class="price">18%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/kit-gamer-pichau-px435-rgb-pg-px435-rgb" title="Kit Gamer Pichau PX435 RGB, PG-PX435-RGB">Kit Gamer Pichau PX435 RGB, PG-PX435-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$120,34</strong>
+<span class="valor">10x de R$12,03</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$105,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 83 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/kit-gamer-pichau-px435-rgb-pg-px435-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/kit-gamer-pichau-px435-rgb-pg-px435-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p451-led-vermelho-7-1-usb-pgh-p451" title="Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgh-p451231.jpg" alt="Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451">
+<div class="save-price">
+<div class="price">11%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p451-led-vermelho-7-1-usb-pgh-p451" title="Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451">Fone de Ouvido Gamer Pichau P451 LED Vermelho 7.1 USB, PGH-P451</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$181,71</strong>
+<span class="valor">10x de R$18,17</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$159,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 95 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p451-led-vermelho-7-1-usb-pgh-p451">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p451-led-vermelho-7-1-usb-pgh-p451" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1" title="Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/z/rz01-02650100-r3m13.jpg" alt="Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1">
+<div class="save-price">
+<div class="price">14%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1" title="Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1">Mouse Gamer Razer Basilisk Essential RGB 6400Dpi, RZ01-02650100-R3M1</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$340,80</strong>
+<span class="valor">10x de R$34,08</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+ <span class="valor">R$299,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 1 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/razer/mouse-gamer-razer-basilisk-essential-rgb-6400dpi-rz01-02650100-r3m1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-pichau-gaming-tippler-verde-by-8105-verde" title="Cadeira Gamer Pichau Tippler Verde, BY-8105-VERDE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8105-verde3212.jpg" alt="Cadeira Gamer Pichau Tippler Verde, BY-8105-VERDE">
+<div class="save-price">
+<div class="price">5%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-pichau-gaming-tippler-verde-by-8105-verde" title="Cadeira Gamer Pichau Tippler Verde, BY-8105-VERDE">Cadeira Gamer Pichau Tippler Verde, BY-8105-VERDE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$590,81</strong>
+<span class="valor">10x de R$59,08</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$519,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available"><span class="text-unavailable-product">Últimas unidades</span></h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-pichau-gaming-tippler-verde-by-8105-verde">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-pichau-gaming-tippler-verde-by-8105-verde" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-pichau-p631k-rgb-switch-kailh-red-pgk-p631k-rgb" title="Teclado Mecanico Pichau P631K RGB, Switch Kailh RED, PGK-P631K-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgk-p631k-rgb3.jpg" alt="Teclado Mecanico Pichau P631K RGB, Switch Kailh RED, PGK-P631K-RGB">
+<div class="save-price">
+<div class="price">20%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-pichau-p631k-rgb-switch-kailh-red-pgk-p631k-rgb" title="Teclado Mecanico Pichau P631K RGB, Switch Kailh RED, PGK-P631K-RGB">Teclado Mecanico Pichau P631K RGB, Switch Kailh RED, PGK-P631K-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$272,62</strong>
+<span class="valor">10x de R$27,26</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$239,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 77 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-mecanico-pichau-p631k-rgb-switch-kailh-red-pgk-p631k-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-pichau-p631k-rgb-switch-kailh-red-pgk-p631k-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+ <td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-azul-pgfea-blue" title="Ventoinha Pichau Gaming Feather 120mm Azul, PGFEA-BLUE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgfea-blue.jpg" alt="Ventoinha Pichau Gaming Feather 120mm Azul, PGFEA-BLUE">
+<div class="save-price">
+<div class="price">9%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-azul-pgfea-blue" title="Ventoinha Pichau Gaming Feather 120mm Azul, PGFEA-BLUE">Ventoinha Pichau Gaming Feather 120mm Azul, PGFEA-BLUE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$22,61</strong>
+<span class="valor">2x de R$11,31</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$19,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 86 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-azul-pgfea-blue">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-azul-pgfea-blue" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-preta-by-8146-black" title="Cadeira Gamer Pichau Gallati Preta, BY-8146-BLACK" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8146-black4.jpg" alt="Cadeira Gamer Pichau Gallati Preta, BY-8146-BLACK">
+<div class="save-price">
+<div class="price">30%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-preta-by-8146-black" title="Cadeira Gamer Pichau Gallati Preta, BY-8146-BLACK">Cadeira Gamer Pichau Gallati Preta, BY-8146-BLACK</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$795,37</strong>
+<span class="valor">10x de R$79,54</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$699,93</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 8 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-preta-by-8146-black">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-gallati-preta-by-8146-black" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-verde-pgfea-green" title="Ventoinha Pichau Gaming Feather 120mm Verde, PGFEA-GREEN" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgfea-green.jpg" alt="Ventoinha Pichau Gaming Feather 120mm Verde, PGFEA-GREEN">
+<div class="save-price">
+<div class="price">9%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-verde-pgfea-green" title="Ventoinha Pichau Gaming Feather 120mm Verde, PGFEA-GREEN">Ventoinha Pichau Gaming Feather 120mm Verde, PGFEA-GREEN</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$22,61</strong>
+<span class="valor">2x de R$11,31</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$19,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 90 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-verde-pgfea-green">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-120mm-verde-pgfea-green" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-branca-pg-dnkii-white" title="Cadeira Gamer Pichau Donek II Branca, PG-DNKII-WHITE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-dnkii-white.jpg" alt="Cadeira Gamer Pichau Donek II Branca, PG-DNKII-WHITE">
+<div class="save-price">
+<div class="price">13%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-branca-pg-dnkii-white" title="Cadeira Gamer Pichau Donek II Branca, PG-DNKII-WHITE">Cadeira Gamer Pichau Donek II Branca, PG-DNKII-WHITE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$988,55</strong>
+<span class="valor">10x de R$98,86</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$869,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 49 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-branca-pg-dnkii-white">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-donek-ii-branca-pg-dnkii-white" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-azul-pg-fx120-blue" title="Ventoinha Pichau Gaming Feather X Led Azul, PG-FX120-BLUE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-fx120-blue.jpg" alt="Ventoinha Pichau Gaming Feather X Led Azul, PG-FX120-BLUE">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-azul-pg-fx120-blue" title="Ventoinha Pichau Gaming Feather X Led Azul, PG-FX120-BLUE">Ventoinha Pichau Gaming Feather X Led Azul, PG-FX120-BLUE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$30,57</strong>
+<span class="valor">3x de R$10,19</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$26,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 94 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-azul-pg-fx120-blue">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/ventoinha-pichau-gaming-feather-x-led-azul-pg-fx120-blue" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-hask-branca-by-8148white" title="Cadeira Gamer Pichau Hask Branca, BY-8148WHITE" class="product-image">
+ <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/y/by-8148white5.jpg" alt="Cadeira Gamer Pichau Hask Branca, BY-8148WHITE">
+<div class="save-price">
+<div class="price">10%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-hask-branca-by-8148white" title="Cadeira Gamer Pichau Hask Branca, BY-8148WHITE">Cadeira Gamer Pichau Hask Branca, BY-8148WHITE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$1.022,65</strong>
+<span class="valor">10x de R$102,27</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$899,93</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 50 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-hask-branca-by-8148white">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-pichau-hask-branca-by-8148white" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/kit-ventoinhas-pichau-gaming-feather-x-rgb-3x120mm-pg-fx120-rgb" title="Kit Ventoinhas Pichau Gaming Feather X RGB 3x120mm, PG-FX120-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-fx120-rgb.jpg" alt="Kit Ventoinhas Pichau Gaming Feather X RGB 3x120mm, PG-FX120-RGB">
+<div class="save-price">
+<div class="price">17%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/kit-ventoinhas-pichau-gaming-feather-x-rgb-3x120mm-pg-fx120-rgb" title="Kit Ventoinhas Pichau Gaming Feather X RGB 3x120mm, PG-FX120-RGB">Kit Ventoinhas Pichau Gaming Feather X RGB 3x120mm, PG-FX120-RGB</a>
+</h4>
+</td>
+</tr>
+ <tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$170,35</strong>
+<span class="valor">10x de R$17,04</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$149,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 93 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/kit-ventoinhas-pichau-gaming-feather-x-rgb-3x120mm-pg-fx120-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/kit-ventoinhas-pichau-gaming-feather-x-rgb-3x120mm-pg-fx120-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p651-rgb-7-1-usb-pgh-p651-rgb" title="Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pgh-p651-rgb1212.jpg" alt="Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB">
+<div class="save-price">
+<div class="price">21%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p651-rgb-7-1-usb-pgh-p651-rgb" title="Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB">Fone de Ouvido Gamer Pichau P651 RGB 7.1 USB, PGH-P651-RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$215,80</strong>
+<span class="valor">10x de R$21,58</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$189,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+ <td class="td-available">
+<h4 class="text-available">Apenas 87 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p651-rgb-7-1-usb-pgh-p651-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/novidades/fone-de-ouvido-gamer-pichau-p651-rgb-7-1-usb-pgh-p651-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br" title="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/p/g/pg-5001-br2315.jpg" alt="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR">
+<div class="save-price">
+<div class="price">7%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br" title="Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR">Fonte Pichau Gaming Nidus 500W Bronze 80 Plus, PG-5001-BR</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$318,07</strong>
+<span class="valor">10x de R$31,81</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$279,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 196 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/fonte-pichau-gaming-nidus-500w-bronze-80-plus-pg-5001-br" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/cooler-para-processador-cooler-master-hyper-t20-90mm-preto-rr-t20-20fk-r1" title="Cooler Para Processador Cooler Master Hyper T20 90mm Preto, RR-T20-20FK-R1" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/r/rr-t20-20fk-r1.jpg" alt="Cooler Para Processador Cooler Master Hyper T20 90mm Preto, RR-T20-20FK-R1">
+<div class="save-price">
+<div class="price">5%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/cooler-para-processador-cooler-master-hyper-t20-90mm-preto-rr-t20-20fk-r1" title="Cooler Para Processador Cooler Master Hyper T20 90mm Preto, RR-T20-20FK-R1">Cooler Para Processador Cooler Master Hyper T20 90mm Preto, RR-T20-20FK-R1</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$86,25</strong>
+<span class="valor">8x de R$10,78</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$75,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 49 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/cooler-para-processador-cooler-master-hyper-t20-90mm-preto-rr-t20-20fk-r1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/cooler-para-processador-cooler-master-hyper-t20-90mm-preto-rr-t20-20fk-r1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br" title="Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/g/sgb-300-kkmf1-br.jpg" alt="Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR">
+<div class="save-price">
+<div class="price">15%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br" title="Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR">Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$211,25</strong>
+<span class="valor">10x de R$21,13</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$185,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 6 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-intercepter-kids-azul-tgt-int-blue" title="Cadeira Gamer TGT Intercepter Kids Azul, TGT-INT-BLUE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-int-blue45126.jpg" alt="Cadeira Gamer TGT Intercepter Kids Azul, TGT-INT-BLUE">
+<div class="save-price">
+<div class="price">18%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-intercepter-kids-azul-tgt-int-blue" title="Cadeira Gamer TGT Intercepter Kids Azul, TGT-INT-BLUE">Cadeira Gamer TGT Intercepter Kids Azul, TGT-INT-BLUE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$454,45</strong>
+<span class="valor">10x de R$45,45</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$399,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 49 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-intercepter-kids-azul-tgt-int-blue">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-intercepter-kids-azul-tgt-int-blue" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00" title="Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/c/mcb-b511d-kgnn-s00_1_4.jpg" alt="Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00" title="Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00">Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$352,16</strong>
+<span class="valor">10x de R$35,22</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+ </li>
+<li class="boleto">
+<span class="valor">R$309,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 18 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-vermelha-tgt-cen-red" title="Cadeira Gamer TGT Centurion Vermelha, TGT-CEN-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-cen-red.jpg" alt="Cadeira Gamer TGT Centurion Vermelha, TGT-CEN-RED">
+<div class="save-price">
+<div class="price">20%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-vermelha-tgt-cen-red" title="Cadeira Gamer TGT Centurion Vermelha, TGT-CEN-RED">Cadeira Gamer TGT Centurion Vermelha, TGT-CEN-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$545,36</strong>
+<span class="valor">10x de R$54,54</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$479,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 43 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-vermelha-tgt-cen-red">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-vermelha-tgt-cen-red" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00" title="Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/c/mcb-b520-kann-s007.jpg" alt="Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00" title="Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00">Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$352,16</strong>
+<span class="valor">10x de R$35,22</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$309,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 25 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+ </td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue" title="Cadeira Gamer TGT Blade Azul, TGT-BLD-BLUE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-bld-blue2121.jpg" alt="Cadeira Gamer TGT Blade Azul, TGT-BLD-BLUE">
+<div class="save-price">
+<div class="price">17%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue" title="Cadeira Gamer TGT Blade Azul, TGT-BLD-BLUE">Cadeira Gamer TGT Blade Azul, TGT-BLD-BLUE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$556,72</strong>
+<span class="valor">10x de R$55,67</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$489,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 48 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1" title="Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/h/shard-a-bk-v15.jpg" alt="Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1">
+<div class="save-price">
+<div class="price">14%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1" title="Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1">Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$215,80</strong>
+<span class="valor">10x de R$21,58</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$189,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 213 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/perifericos/mouse-cooler-master-mastermouse-lite-s-2000dpi-sgm-1006-ksoa1" title="Mouse Cooler Master MasterMouse Lite S 2000DPI, SGM-1006-KSOA1" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/g/sgm-1006-ksoa123121.jpg" alt="Mouse Cooler Master MasterMouse Lite S 2000DPI, SGM-1006-KSOA1">
+<div class="save-price">
+<div class="price">11%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/perifericos/mouse-cooler-master-mastermouse-lite-s-2000dpi-sgm-1006-ksoa1" title="Mouse Cooler Master MasterMouse Lite S 2000DPI, SGM-1006-KSOA1">Mouse Cooler Master MasterMouse Lite S 2000DPI, SGM-1006-KSOA1</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$90,80</strong>
+<span class="valor">9x de R$10,09</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$79,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 34 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-cooler-master-mastermouse-lite-s-2000dpi-sgm-1006-ksoa1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/perifericos/mouse-cooler-master-mastermouse-lite-s-2000dpi-sgm-1006-ksoa1" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4045,11 +6701,11 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
- <h4 class="text-available">Apenas 4 item(s)!</h4>
+<h4 class="text-available">Apenas 4 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-gamer-cooler-master-cm310-rgb-10000dpi-cm-310-kkwo2">
+ <a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-gamer-cooler-master-cm310-rgb-10000dpi-cm-310-kkwo2">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/perifericos/mouse-gamer-cooler-master-cm310-rgb-10000dpi-cm-310-kkwo2" class="more-details bt-list-product">
@@ -4089,7 +6745,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 67 item(s)!</h4>
+<h4 class="text-available">Apenas 62 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -4097,6 +6753,50 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/hardware/cooler-para-processador-cooler-master-hyper-h410r-92mm-rgb-rr-h410-20pc-r1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+ Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-azul-tgt-fur-blue" title="Cadeira Gamer TGT Fury Azul, TGT-FUR-BLUE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-fur-blue656464.jpg" alt="Cadeira Gamer TGT Fury Azul, TGT-FUR-BLUE">
+<div class="save-price">
+<div class="price">12%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-azul-tgt-fur-blue" title="Cadeira Gamer TGT Fury Azul, TGT-FUR-BLUE">Cadeira Gamer TGT Fury Azul, TGT-FUR-BLUE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$556,72</strong>
+<span class="valor">10x de R$55,67</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$489,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 48 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-azul-tgt-fur-blue">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-azul-tgt-fur-blue" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4149,6 +6849,94 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
+<a href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348" title="Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/e/n/en583481444.jpg" alt="Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348">
+<div class="save-price">
+<div class="price">7%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348" title="Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348">Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+ <li class="other">
+<strong class="regular-price">R$211,25</strong>
+<span class="valor">10x de R$21,13</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$185,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 25 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue-1" title="Cadeira Gamer TGT Blade Vermelha, TGT-BLD-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-bld-red121.jpg" alt="Cadeira Gamer TGT Blade Vermelha, TGT-BLD-RED">
+<div class="save-price">
+<div class="price">17%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue-1" title="Cadeira Gamer TGT Blade Vermelha, TGT-BLD-RED">Cadeira Gamer TGT Blade Vermelha, TGT-BLD-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$556,72</strong>
+<span class="valor">10x de R$55,67</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$489,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 46 item(s)!</h4>
+</td>
+ <td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue-1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-blade-azul-tgt-bld-blue-1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
 <a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-bold-rgb-lateral-acrilico-preto-bolt-a-bk-v1" title="Gabinete Gamer AeroCool Bolt RGB Lateral Acrilico Preto, BOLT-A-BK-V1" class="product-image">
 <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/b/o/bolt-a-bk-v15.jpg" alt="Gabinete Gamer AeroCool Bolt RGB Lateral Acrilico Preto, BOLT-A-BK-V1">
 <div class="save-price">
@@ -4177,7 +6965,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 287 item(s)!</h4>
+<h4 class="text-available">Apenas 275 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -4186,7 +6974,7 @@ Detalhes </a>
 Comprar </a>
 <a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-bold-rgb-lateral-acrilico-preto-bolt-a-bk-v1" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
+ Detalhes </a>
 </div>
 </td>
 
@@ -4221,7 +7009,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 41 item(s)!</h4>
+<h4 class="text-available">Apenas 35 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -4229,6 +7017,50 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/hardware/cooler-para-processador-cooler-master-hyper-t200-rr-t200-22pk-r1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-vermelha-tgt-fur-red" title="Cadeira Gamer TGT Fury Vermelha, TGT-FUR-RED" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-fur-red646126.jpg" alt="Cadeira Gamer TGT Fury Vermelha, TGT-FUR-RED">
+<div class="save-price">
+<div class="price">17%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-vermelha-tgt-fur-red" title="Cadeira Gamer TGT Fury Vermelha, TGT-FUR-RED">Cadeira Gamer TGT Fury Vermelha, TGT-FUR-RED</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$556,72</strong>
+<span class="valor">10x de R$55,67</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$489,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 48 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-vermelha-tgt-fur-red">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-fury-vermelha-tgt-fur-red" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4253,10 +7085,10 @@ Detalhes </a>
 <tr class="item">
 <td>
 <ul class="payment">
-<li class="other">
+ <li class="other">
 <strong class="regular-price">R$363,52</strong>
 <span class="valor">10x de R$36,35</span>
- <span class="adicional"><strong>sem juros</strong> no cartão</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
 <span class="valor">R$319,90</span><br>
@@ -4281,16 +7113,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348" title="Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/e/n/en583481444.jpg" alt="Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348">
+<a href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7" title="Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/1/11861-74.jpg" alt="Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7">
 <div class="save-price">
-<div class="price">7%</div>
+<div class="price">5%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348" title="Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348">Gabinete Aerocool ATX SI-5100 Com Acrilico USB 3.0 Preto, EN58348</a>
+<a href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7" title="Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7">Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7</a>
 </h4>
 </td>
 </tr>
@@ -4298,27 +7130,71 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$211,25</strong>
-<span class="valor">10x de R$21,13</span>
+<strong class="regular-price">R$227,16</strong>
+<span class="valor">10x de R$22,72</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$185,90</span><br>
+<span class="valor">R$199,90</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 32 item(s)!</h4>
+ <h4 class="text-available">Apenas 7 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/ths/gabinete-aerocool-atx-si-5100-com-acrilico-usb-3-0-preto-en58348" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-azul-tgt-cen-blue" title="Cadeira Gamer TGT Centurion Azul, TGT-CEN-BLUE" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/g/tgt-cen-blue65127.jpg" alt="Cadeira Gamer TGT Centurion Azul, TGT-CEN-BLUE">
+<div class="save-price">
+<div class="price">20%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-azul-tgt-cen-blue" title="Cadeira Gamer TGT Centurion Azul, TGT-CEN-BLUE">Cadeira Gamer TGT Centurion Azul, TGT-CEN-BLUE</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$545,36</strong>
+<span class="valor">10x de R$54,54</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$479,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 49 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-azul-tgt-cen-blue">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/cadeiras/cadeira-gamer-tgt-centurion-azul-tgt-cen-blue" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+ Detalhes </a>
 </div>
 </td>
 
@@ -4361,50 +7237,6 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-red-lateral-acrilico-mcb-b511d-kann-s00" class="more-details bt-list-product">
- <i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br" title="Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/g/sgb-300-kkmf1-br.jpg" alt="Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR">
-<div class="save-price">
-<div class="price">15%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br" title="Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR">Kit Teclado e Mouse Cooler Master Storm Devastator 3 LED Multicolor, SGB-3000-KKMF1-BR</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$211,25</strong>
-<span class="valor">10x de R$21,13</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$185,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 9 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/perifericos/kit-teclado-e-mouse-cooler-master-storm-devastator-3-led-multicolor-sgb-3000-kkmf1-br" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4413,140 +7245,8 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00" title="Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/c/mcb-b511d-kgnn-s00_1_4.jpg" alt="Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00">
-<div class="save-price">
-<div class="price">6%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00" title="Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00">Gabinete Cooler Master Masterbox MB511 TG Preto/Vermelho, MCB-B511D-KGNN-S00</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$352,16</strong>
-<span class="valor">10x de R$35,22</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$309,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 19 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb511-tg-preto-vermelho-mcb-b511d-kgnn-s00" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00" title="Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/c/mcb-b520-kann-s007.jpg" alt="Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00">
-<div class="save-price">
-<div class="price">6%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00" title="Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00">Gabinete Cooler Master MasterBox MB520 Vermelho Lateral Acrilico, MCB-B520-KANN-S00</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$352,16</strong>
-<span class="valor">10x de R$35,22</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$309,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 25 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-masterbox-mb520-vermelho-lateral-acrilico-mcb-b520-kann-s00" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7" title="Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/1/1/11861-74.jpg" alt="Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7">
-<div class="save-price">
-<div class="price">5%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7" title="Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7">Kit Ventoinha DT3 Sports ZX120 Sync Pro 3x120mm RGB, 11861-7</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$227,16</strong>
-<span class="valor">10x de R$22,72</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$199,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 16 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/kit-ventoinha-dt3-sports-zx120-sync-pro-3x120mm-rgb-11861-7" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1" title="Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/s/h/shard-a-bk-v15.jpg" alt="Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1">
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a" title="Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/h/e/hermes-p1a213212.jpg" alt="Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A">
 <div class="save-price">
 <div class="price">14%</div>
 </div>
@@ -4554,7 +7254,7 @@ Detalhes </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1" title="Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1">Gabinete Gamer AeroCool Shard RGB Lateral Acrilico Preto, SHARD-A-BK-V1</a>
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a" title="Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A">Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A</a>
 </h4>
 </td>
 </tr>
@@ -4562,25 +7262,157 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$215,80</strong>
-<span class="valor">10x de R$21,58</span>
+<strong class="regular-price">R$272,62</strong>
+<span class="valor">10x de R$27,26</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$189,90</span><br>
+<span class="valor">R$239,91</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 248 item(s)!</h4>
+<h4 class="text-available">Apenas 20 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/hardware/gabinete-gamer-aerocool-shard-rgb-lateral-acrilico-preto-shard-a-bk-v1" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206" title="Teclado Multimidia Multilaser USB, TC206" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/c/tc206.jpg" alt="Teclado Multimidia Multilaser USB, TC206">
+<div class="save-price">
+<div class="price">4%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206" title="Teclado Multimidia Multilaser USB, TC206">Teclado Multimidia Multilaser USB, TC206</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$29,43</strong>
+<span class="valor">2x de R$14,72</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$25,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 29 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-mastercase-h500-rgb-mcm-h500-ignn-s00" title="Gabinete Cooler Master Mastercase H500 RGB, MCM-H500-IGNN-S00" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/c/mcm-h500-ignn-s002.jpg" alt="Gabinete Cooler Master Mastercase H500 RGB, MCM-H500-IGNN-S00">
+<div class="save-price">
+<div class="price">11%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-mastercase-h500-rgb-mcm-h500-ignn-s00" title="Gabinete Cooler Master Mastercase H500 RGB, MCM-H500-IGNN-S00">Gabinete Cooler Master Mastercase H500 RGB, MCM-H500-IGNN-S00</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$852,16</strong>
+<span class="valor">10x de R$85,22</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$749,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 4 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-cooler-master-mastercase-h500-rgb-mcm-h500-ignn-s00">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-cooler-master-mastercase-h500-rgb-mcm-h500-ignn-s00" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3" title="Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/p/dp-atx-matrexx55v38.jpg" alt="Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3" title="Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3">Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$363,53</strong>
+<span class="valor">10x de R$36,35</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$319,91</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 12 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4617,7 +7449,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 45 item(s)!</h4>
+<h4 class="text-available">Apenas 37 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -4625,138 +7457,6 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/redes-wireless/adaptador-wireless-tp-link-usb-300mbps-tl-wn821n-box" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
- </td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3" title="Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/p/dp-atx-matrexx55v38.jpg" alt="Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3">
-<div class="save-price">
-<div class="price">6%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3" title="Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3">Gabinete DeepCool Matrexx 55 V3 Vidro Temp Preto, DP-ATX-MATREXX55V3</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$363,53</strong>
-<span class="valor">10x de R$36,35</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$319,91</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 13 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/gabinete-deepcool-matrexx-55-v3-vidro-temp-preto-dp-atx-matrexx55v3" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206" title="Teclado Multimidia Multilaser USB, TC206" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/t/c/tc206.jpg" alt="Teclado Multimidia Multilaser USB, TC206">
-<div class="save-price">
-<div class="price">4%</div>
- </div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206" title="Teclado Multimidia Multilaser USB, TC206">Teclado Multimidia Multilaser USB, TC206</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$29,43</strong>
-<span class="valor">2x de R$14,72</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$25,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 35 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/multilaser/teclado-multimidia-multilaser-usb-tc206" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a" title="Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/h/e/hermes-p1a213212.jpg" alt="Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A">
-<div class="save-price">
-<div class="price">14%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a" title="Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A">Teclado Mecanico Gamdias Hermes P1A RGB Switch Azul, HERMES-P1A</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$272,62</strong>
-<span class="valor">10x de R$27,26</span>
- <span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$239,91</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 25 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-gamdias-hermes-p1a-rgb-switch-azul-hermes-p1a" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4853,6 +7553,50 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1" title="Gabinete NZXT H210i Preto/Preto, CA-H210i-B1" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/c/a/ca-h210i-b1.jpg" alt="Gabinete NZXT H210i Preto/Preto, CA-H210i-B1">
+<div class="save-price">
+<div class="price">6%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1" title="Gabinete NZXT H210i Preto/Preto, CA-H210i-B1">Gabinete NZXT H210i Preto/Preto, CA-H210i-B1</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$829,45</strong>
+<span class="valor">10x de R$82,95</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$729,92</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 3 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
 <a href="https://www.pichau.com.br/logitech/mouse-logitech-m90-usb-preto-910-004053" title="Mouse Logitech M90 USB Preto, 910-004053" class="product-image">
 <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/9/1/910-00405352.jpg" alt="Mouse Logitech M90 USB Preto, 910-004053">
 <div class="save-price">
@@ -4881,7 +7625,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 137 item(s)!</h4>
+<h4 class="text-available">Apenas 129 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -4889,6 +7633,50 @@ Detalhes </a>
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/logitech/mouse-logitech-m90-usb-preto-910-004053" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi" title="Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/z/e/zeus-m14.jpg" alt="Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi">
+<div class="save-price">
+<div class="price">15%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi" title="Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi">Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$170,34</strong>
+<span class="valor">10x de R$17,03</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$149,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+<td class="td-available">
+<h4 class="text-available">Apenas 14 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -4925,7 +7713,7 @@ Detalhes </a>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 50 item(s)!</h4>
+<h4 class="text-available">Apenas 46 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
@@ -4985,138 +7773,6 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1" title="Gabinete NZXT H210i Preto/Preto, CA-H210i-B1" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/c/a/ca-h210i-b1.jpg" alt="Gabinete NZXT H210i Preto/Preto, CA-H210i-B1">
-<div class="save-price">
-<div class="price">6%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1" title="Gabinete NZXT H210i Preto/Preto, CA-H210i-B1">Gabinete NZXT H210i Preto/Preto, CA-H210i-B1</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$829,45</strong>
-<span class="valor">10x de R$82,95</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$729,92</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 3 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1">
- <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/hardware/gabinete-nzxt-h210i-preto-preto-ca-h210i-b1" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi" title="Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/z/e/zeus-m14.jpg" alt="Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi">
-<div class="save-price">
-<div class="price">15%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi" title="Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi">Mouse Gamer Gamdias Zeus M1 RGB 7000Dpi</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$170,34</strong>
-<span class="valor">10x de R$17,03</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$149,90</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 14 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/ths/mouse-gamer-gamdias-zeus-m1-rgb-7000dpi" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb" title="Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/k/5/k566b-rgb.jpg" alt="Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB">
-<div class="save-price">
-<div class="price">3%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb" title="Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB">Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$471,60</strong>
-<span class="valor">10x de R$47,16</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$415,01</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 9 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
 <a href="https://www.pichau.com.br/perifericos/mouse-gamer-mad-catz-r-a-t-2-5000dpi-preto-rat-2" title="Mouse Gamer Mad Catz R.A.T. 2+ 5000DPI Preto, RAT 2+" class="product-image">
 <img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/r/a/rat-2_5.jpg" alt="Mouse Gamer Mad Catz R.A.T. 2+ 5000DPI Preto, RAT 2+">
 <div class="save-price">
@@ -5127,7 +7783,7 @@ Detalhes </a>
 <td colspan="4">
 <h4 class="product-name">
 <a href="https://www.pichau.com.br/perifericos/mouse-gamer-mad-catz-r-a-t-2-5000dpi-preto-rat-2" title="Mouse Gamer Mad Catz R.A.T. 2+ 5000DPI Preto, RAT 2+">Mouse Gamer Mad Catz R.A.T. 2+ 5000DPI Preto, RAT 2+</a>
- </h4>
+</h4>
 </td>
 </tr>
 <tr class="item">
@@ -5150,7 +7806,7 @@ Detalhes </a>
 <td>
 <div class="actions-buttons-daily">
 <a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/mouse-gamer-mad-catz-r-a-t-2-5000dpi-preto-rat-2">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+ <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
 <a href="https://www.pichau.com.br/perifericos/mouse-gamer-mad-catz-r-a-t-2-5000dpi-preto-rat-2" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
@@ -5161,16 +7817,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb" title="Water Cooler KWG Crater M1-240R RGB" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/1/m1-240r-rgb.jpg" alt="Water Cooler KWG Crater M1-240R RGB">
+<a href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1" title="Display Interativo Wacom Cintiq Pro 13" ,="" dth1320ak1"="" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/t/dth1320ak15.jpg" alt="Display Interativo Wacom Cintiq Pro 13" ,="" dth1320ak1"="">
 <div class="save-price">
-<div class="price">12%</div>
+<div class="price">7%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb" title="Water Cooler KWG Crater M1-240R RGB">Water Cooler KWG Crater M1-240R RGB</a>
+<a href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1" title="Display Interativo Wacom Cintiq Pro 13" ,="" dth1320ak1"="">Display Interativo Wacom Cintiq Pro 13", DTH1320AK1</a>
 </h4>
 </td>
 </tr>
@@ -5178,69 +7834,25 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$431,71</strong>
-<span class="valor">10x de R$43,17</span>
+<strong class="regular-price">R$7.272,84</strong>
+<span class="valor">10x de R$727,28</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$379,90</span><br>
+<span class="valor">R$6.400,10</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
- <h4 class="text-available">Apenas 7 item(s)!</h4>
+<h4 class="text-available">Apenas 1 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb" class="more-details bt-list-product">
-<i class="fa fa-plus" aria-hidden="true"></i>
-Detalhes </a>
-</div>
-</td>
-
-</tr>
-<tr class="item">
-<td rowspan="2">
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-motospeed-ck108-k92-preto-switch-gateron-branco-rgb-fmstc0042bro" title="Teclado Mecanico Motospeed CK108 K92 Preto Switch Gateron Branco RGB, FMSTC0042BRO" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/f/m/fmstc0043vrd2_1.jpg" alt="Teclado Mecanico Motospeed CK108 K92 Preto Switch Gateron Branco RGB, FMSTC0042BRO">
-<div class="save-price">
-<div class="price">11%</div>
-</div>
-</a>
-</td>
-<td colspan="4">
-<h4 class="product-name">
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-motospeed-ck108-k92-preto-switch-gateron-branco-rgb-fmstc0042bro" title="Teclado Mecanico Motospeed CK108 K92 Preto Switch Gateron Branco RGB, FMSTC0042BRO">Teclado Mecanico Motospeed CK108 K92 Preto Switch Gateron Branco RGB, FMSTC0042BRO</a>
-</h4>
-</td>
-</tr>
-<tr class="item">
-<td>
-<ul class="payment">
-<li class="other">
-<strong class="regular-price">R$357,96</strong>
-<span class="valor">10x de R$35,80</span>
-<span class="adicional"><strong>sem juros</strong> no cartão</span>
-</li>
-<li class="boleto">
-<span class="valor">R$315,00</span><br>
-<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
-</li>
-</ul>
-</td>
-<td class="td-available">
-<h4 class="text-available">Apenas 3 item(s)!</h4>
-</td>
-<td>
-<div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-mecanico-motospeed-ck108-k92-preto-switch-gateron-branco-rgb-fmstc0042bro">
-<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-Comprar </a>
-<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-motospeed-ck108-k92-preto-switch-gateron-branco-rgb-fmstc0042bro" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -5293,16 +7905,16 @@ Detalhes </a>
 </tr>
 <tr class="item">
 <td rowspan="2">
-<a href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1" title="Display Interativo Wacom Cintiq Pro 13" ,="" dth1320ak1"="" class="product-image">
-<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/d/t/dth1320ak15.jpg" alt="Display Interativo Wacom Cintiq Pro 13" ,="" dth1320ak1"="">
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb" title="Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/k/5/k566b-rgb.jpg" alt="Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB">
 <div class="save-price">
-<div class="price">7%</div>
+<div class="price">3%</div>
 </div>
 </a>
 </td>
 <td colspan="4">
 <h4 class="product-name">
-<a href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1" title="Display Interativo Wacom Cintiq Pro 13" ,="" dth1320ak1"="">Display Interativo Wacom Cintiq Pro 13", DTH1320AK1</a>
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb" title="Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB">Teclado Mecanico Redragon Tvastar RGB Azul Metalico, K566B-RGB</a>
 </h4>
 </td>
 </tr>
@@ -5310,25 +7922,69 @@ Detalhes </a>
 <td>
 <ul class="payment">
 <li class="other">
-<strong class="regular-price">R$7.272,84</strong>
-<span class="valor">10x de R$727,28</span>
+<strong class="regular-price">R$471,60</strong>
+<span class="valor">10x de R$47,16</span>
 <span class="adicional"><strong>sem juros</strong> no cartão</span>
 </li>
 <li class="boleto">
-<span class="valor">R$6.400,10</span><br>
+<span class="valor">R$415,01</span><br>
 <span class="adicional">no boleto com <strong>12% de desconto</strong></span>
 </li>
 </ul>
 </td>
 <td class="td-available">
-<h4 class="text-available">Apenas 1 item(s)!</h4>
+<h4 class="text-available">Apenas 9 item(s)!</h4>
 </td>
 <td>
 <div class="actions-buttons-daily">
-<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb">
 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
 Comprar </a>
-<a href="https://www.pichau.com.br/perifericos/display-interativo-wacom-cintiq-pro-13-dth1320ak1" class="more-details bt-list-product">
+<a href="https://www.pichau.com.br/perifericos/teclado-mecanico-redragon-tvastar-rgb-azul-metalico-k566b-rgb" class="more-details bt-list-product">
+<i class="fa fa-plus" aria-hidden="true"></i>
+Detalhes </a>
+</div>
+</td>
+
+</tr>
+<tr class="item">
+<td rowspan="2">
+<a href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb" title="Water Cooler KWG Crater M1-240R RGB" class="product-image">
+<img src="https://cdn.pichau.com.br/catalog/product/cache/5679dcd765522bc013fe4dc6081ba964/m/1/m1-240r-rgb.jpg" alt="Water Cooler KWG Crater M1-240R RGB">
+<div class="save-price">
+<div class="price">12%</div>
+</div>
+</a>
+</td>
+<td colspan="4">
+<h4 class="product-name">
+<a href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb" title="Water Cooler KWG Crater M1-240R RGB">Water Cooler KWG Crater M1-240R RGB</a>
+</h4>
+</td>
+</tr>
+<tr class="item">
+<td>
+<ul class="payment">
+<li class="other">
+<strong class="regular-price">R$431,71</strong>
+<span class="valor">10x de R$43,17</span>
+<span class="adicional"><strong>sem juros</strong> no cartão</span>
+</li>
+<li class="boleto">
+<span class="valor">R$379,90</span><br>
+<span class="adicional">no boleto com <strong>12% de desconto</strong></span>
+</li>
+</ul>
+</td>
+ <td class="td-available">
+<h4 class="text-available">Apenas 7 item(s)!</h4>
+</td>
+<td>
+<div class="actions-buttons-daily">
+<a class="action tocart bt-list-product" href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb">
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+Comprar </a>
+<a href="https://www.pichau.com.br/hardware/water-cooler-kwg-crater-m1-240r-rgb" class="more-details bt-list-product">
 <i class="fa fa-plus" aria-hidden="true"></i>
 Detalhes </a>
 </div>
@@ -5437,7 +8093,7 @@ Cadastro realizado com sucesso </div>
 <div class="yt-subscribe-footer"><a href="https://www.youtube.com/subscription_center?add_user=pichauinfo" target="_blank"> <img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/footer/yt-subscribe.png" alt=""> </a></div>
 </nav>
 <div class="fb-like-box">
-<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/PichauInfo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=555333651272722&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 265px; height: 181px;"><iframe name="f1ba54ef9d79de" width="1000px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=555333651272722&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Df299ff8a4fd6f44%26domain%3Dwww.pichau.com.br%26origin%3Dhttps%253A%252F%252Fwww.pichau.com.br%252Ffed16b00556848%26relation%3Dparent.parent&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false" style="border: none; visibility: visible; width: 265px; height: 181px;" class=""></iframe></span></div>
+<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/PichauInfo/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=555333651272722&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false"><span style="vertical-align: bottom; width: 265px; height: 181px;"><iframe name="f3f278494c73b8a" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" style="border: medium none; visibility: visible; width: 265px; height: 181px;" src="https://www.facebook.com/v2.11/plugins/page.php?adapt_container_width=true&amp;app_id=555333651272722&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D46%23cb%3Dfff199991f8002%26domain%3Dwww.pichau.com.br%26origin%3Dhttps%253A%252F%252Fwww.pichau.com.br%252Ff32ca34bc625f7%26relation%3Dparent.parent&amp;container_width=265&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FPichauInfo%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
 </div>
 <hr><nav class="nav-payment" style="margin-right: 9.8%;">
 <h5>Formas de Pagamento</h5>
@@ -5451,7 +8107,7 @@ Cadastro realizado com sucesso </div>
 </div></li>
 <li><img src="https://www.pichau.com.br/static/version1588789306/frontend/Pichau/base/pt_BR/images/footer/certificados/pichau-google.png" alt=""></li>
 <li style="width: 110px; margin-top: 0; margin-right: 0;"><a id="seloEbit" href="http://www.ebit.com.br/6261" target="_blank" data-noop="redir(this.href);"> </a></li>
-<li class="last" style="margin-right: 0;"><div id="___ratingbadge_0" style="border: 1px none rgb(245, 245, 245); text-indent: 0px; margin: 0px; padding: 0px; background: transparent; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 165px; height: 54px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 165px; margin: 0px; border-style: none; display: block; left: 0px; visibility: visible; height: 54px;" tabindex="0" vspace="0" width="100%" id="I0_1588919027900" name="I0_1588919027900" src="https://www.google.com/shopping/customerreviews/badge?usegapi=1&amp;merchant_id=106916823&amp;position=INLINE&amp;origin=https%3A%2F%2Fwww.pichau.com.br&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en_US.ebk8EhJxLu4.O%2Fam%3DwQE%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCP6GuLd1aTsaaFO6Zp_Rjnyu1Wv5g%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1588919027900&amp;_gfid=I0_1588919027900&amp;parent=https%3A%2F%2Fwww.pichau.com.br&amp;pfname=&amp;rpctoken=31965759" data-gapiattached="true" title="Google Customer Reviews"></iframe></div></li>
+<li class="last" style="margin-right: 0;"><div id="___ratingbadge_0" style="border: 1px none rgb(245, 245, 245); text-indent: 0px; margin: 0px; padding: 0px; background: transparent none repeat scroll 0% 0%; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 165px; height: 54px;"><iframe ng-non-bindable="" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 165px; margin: 0px; border-style: none; display: block; left: 0px; visibility: visible; height: 54px;" tabindex="0" vspace="0" id="I0_1589017244238" name="I0_1589017244238" src="https://www.google.com/shopping/customerreviews/badge?usegapi=1&amp;merchant_id=106916823&amp;position=INLINE&amp;origin=https%3A%2F%2Fwww.pichau.com.br&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.jw7XZHvcak8.O%2Fam%3DwQE%2Fd%3D1%2Fct%3Dzgms%2Frs%3DAGLTcCOXtLG11kt9d673FzpjO_GiLUGIQA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh&amp;id=I0_1589017244238&amp;_gfid=I0_1589017244238&amp;parent=https%3A%2F%2Fwww.pichau.com.br&amp;pfname=&amp;rpctoken=42371562" data-gapiattached="true" title="Google Customer Reviews" width="100%" frameborder="0"></iframe></div></li>
 </ul>
 </nav></div>
 <div class="addres-footer"><img class="logo-footer" src="https://cdn.pichau.com.br/wysiwyg/logo-alt.png" alt="Pichau">
@@ -5552,7 +8208,7 @@ Cadastro realizado com sucesso </div>
                 customerData.invalidate(['gtm']);
             });
     </script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-199a4e80efcd30d8013","applicationID":"508691749","transactionName":"YlNbMBRVXxAAWkIMClsZeAcSXV4NTl1XDAlMUlwFChtYDQVcTkoMW1JcHA==","queueTime":0,"applicationTime":4453,"atts":"ThRYRlxPTB4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-199a4e80efcd30d8013","applicationID":"508691749","transactionName":"YlNbMBRVXxAAWkIMClsZeAcSXV4NTl1XDAlMUlwFChtYDQVcTkoMW1JcHA==","queueTime":0,"applicationTime":5971,"atts":"ThRYRlxPTB4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
 
 <div class="modals-wrapper"><aside role="dialog" class="modal-popup popup-authentication
                modal-slide
@@ -5646,4 +8302,4 @@ Cadastro realizado com sucesso </div>
 
 </div>
 <div data-role="focusable-end" tabindex="0"></div>
-</aside></div></body></html>`;
+</aside></div></body></html>`

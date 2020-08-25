@@ -1,6 +1,6 @@
 {
     "name": "@juliano.ladeira/kachecker",
-    "version": "2.1.2",
+    "version": "2.1.3",
     "description": "Checks KaBuM for discounts",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
@@ -14,7 +14,7 @@
         "url": "git+https://github.com/JulianoPeresLadeira/kachecker.git"
     },
     "keywords": [
-        "Ka\u0002BuM"
+        "KaBuM"
     ],
     "author": "Juliano Ladeira",
     "license": "ISC",

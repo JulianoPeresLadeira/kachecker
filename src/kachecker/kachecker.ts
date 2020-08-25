@@ -25,7 +25,6 @@ export default class Kachecker {
     async fetchProducts(): Promise<Array<Product>> {
         const products = await Promise.all(this.checkers.map(checker => {
             try {
-                console.log(checker)
                 return checker.fetchProducts().catch(
                     error => {
                         console.log(`${checker.constructor.name} => ${error}`);

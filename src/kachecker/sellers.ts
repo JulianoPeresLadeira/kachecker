@@ -6,13 +6,13 @@ import { PichauChecker } from "../sellers/pichau/pichau-checker";
 import PichauDefaultConfig from "../sellers/pichau/pichau-default-configs";
 
 export const sellers = {
+    /*"terabyteshop": {
+        "checker": TerabyteshopChecker,
+        "defaultConfig": TerabyteshopDefaultConfig
+    },*/
     "kabum": {
         "checker": KabumChecker,
         "defaultConfig": KabumDefaultConfig
-    },
-    "terabyteshop": {
-        "checker": TerabyteshopChecker,
-        "defaultConfig": TerabyteshopDefaultConfig
     },
     "pichau": {
         "checker": PichauChecker,
